@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="the_ribbon">
+   <title>The ribbon</title>
+   <shortdesc />
+   <conbody>
+      <p>The ribbon is a set of tabbed toolbars, filled with tool buttons and other graphical control elements, grouped by functionality.</p>
+      <p>The content of the ribbon depends on the current workspace.</p>
+      <p>The Drafting, Modeling, Mechanical and BIM workspaces use the ribbon by default.</p>
+      <p>Use <xref keyref="CMD_ribbon" /> and <xref keyref="CMD_ribbonclose" /> to open or close the
+         ribbon.</p>
+   </conbody>
+   <related-links>
+      <linklist>
+         <title>Related Information</title>
+         <link href="https://help.bricsys.com/hc/en-us/articles/360006536153-Ribbon" format="html" scope="external">
+            <linktext>Exploring the Ribbon</linktext>
+            <!--needs link-->
+         </link>
+         <link keyref="GD_choosing_the_workspace" />
+         <link keyref="GD_toolbars" />
+         <link keyref="GD_menus" />
+         <link keyref="GD_the_quad_basics" />
+         <link keyref="GD_the_command_line" />
+         <link keyref="GD_executing_commands" />
+      </linklist>
+   </related-links>
+</concept>
+
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="the_clean_screen_mode">
+   <title>The clean screen mode</title>
+   <shortdesc />
+   <conbody>
+      <p>In clean screen mode, you can maximize the drawing area by dismissing user interface elements, such as the menu bar, the ribbon, toolbars, panels, the command line, status bar and document tabs. You can still use the <xref keyref="GD_the_quad_basics">Quad</xref> to launch commands.</p>
+      <p>Press and hold the Ctrl key and press the 0 (zero) key to toggle the clean screen mode on/off.<note>Do not use the numeric keypad.</note><note>On AZERTY keyboards: do not press the Shift key when hitting the 0 key.</note>
+      </p>
+   </conbody>
+   <related-links>
+      <linklist>
+         <title>Related Information</title>
+         <link href="https://help.bricsys.com/hc/en-us/articles/360006563394-CleanScreenOn" format="html" scope="external">
+            <linktext>CLEANSCREENON</linktext>
+         </link>
+         <!--needs link-->
+      </linklist>
+   </related-links>
+</concept>
+
+

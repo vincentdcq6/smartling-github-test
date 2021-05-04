@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+<!-- End Document Specific Declarations -->
+
+]>
+<map xml:lang="en-us" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <title>What's new in V21</title>
+  <topicref href="_guides/whats_new_V21/whats_new_in_v21_title.dita" navtitle="What's new in V21" keys="whats_new_in_v21_title">
+    <topicref href="_guides/whats_new_V21/BricsCAD/NFG_whats_new_in_bricscad_v21_title.dita" keys="NFG_whats_new_in_bricscad_v21_title">
+      <topicref href="_guides/whats_new_V21/BricsCAD/NFG_overview.dita" keys="NFG_overview" />
+      <topicref href="_guides/whats_new_V21/BricsCAD/NFG_user_interface.dita" keys="NFG_user_interface" />
+      <topicref href="_guides/whats_new_V21/BricsCAD/NFG_productivity.dita" keys="NFG_productivity" />
+      <topicref href="_guides/whats_new_V21/BricsCAD/NFG_drafting.dita" keys="NFG_drafting" />
+      <topicref href="_guides/whats_new_V21/BricsCAD/NFG_modeling.dita" keys="NFG_modeling" />
+      <topicref href="_guides/whats_new_V21/BricsCAD/NFG_civil_tools.dita" keys="NFG_civil_tools" />
+      <topicref href="_guides/whats_new_V21/BricsCAD/NFG_performance_and_compatibility.dita" keys="NFG_performance_and_compatibility" />
+    </topicref>
+    <topicref href="_guides/whats_new_V21/BIM/NFG_whats_new_in_bricscad_v21_bim_title.dita" keys="NFG_whats_new_in_bricscad_v21_bim_title">
+      <topicref href="_guides/whats_new_V21/BIM/NFG_overview.dita" keys="NFG_overview_bim" />
+      <topicref href="_guides/whats_new_V21/BIM/NFG_modeling_techniques.dita" keys="NFG_modeling_techniques" />
+      <topicref href="_guides/whats_new_V21/BIM/NFG_building_data.dita" keys="NFG_building_data" />
+      <topicref href="_guides/whats_new_V21/BIM/NFG_project_collaboration.dita" keys="NFG_project_collaboration" />
+      <topicref href="_guides/whats_new_V21/BIM/NFG_design_documentation.dita" keys="NFG_design_documentation" />
+      <topicref href="_guides/whats_new_V21/BIM/NFG_point_clouds.dita" keys="NFG_point_clouds" />
+    </topicref>
+    <topicref href="_guides/whats_new_V21/Mechanical/NFG_whats_new_in_bricscad_v21_mechanical_title.dita" keys="NFG_whats_new_in_bricscad_v21_mechanical_title">
+      <topicref href="_guides/whats_new_V21/Mechanical/NFG_overview.dita" keys="NFG_overview_mechanical" />
+      <topicref href="_guides/whats_new_V21/Mechanical/NFG_bom_manager.dita" keys="NFG_bom_manager" />
+      <topicref href="_guides/whats_new_V21/Mechanical/NFG_parts_libraries.dita" keys="NFG_parts_libraries" />
+      <topicref href="_guides/whats_new_V21/Mechanical/NFG_parameters_and_constraints.dita" keys="NFG_parameters_and_constraints" />
+      <topicref href="_guides/whats_new_V21/Mechanical/NFG_standard_parts.dita" keys="NFG_standard_parts" />
+      <topicref href="_guides/whats_new_V21/Mechanical/NFG_sheet_metal.dita" keys="NFG_sheet_metal" />
+    </topicref>
+  </topicref>
+</map>

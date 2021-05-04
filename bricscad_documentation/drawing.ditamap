@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+<!-- End Document Specific Declarations -->
+
+]>
+<map xml:lang="en-us" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <title>Drawing</title>
+  <topicref href="_drawingentities/drawing_title.dita" navtitle="Drawing" keys="drawing_title">
+    <topicref href="_drawingentities/drawingentitiesoverview_title.dita" navtitle="Drawing Entities Overview">
+      <topicref href="_drawingentities/DE_blockreference.dita" navtitle="Block Reference Entities" />
+    </topicref>
+    <topicref href="_entitysnaps/entitysnapsoverview_title.dita" keys="entitysnapsoverview_title">
+      <topicref href="_entitysnaps/ES_apparentintersection.dita" keys="ES_apparentintersection" />
+      <topicref href="_entitysnaps/ES_center.dita" keys="ES_center" />
+      <topicref href="_entitysnaps/ES_centerofaface3d.dita" keys="ES_centerofaface3d" />
+      <topicref href="_entitysnaps/ES_endpoint.dita" keys="ES_endpoint" />
+      <topicref href="_entitysnaps/ES_extension.dita" keys="ES_extension" />
+      <topicref href="_entitysnaps/ES_geometriccenter.dita" keys="ES_geometriccenter" />
+      <topicref href="_entitysnaps/ES_insertion.dita" keys="ES_insertion" />
+      <topicref href="_entitysnaps/ES_intersection.dita" keys="ES_intersection" />
+      <topicref href="_entitysnaps/ES_intersection3d.dita" keys="ES_intersection3d" />
+      <topicref href="_entitysnaps/ES_knot3d.dita" keys="ES_knot3d" />
+      <topicref href="_entitysnaps/ES_midpoint.dita" keys="ES_midpoint" />
+      <topicref href="_entitysnaps/ES_midpoint3d.dita" keys="ES_midpoint3d" />
+      <topicref href="_entitysnaps/ES_nearest.dita" keys="ES_nearest" />
+      <topicref href="_entitysnaps/ES_nearest3d.dita" keys="ES_nearest3d" />
+      <topicref href="_entitysnaps/ES_node.dita" keys="ES_node" />
+      <topicref href="_entitysnaps/ES_parallel.dita" keys="ES_parallel" />
+      <topicref href="_entitysnaps/ES_perpendicular.dita" keys="ES_perpendicular" />
+      <topicref href="_entitysnaps/ES_perpendicularonaface3d.dita" keys="ES_perpendicularonaface3d" />
+      <topicref href="_entitysnaps/ES_quadrant.dita" keys="ES_quadrant" />
+      <topicref href="_entitysnaps/ES_tangent.dita" keys="ES_tangent" />
+      <topicref href="_entitysnaps/ES_vertex3d.dita" keys="ES_vertex3d" />
+    </topicref>
+  </topicref>
+</map>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="CL_BricsCADMechanicalLibrary">
+   <title>BricsCAD Mechanical Library</title>
+   <shortdesc>The BricsCAD Mechanical Library is available with a BricsCAD Mechanical License. It includes more than 30,000 standard parts organized into three categories.</shortdesc>
+   <conbody>
+      <section id="section_y51_1z1_g4b">
+         <title>Holes</title>
+         <p>The Holes category contains threaded and non-threaded hole components for ANSI and ISO standards.</p>
+         <p><b>Threaded Holes</b><ul id="ul_mvr_g24_znb">
+               <li>ANSI Threaded</li>
+               <li>ANSI Counterbore</li>
+               <li>ANSI Countersink</li>
+               <li>ISO Threaded</li>
+               <li>ISO Counterbore</li>
+               <li>ISO Countersink</li>
+            </ul></p>
+         <p><b>Non-threaded Holes</b><ul id="ul_wbm_324_znb">
+               <li>Counterbore</li>
+               <li>Countersink</li>
+               <li>Hole</li>
+               <li>Slot</li>
+               <li>Slot Counterbore</li>
+               <li>Slot Countersink</li>
+            </ul></p>
+      </section>
+      <section id="section_hx1_1z1_g4b">
+         <title>Sheet Metal</title>
+         <p>The Sheet Metal category contains sheet metal components.</p>
+         <p><b>Form features</b><ul id="ul_kx1_1z1_g4b">
+               <li>Bridge</li>
+               <li>Cardguide</li>
+               <li>Coin counterbore</li>
+               <li>Coin countersink</li>
+               <li>Dimple</li>
+               <li>EKO</li>
+               <li>EKO big diameter</li>
+               <li>Emboss</li>
+               <li>Emboss rectangle</li>
+               <li>Emboss with Hole</li>
+               <li>Extrusion</li>
+               <li>Half sheer</li>
+               <li>Half sheer shaped</li>
+               <li>Linear Rib</li>
+               <li>Louver</li>
+            </ul></p>
+      </section>
+      <section id="section_ix1_1z1_g4b"><title>Standard Parts</title><p>The Standard Parts category contains standard parts components.</p><b>Fasteners</b><ul id="ul_vmy_m24_znb">
+            <li>Bolts</li>
+            <li>Clinch fasteners</li>
+            <li>Clips – Retainer Rings</li>
+            <li>Nuts</li>
+            <li>Pins</li>
+            <li>Rivets</li>
+            <li>Screws</li>
+            <li>Studs</li>
+            <li>Thread Inserts</li>
+            <li>Threads</li>
+            <li>Washers</li>
+         </ul><p><b>Machine Parts</b><ul id="ul_i1b_t24_znb">
+               <li>Back-up Rings</li>
+               <li>Bearings</li>
+               <li>Bushings</li>
+               <li>Grease Nipples</li>
+               <li>Keys</li>
+               <li>O-Rings</li>
+               <li>Seals</li>
+               <li>Slines</li>
+               <li>Sprockets</li>
+               <li>V-Packings</li>
+            </ul></p><p><b>Piping</b><ul id="ul_lx1_1z1_g4b">
+               <li>Crosses</li>
+               <li>Eccentric Reducers</li>
+               <li>Elbows</li>
+               <li>Flanges</li>
+               <li>Gaskets</li>
+               <li>Pipe Plug</li>
+               <li>Pipes</li>
+               <li>Reducers</li>
+               <li>Tees</li>
+            </ul></p></section>
+      <section id="section_jx1_1z1_g4b">
+         <title>Structural Shapes</title>
+         <ul id="ul_glp_z24_znb">
+            <li>Aluminum Beams</li>
+            <li>Aluminum Channels</li>
+            <li>Beams</li>
+            <li>Channels</li>
+            <li>Deckings</li>
+            <li>Hat-Sections</li>
+            <li>L-Angles</li>
+            <li>Rectangular Bars</li>
+            <li>Rectangular Pipes</li>
+            <li>Round Bars</li>
+            <li>Round Pipes</li>
+            <li>T-Sections</li>
+            <li>Z-Sections</li>
+         </ul>
+      </section>
+   </conbody>
+</concept>
