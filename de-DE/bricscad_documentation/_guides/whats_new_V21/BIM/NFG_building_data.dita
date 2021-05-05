@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A52162AC-CDD37B3-51220B7A55D45D3-E9E0F5">
+   <title>Gebäude Daten</title>
+
+   <conbody>
+      <section id="section_ypj_5mx_s4b">
+         <title>Analytisches Modell</title>
+         <p>Mit diesem Befehl können Sie ein analytisches Modell aus einem vollständigen 3D-Modell mit einer Struktur erzeugen. Der Befehl startet mit einem automatisch generierten Vorschlag, erlaubt Ihnen aber, das Modell weiter an Ihre Wünsche anzupassen.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataAnalyticalDialog_01_V21.png" id="image_zpj_5mx_s4b" scope="external" />
+            </fig></p>
+         <p>Der automatische Vorschlag wird versuchen, starre Verbindungen (Exzentrizitäten) so weit wie möglich zu minimieren, indem er einige Achslinien verschiebt, verlängert und sogar dreht. Sie können das Ausmaß solcher Änderungen durch die Abweichungseinstellungen steuern.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataAnalytical_01_V21.png" id="image_aqj_5mx_s4b" scope="external" />
+            </fig></p>
+         <p>After editing the model, you can export it to an IFC.</p>
+      </section>
+      <section id="section_bqj_5mx_s4b">
+         <title>BIM API</title>
+         <p>Konfigurierbare Mengen sind jetzt sowohl in der BIM-API als auch in der BIM-API für Bereiche verfügbar.</p>
+      </section>
+      <section id="section_cqj_5mx_s4b">
+         <title>BIM Zusammenstellungen</title>
+         <p>In V21 wurden die Anzeige des Rendermaterials und die LOD (Level of Details) Einstellung getrennt. Im Multifunktionsleisten Panel Start/Ansicht wurde eine neue Schaltfläche neben der LOD-Schaltfläche hinzugefügt, um die Rendering-Zusammenstellungs-Materialien umzuschalten.</p>
+         <p><image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_DataLODicon_01_V21.png" id="image_mrx_54x_s4b" scope="external" /><image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_DataRenderCompositionMaterial_01_V21.png" id="image_eqj_5mx_s4b" scope="external" /></p>
+         <p>Die LOD-Einstellungen steuern, ob die Schichten der Volumenkörper angezeigt werden oder nicht. Wenn die Schichten der Volumenkörper nicht sichtbar sind und die Option &quot;Render Zusammenstellungs Materialien&quot; aktiviert ist, werden nur die Hauptflächen der mehrschichtigen Volumenkörper mit Rendermaterialien belegt.</p>
+      </section>
+      <section id="section_fqj_5mx_s4b">
+         <title>Benutzerdefinierte BIM-Eigenschaften</title>
+         <p>Die Option Pro Instanz eines benutzerdefinierten Eigenschaftssatzes ermöglicht es Benutzern, benutzerdefinierte Eigenschaften auf einer Pro-Objekt Basis zu aktivieren/deaktivieren.</p>
+         <p>Die Option Aufzählung ermöglicht es Ihnen, eine feste Anzahl möglicher Werte für benutzerdefinierte BIM Eigenschaften zu definieren.</p>
+         <fig id="fig_rc1_twb_v4b">
+            <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataProperties_01_V21.png" scope="external" id="image_sc1_twb_v4b" />
+         </fig>
+      </section>
+      <section id="section_gqj_5mx_s4b">
+         <title>Räumliche Elemente</title>
+         <p><b>BimRaum (bimroom)</b></p>
+         <p>Der Befehl BIMROOM wurde durch den Befehl <xref keyref="CMD_bimspace" /> ersetzt. Sie können immer noch BIMRÄUME öffnen, die in V20 erstellt wurden, aber es ist nicht möglich, neue BIMRÄUME zu erstellen oder die Geometrie von bestehenden BIMRÄUME in BricsCAD BIM V21 zu aktualisieren. Verwenden Sie die Space Option des <xref keyref="CMD_bimclassify" />, um einen BIM-Raum in einen BIM-Raum umzuwandeln. Raum Eigenschaften und Innen Ansichten, falls vorhanden, werden auf den entsprechenden Bereich übertragen.</p>
+         <p><b>BimBereich</b></p>
+         <p>Sie können BIM Bereiche aus geschlossenen Umgrenzungen erstellen. Wenn Wandelemente einen Bereich in Ihrem Modell umschließen, können Sie mit dem Werkzeug BimBereich einen BIM-Bereich definieren. Die Platz-Footprint-Vorschau wird jetzt beim Ausführen von <xref keyref="CMD_bimspace" /> angezeigt.            Diese Bereiche werden als regelmäßige Volumenkörper dargestellt, so dass sie leicht manipuliert werden können. Mit der Option Bearbeiten des Befehl BIMBEREICH können Sie Begrenzungselemente eines Raums hinzufügen oder entfernen.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataSpace_01_V21.png" id="image_hqj_5mx_s4b" scope="external" />
+            </fig></p>
+         <p><b>BimAktBereich</b></p>
+         <p>Berechnet einen BIM-Bereich neu, der nicht mehr aktuell ist, zum Beispiel nach dem Hinzufügen oder Entfernen von begrenzenden Objekten. Im Eigenschaften Panel wird die Eigenschaft Aktualisierungs-Methode mit den Optionen Automatisch und Manuell hinzugefügt.</p>
+         <p>Die neue Eigenschaft Darstellung ermöglicht das Umschalten zwischen Volumenkörpern oder Grundriss-Darstellung eines Bereichs.</p>
+         <p>Der Bereich Bezeichner wurde hinzugefügt. Der Bereichs-Bezeichner ist ein Block, der eine Schraffur und Attribute enthält. Die Standardattribute des Bereichs-Bezeichner umfassen einen Bereichs-Namen und eine Bereichs-Nummer. Sie können die Werte der einzelnen Attribute über das Panel Eigenschaften ändern.</p>
+         <p>Die Eigenschaft Status gibt an, ob ein Raum aktuell oder veraltet ist.<fig id="fig_rdh_kzq_cpb">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataSpaceProperties_01_V21.png" id="image_iqj_5mx_s4b" scope="external" />
+            </fig></p>
+         <p><b>Bereichs Symbole</b></p>
+         <p>Die BIM-Bereich-Werkzeugsymbole für Bereich bearbeiten, Bereich aktualisieren und Innen Ansichten definieren sind im Quad, in der Multifunktionsleiste und im BIM Bereich Werkzeugkasten verfügbar.<fig>
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_DataSpaceIcons_01_V21.png" id="image_jqj_5mx_s4b" scope="external" />
+            </fig></p>
+         <p><b>Räumliche Strukturelemente</b></p>
+         <p>Bei Verwendung der <xref keyref="CMD_bimclassify" /> wurde eine neue Kategorie der Klassifizierung
+ hinzugefügt. Der Name der neuen Kategorie lautet Räumliche Strukturelemente. Unter dieser Kategorie finden Sie Bereich, Gebäude und Geschoss.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataSpaceClassify_01_V21.png" id="image_kqj_5mx_s4b" scope="external" />
+            </fig></p>
+         <p><b>DefaultSpaceHeight</b></p>
+         <p>Die Systemvariable ROOMHEIGHT wird durch die Benutzerpräferenz DefaultSpaceHeight
+ ersetzt.<!--link-->gilt die Einstellung für Spaces.</p>
+      </section>
+      <section id="section_lqj_5mx_s4b">
+         <title>BIMSETLASTTRAGRICHTUNG</title>
+         <p>Mit der neuen Werkzeugtaste, die das <xref keyref="CMD_bimsetloadbearingdirection" /> in V21 startet, ist es einfach, die tragende Richtung Ihrer Decke durch den Quad einzustellen.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataLoadBearingDirectionQuad_01_V21.png" id="image_bxt_lpx_s4b" scope="external" />
+            </fig></p>
+         <p>Als Ergebnis erhalten Sie einen schwarzen Punkt auf Ihrer Platte. Sobald Sie darauf klicken, können Sie die Tragrichtung der Platte in einer der beiden Hauptrichtungen der Platte oder in beiden ändern.<fig id="fig_ent_bpx_s4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataLoadbearing_01_V21.png" id="image_q3g_mpx_s4b" scope="external" />
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataLoadbearing_02_V21.png" id="image_sqr_mpx_s4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_nqj_5mx_s4b">
+         <title>Python-Skripte in BricsCAD BIM</title>
+         <note>Dies ist eine Funktion von V21 Beta.</note>
+         <p>Das neue <xref keyref="CMD_bimpython" /> ermöglicht Ihnen die Abfrage und Verwaltung von Daten aus einem Modell innerhalb von BricsCAD BIM mit einer .py-Datei python-Skript.</p>
+         <p>Die Python-Skripte können so einfach sein wie das Abrufen von Mengen und zugehörigen Eigenschaften von Objekten und BIM-Objekten oder so aufwendig wie die Implementierung einer Reihe von Berechnungen auf der Grundlage der verfügbaren Modellparameter.</p>
+         <p>Wenn Sie BIMPYTHON ausführen, wird ein Windows-Dialogfeld geöffnet, in dem Sie das Python-Skript in .py Format.</p>
+         <p>Der neue Befehl BIMACTIVATEPYTHON<!--link--> ermöglicht die Aktivierung und Deaktivierung der virtuellen Python-Umgebung in BricsCAD BIM, indem die Werte 0 bzw. 1 für <b>OFF</b> bzw. <b>ON</b> aktiviert werden. Sie müssen sicherstellen, dass sie <b>EIN</b> ist, bevor Sie BIMPYTHON verwenden.</p>
+         <p>Die Programmiersprache Python ist zusammen mit ihren Standardbibliotheken in BricsCAD BIM eingebettet, so dass Sie diese nicht separat installieren müssen, es sei denn, Sie haben eigene Pakete und Bibliotheken, die Sie in Ihren Skripten verwenden möchten.</p>
+      </section>
+      <section id="section_oqj_5mx_s4b">
+         <title>Projekt Browser</title>
+         <p>BIM-Projektdaten werden nun in einem externen Projekt <b>.bsyslib</b> gespeichert, anstelle der bisher verwendeten <b>.projectroot</b>. Beim Öffnen eines BIM-Projekts vor V21 können Sie die <b>.projectroot</b> in ein V21-Projekt <b>.bsyslib</b> konvertieren. Um die Eröffnung eines BIM-Projekts an einem neuen Ort zu vereinfachen, werden Pfade zu <b>.bsyslib</b> Dateien werden jetzt mit einem relativen Pfad gespeichert.</p>
+         <p><b>Pläne</b></p>
+         <p>Es ist jetzt möglich, ein Layout von Grund auf neu zu erstellen, und zwar im Dialog &quot;Plansatz Einrichtung&quot;.<fig id="fig_zls_q4x_s4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataProjectBrowser_01_V21.png" id="image_ams_q4x_s4b" scope="external" />
+            </fig></p>
+         <p>Der Projekt Browser zeigt die Blatt Nummer an (falls vorhanden). Die Blatt Nummer wird durch das Verfahren <b>Pläne erstellen</b> vergeben. Blattansichtsnummern werden beginnend mit
+ von 1 für alle Schnittergebnisse vergeben, die von der <xref keyref="CMD_bimsectionupdate" /> erstellt werden.<fig id="fig_jv5_p4x_s4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataProjectBrowser_02_V21.png" id="image_kv5_p4x_s4b" scope="external" />
+            </fig></p>
+         <p><b>Modele</b></p>
+         <p>Hauptzeichnungen und externe Referenzen werden in der Registerkarte Modelle des Projekt-Browsers baumstrukturiert aufgelistet:</p>
+         <p>Eine Kurzinfo ist verfügbar, um die Verbindung einer Projekt Bibliothek mit einem Zeichnungs Blatt zu fixieren.<fig id="fig_gcy_44x_s4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataProjectBrowser_03_V21.png" id="image_hcy_44x_s4b" scope="external" />
+            </fig></p>
+         <p><b>Extraktions-Pläne</b></p>
+         <p>Der Assistent zum <b>Hinzufügen eines Extraktions-Plan</b>, der in einem Kontextmenü verfügbar ist, ermöglicht es Ihnen, schnell einen BIM Extraktions-Plan hinzuzufügen, ohne eine neue .dxd Datei erstellen zu müssen. Datei. Die Verwendung von relativen Pfaden wird jetzt für Extraktions-Pläne unterstützt.<fig id="fig_evd_44x_s4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataProjectBrowser_04_V21.png" id="image_fvd_44x_s4b" scope="external" />
+            </fig></p>
+         <p>Die Optionen <b>Tabelle erstellen/aktualisieren</b> und <b>CSV erstellen/aktualisieren</b> sind in einem Kontextmenü zum Erstellen oder Aktualisieren eines Zeitplans oder einer CSV-Ausgabedatei verfügbar.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataProjectBrowser_05_V21.png" id="image_pqj_5mx_s4b" scope="external" />
+            </fig></p>
+      </section>
+   </conbody>
+</concept>
