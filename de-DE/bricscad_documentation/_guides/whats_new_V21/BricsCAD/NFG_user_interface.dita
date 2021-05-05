@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A5F13434-735352C-7CBC10EF1557792-42321B">
+   <title>Benutzer Oberfläche</title>
+   <shortdesc />
+
+   <conbody>
+      <p>BricsCAD v21 bietet eine Vielzahl von Verbesserungen der Benutzeroberfläche, um Ihre Produktivität zu steigern, ohne Ihren bestehenden Arbeitsablauf zu beeinflussen.</p>
+      <section id="section_mwz_w3t_r4b">
+         <title>BricsCAD Starter</title>
+         <p>Der neu gestaltete BricsCAD Starter ermöglicht es Ihnen, BricsCAD in einer Umgebung zu starten, die für Ihre Design-Aufgaben und Ihre Lizenzstufe am geeignetsten ist.</p>
+         <p>Die verfügbaren Umgebungsoptionen hängen von Ihrer Lizenzstufe ab. Sie können die Lizenzstufe mit dem neuen <xref keyref="CMD_setlicenselevel" /> ändern, das das               <xref keyref="SV_runaslevel" /> steuert. Wenn Sie eine Demolizenz verwenden, können Sie eine beliebige Umgebung wählen. Andernfalls können Sie jede Umgebung wählen, die von der von Ihnen erworbenen Lizenzstufe unterstützt wird. So unterstützt zum Beispiel eine Ultimate-Lizenz alle Umgebungen. Während eine Lite-Lizenz nur die 2D-Konstruktions Umgebung unterstützt.</p>
+         <p>Mit der neuen Option Einheiten können Sie die Maßeinheiten festlegen (<xref keyref="SV_measureinit" />), die bestimmen, welche Schraffurmuster- und Linientyp-Definitionsdateien verwendet werden sollen. Dieses Steuerelement legt auch die Zeichnungseinheiten für neue Zeichnungen fest, die ohne Vorlagendatei erstellt werden.<fig id="fig_emz_535_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_01_V21.png" id="image_nwz_w3t_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_owz_w3t_r4b">
+         <title>Befehle</title>
+         <p>Das Befehlszeilen Panel unterstützt jetzt anklickbare Befehlsoptionen, die es Ihnen ermöglichen, Optionen in der Befehlszeile auszuwählen, ohne sie über die Tastatur eingeben zu müssen.<fig id="fig_ixm_v35_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_02_V21.png" id="image_pwz_w3t_r4b" scope="external" />
+            </fig></p>
+         <p>Unter <xref keyref="CMD_commands" /> können Sie die verfügbaren Befehle nachschlagen. In BricsCAD v21 wurde die Liste aktualisiert, um nur die Befehle aufzulisten, die mit Ihrer aktuellen Lizenzstufe verfügbar sind.</p>
+      </section>
+      <section id="section_qwz_w3t_r4b">
+         <title>Multifunktionsleiste</title>
+         <p>In der Multifunktionsleiste können Sie mit dem Mausrad durch Registerkarten blättern. Platzieren Sie den Cursor einfach an einer beliebigen Stelle auf der Multifunktionsleiste und drehen Sie das Rad.</p>
+         <p>Die <xref keyref="SV_ribbontoolsize" /> legt die Größe der Werkzeugschaltflächen im Menüband fest. Die Optionen sind <uicontrol>Small</uicontrol>, <uicontrol>Large</uicontrol> und <uicontrol>Extra Large</uicontrol>.</p>
+      </section>
+      <section id="section_rwz_w3t_r4b">
+         <title>Werkzeugkästen</title>
+         <p>Neue Symbolleisten für UCS und UCS-Optionen<!--link--> bieten einfachen Zugriff auf UCS-Befehle und -Optionen. Sie greifen auf diese Werkzeugleisten zu, indem Sie mit der rechten Maustaste auf eine Werkzeugleiste, einen Abschnitt oder das Menüband klicken und die <menucascade>
+               <uicontrol>Symbolleisten</uicontrol>
+               <uicontrol> BricsCAD</uicontrol>
+            </menucascade> Menü.</p>
+         <fig id="fig_bpr_bbr_cpb">
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_03_V21.png" id="image_swz_w3t_r4b" scope="external" />
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_04_V21.png" id="image_twz_w3t_r4b" scope="external" />
+         </fig>
+         <fig id="fig_gwt_x35_r4b">
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_05_V21.png" id="image_uwz_w3t_r4b" scope="external" />
+         </fig>
+         <p>Die <xref keyref="SV_toolbuttonsize" /> gilt nur für Symbolleisten, nicht mehr für Ribbon-Symbolschaltflächen (siehe oben).</p>
+      </section>
+      <section id="section_vwz_w3t_r4b">
+         <title>Menüs</title>
+         <p>Das Menü, das angezeigt wird, wenn Sie eine dwg-Datei mit der rechten Maustaste in BricsCAD ziehen und ablegen, bietet eine neue Option zum <uicontrol>Öffnen als schreibgeschützt</uicontrol>.<fig id="fig_ess_fj5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_06_V21.png" id="image_wwz_w3t_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_xwz_w3t_r4b">
+         <title>Layouts</title>
+         <p>Der Layout-Manager wurde erweitert, um die Veröffentlichung mehrerer Layouts zu ermöglichen.<fig id="fig_hky_y35_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_07_V21.png" id="image_ywz_w3t_r4b" scope="external" />
+            </fig></p>
+         <p>Wenn Sie im Layout-Manager ein Layout aktuell setzen, scrollt die aktive Layout-Registerkarte automatisch, um in der Liste der Layout-Registerkarten sichtbar zu bleiben.<fig id="fig_p1f_z35_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_08_V21.png" id="image_zwz_w3t_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_axz_w3t_r4b">
+         <title>Objekt Fänge</title>
+         <p>Die Option <uicontrol>Auf Punkt fangen</uicontrol> in den Entity Snaps<!--link--> Die Symbolleiste und das Menü werden umbenannt in <uicontrol>Snap to Node</uicontrol>.</p>
+         <fig id="fig_fsh_hbr_cpb">
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_10_V21.png" id="image_cgd_fdx_54b" scope="external" />
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_09_V21.png" id="image_ow3_kdx_54b" scope="external" />
+         </fig>
+      </section>
+   </conbody>
+</concept>
