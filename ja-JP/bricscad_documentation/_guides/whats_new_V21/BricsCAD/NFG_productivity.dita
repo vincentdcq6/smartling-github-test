@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A527161A-523CBD3-B53C1921286683A-475271">
+   <title>生産性</title>
+
+   <conbody>
+      <section id="section_yhn_3d5_r4b">
+         <title>ガイド曲線を用いた図形移動</title>
+         <p><xref keyref="CMD_moveguided" />新しいでは、選択したエンティティを
+ 参照カーブ</p>
+         <p>MOVEGUIDEDコマンドを起動し、移動する図形を選択すると、選択ウィンドウ内に完全に含まれている図形が移動します。選択ウィンドウと交差する図形は、参照曲線として使用されます。選択した図形上の青色のベクトルは、参照曲線を表します。選択した図形を参照曲線と一致するジオメトリの近くに移動すると、自動的に所定の位置にスナップされます。新しい位置にある関連するジオメトリは自動的にトリムされ、元の位置のジオメトリは自動的に修復されます。このように、必要な手動編集の作業量を大幅に削減できます。<fig id="fig_xyf_jd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_01_V21.png" id="image_zhn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>移動する図形を最初に選択してから、MOVEGUIDEDコマンドを起動すると、より柔軟に作業を行えます。あらかじめ選択した図形が移動のための選択セットに使用され、参照曲線として使用する図形を選択するようプロンプトが表示されます。</p>
+      </section>
+      <section id="section_a3n_3d5_r4b">
+         <title>線形配列複写</title>
+         <p><xref keyref="CMD_copy" />には新しい <uicontrol> Array </uicontrol> オプションが追加されました。
+ を選択すると、選択した図形を直線状配列複写にコピーできます。<fig id="fig_v5z_jd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_02_V21.png" id="image_b3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>配列複写する複写の数を指定し、点を指定して最初の 2 つの図形セット間の距離と角度を指定するか、[<uicontrol> フィット </uicontrol>] オプションを使用して、最初と最後の図形のセット間の距離と角度を指定します。<fig id="fig_iw3_kd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_03_V21.png" id="image_c3n_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_d3n_3d5_r4b">
+         <title>図形ごとに元に戻す</title>
+         <p><xref keyref="PNL_properties" />の新しい履歴コントロールを使用すると、編集を元に戻すことができます。
+ 選択したエンティティに対する操作です。[履歴] プロパティは、1 つの図形を選択した場合にのみ表示されます。[履歴] ドロップダウンリストを開いて、以降実行された他のすべてのコマンドや表示操作を元に戻すことなく、図形を以前の手順のいずれかに戻します。<fig id="fig_wjs_kd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_04_V21.png" id="image_e3n_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_f3n_3d5_r4b">
+         <title>マニピュレータ</title>
+         <p>Shiftキーを押して、マニピュレータを法線軸を中心に90度回転させます。<fig id="fig_u2b_ld5_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Productivity_05_V21.png" id="image_g3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>マニピュレータの [コピー] と [繰り返し] オプションで、表示、クリック、ローカライズが可能になりました。<fig id="fig_sgj_ld5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_06_V21.png" id="image_h3n_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_i3n_3d5_r4b">
+         <title>最短距離</title>
+         <p>ザ・ザ・ザ・<xref keyref="SV_nearestdistance" />
+            <!--no link to such a command, is it a SV?--> パフォーマンスと動作の向上
+ 点図形のサポートを含みます。<fig id="fig_k45_ld5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_07_V21.png" id="image_j3n_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_k3n_3d5_r4b">
+         <title>画層</title>
+         <p>BricsCAD V21では、生産性を高める画層機能が強化されています。</p>
+         <p><b>画層標準を適用</b></p>
+         <p><xref keyref="CMD_laytrans" />新しいを使用すると、別の図面ファイルの画層名とプロパティを現在の図面にすばやく適用できます。LAYTRANSコマンドを起動すると、[画層標準を適用] ダイアログボックスが表示されます。[変換元] リストには、カレントの図面内のすべての画層名が表示されます。既存のDWG、DWS、またはDWTファイルから画層情報をロードして、マッピングする画層を指定できます。<fig id="fig_bwg_md5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_08_V21.png" id="image_l3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>また、新しい画層を作成することもできます。既存の画層とマッピングする画層名とプロパティを入力します。<fig id="fig_x2n_md5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_09_V21.png" id="image_m3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>カレントの図面(左側のリスト)から1つまたは複数の画層を選択して、右側のリストの画層にマッピングすることができます。[<uicontrol> 同じマップ </uicontrol>] (Map Same) を選択すると、右側のリストに対応する名前を持つ現在の図面内の画層名は、右側のリストからプロパティを継承します。選択した画層マッピングが [変換マッピング] リストに表示されます。<fig id="fig_pj5_md5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_10_V21.png" id="image_n3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>[変換マッピング] リストに画層を追加する方法に関係なく、画層のマッピングプロパティを変更できます。レイヤーをダブルクリックするか、「編集」(<uicontrol> Edit </uicontrol>) を選択して、「新規レイヤー」(New Layer) ダイアログで同じオプションを持つ「レイヤーを編集」(Edit Layer) ダイアログボックスを開きます。[変換マッピング] リストから画層を削除したり、マッピングリストを保存して後で再び使用することもできます。</p>
+         <p>[オプション] ダイアログには、画層マッピングのその他のコントロールがあります。<fig id="fig_ipb_nd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_11_V21.png" id="image_o3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p><b>画層別の設定</b></p>
+         <p><xref keyref="CMD_setbylayer" /> <xref keyref="CMD_-setbylayer" />新しいとあなたを有効にします
+ 選択した図形の優先プロパティを ByLayer にすばやく変更できます。</p>
+         <p><xref keyref="SV_setbylayermode" />新しいコマンドを使用して、SETBYLAYER [画層設定] コマンドの影響を受けるプロパティをコントロールします。設定値は、選択したすべてのオプションの値を合計したビットコードとして保存されます。</p>
+         <ul id="ul_p3n_3d5_r4b">
+            <li>1：色</li>
+            <li>2：線種</li>
+            <li>4：線の太さ</li>
+            <li>8：マテリアル</li>
+            <li>16：印刷スタイル</li>
+            <li>32：ByBlock</li>
+            <li>64：ブロック</li>
+            <li>128：透過性</li>
+         </ul>
+         <p><b>ビューポート別の画層プロパティ</b></p>
+         <p><xref keyref="CMD_vplayer" />は 21 で拡張され、上のエンティティを選択できるようになりました
+ ビューポートの優先を適用する画層。ビューポートで変更したい画層プロパティを選択したら、画層名を入力するか、Enterキーを押して、目的の画層上の図形を選択して画層を指定します。<fig id="fig_wln_nd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_12_V21.png" id="image_q3n_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_r3n_3d5_r4b">
+         <title>線種</title>
+         <p>BricsCAD は、を追加した線種ギャップの選択をサポートするようになりました <xref keyref="SV_ltgapselection" />。LTGAPSELECTIONを有効にすると、ギャップを選択した場合も図形がハイライトされ、選択されます。<fig id="fig_k1v_nd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_13_V21.png" id="image_s3n_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_t3n_3d5_r4b">
+         <title>パラメータと拘束</title>
+         <p>BricsCAD V21では、パラメトリック図面とブロック定義を作成するための強力な機能強化が提供されています。</p>
+         <p><b>[パラメータと拘束] パネル</b></p>
+         <p>BricsCADのすべてのライセンスレベルで2Dパラメータと拘束がサポートされるようになりました。[パラメータと拘束] パネルで、パラメータと拘束を表示および変更します。パネルが拡張され、3D幾何拘束、2D寸法拘束、パラメトリックブロック、配列が表示されます。<fig id="fig_cld_4d5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_14_V21.png" id="image_u3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>パラメータと拘束の右クリックメニューを使用して、パラメータをジオメトリ駆動にするかどうかを指定できます。このようなパラメータの式を編集することはできません (ジオメトリ駆動のステータスをオフに切り替えると編集できます)。この場合、ジオメトリ駆動パラメータに直接または間接的に依存する3D寸法拘束によって3Dジオメトリから自動的に計算されます。このような3D寸法拘束の単純な算術式は、DMPUSHPULLやDMMOVE/DMROTATEなどの直接編集ツールを使いジオメトリを変更すると動的に解決されます。<fig id="fig_omm_4d5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_15_V21.png" id="image_v3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>また、右クリックメニューを使い、パラメータをブロックとして挿入したときに編集用に公開するかどうかをコントロールできます。</p>
+         <p>BricsCAD Liteライセンスで3Dパラメトリックモデルを開くと、3D拘束が紫色で表示されます。BricsCAD Liteで式を表示して編集できます。変更内容は、BricsCAD Proライセンス以上で3Dモデルを開くと反映されます。</p>
+         <p><b>自動拘束</b></p>
+         <p><xref keyref="CMD_autoconstrain" />新しい機能では、2D を自動的に適用できます
+ 選択した 2D ジオメトリへの幾何拘束と寸法拘束BricsCADはジオメトリを完全に拘束し、過剰に拘束しないようにします。幾何拘束と寸法拘束はジオメトリに表示されます。[パラメータと拘束] パネルで、パラメータと拘束を表示、追加、削除、変更することができます。<fig id="fig_zkb_pd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_16_V21.png" id="image_w3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p><b>参照曲線</b></p>
+         <p><xref keyref="CMD_referencecurves" />新しいでは、参照ジオメトリを指定できます。
+ ブロック用。参照に使用するジオメトリを選択すると、BricsCADは REFERENCE_CURVES画層を作成し(既存の画層がない場合)、選択した図形をその画層に追加します。</p>
+         <p>図面またはブロック定義で指定した参照曲線を挿入すると、ブロックまたは図面を関連するジオメトリに自動的に位置合わせできます。参照曲線の数と、参照曲線間の距離によって、位置合わせできるジオメトリが決まります。関連するジオメトリにカーソルを近づけると、ブロックが自動的に反転し、複数の挿入オプションを選択できます。関連するジオメトリの端からブロックの端までの距離が表示され、必要に応じて値を入力できます。また、参照曲線にギャップがある場合、関連するジオメトリが自動的にトリムされ、一致するギャップが生成されます。<fig id="fig_bdk_pd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_17_V21.png" id="image_x3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>参照曲線を使い、自動的にコーナーに位置合わせすることもできます。以下の例では、4本の平行な参照曲線と1つのコーナー参照曲線があり、ドアブロックを4本の平行線と1本の垂直線に一致するジオメトリに位置合わせすることを可能にしています。<fig id="fig_wdq_pd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_18_V21.png" id="image_y3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p><b>表示状態</b></p>
+         <p><xref keyref="CMD_visibilitystates" />新しいでは、可視性のパラメータと状態を定義できます。図面またはブロック定義に複数の表示パラメータを作成できます。また、表示パラメータごとに複数の表示状態を作成できます。図面またはブロックを挿入するときに、各インスタンスの表示を変更できます。例えば、SwingAngleとHeaderという 2 つの表示パラメータがあるドアブロックを作成できます。</p>
+         <p>SwingAngleパラメータには、閉、30、45、60、90 という 5 つの表示状態があります。<fig id="fig_rhy_pd5_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Productivity_19_V21.png" id="image_z3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Header パラメータには、 <uicontrol>オン</uicontrol>と<uicontrol>オフ</uicontrol>の 2 つの可視性状態が含まれます。<fig id="fig_asg_qd5_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Productivity_20_V21.png" id="image_ajn_3d5_r4b" scope="external" />
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Productivity_21_V21.png" id="image_bjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>各表示状態に対してすべてのジオメトリを作成して、各パラメータの各状態で表示する適切なジオメトリを選択します。表示状態に属さないジオメトリは常に表示されます。このドアの例では、10種類のブロック挿入が可能です。<fig id="fig_sls_qd5_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Productivity_22_V21.png" id="image_cjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>[プロパティ] パネルを使用して、選択したブロック挿入の表示状態を簡単に変更できます。<fig id="fig_erw_qd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_23_V21.png" id="image_djn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p><b>3D半径拘束</b></p>
+         <p><xref keyref="CMD_dmradius3d" />では、ジオメトリ駆動の 3D 半径を作成できます。
+ 拘束を使用して、ブロック内の図形の半径を測定します。<fig id="fig_z5b_rd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_25_V21.png" id="image_ejn_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_fjn_3d5_r4b">
+         <title>ブロック</title>
+         <p>BricsCAD V21では、ブロックを使い作業をするときの生産性を向上させる多くの機能強化が提供されています。</p>
+         <p><b>ブロック属性プロパティ</b></p>
+         <p>[プロパティ] パネルでブロック属性プロパティにアクセスできるようになりました。これにより、複数の属性を同時に表示および編集できます。Ctrlキーを押して、ブロックインスタンス内の 1 つまたは複数の属性を選択します。[プロパティ] パネルを開き、関連するすべての属性プロパティとともに [属性] 図形タイプを表示します。<fig id="fig_a5h_rd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_27_V21.png" id="image_gjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p><b>ライブラリパネル</b></p>
+         <p>新しい [ライブラリ] パネルは、2Dおよび3Dブロックライブラリにアクセスするための中心的な場所を提供します。旧リリースの [コンポーネント] パネルと [2Dパラメトリックブロック] パネルに代わり、このパネルを使用します。<fig id="fig_jct_rd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_28_V21.png" id="image_hjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>右上にあるメニューを使用して、[ライブラリ] パネルに表示するコンテンツをコントロールできます。Bricsysライブラリの事前定義されたコンテンツと、独自のコンテンツを含むユーザー定義ライブラリを表示させることができます。<fig id="fig_iz1_sd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_29_V21.png" id="image_ijn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>BricsCADがライブラリコンテンツを検索する場所を指定するには、[ライブラリを管理] オプションを選択します。COMPONENTSPATH設定にすばやくアクセスして、ライブラリフォルダの場所を表示および変更できます。別のメニューオプションは、欠落している要素のサムネイルイメージを自動的に生成します。</p>
+         <p>[検索] ボックスにキーワードを入力してコンテンツを検索するか、カテゴリを展開してカテゴリ内のすべてのコンテンツを表示できます。また、グリッド表示またはリスト表示でコンテンツを表示できます。<fig id="fig_vn4_r1r_cpb">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_30_V21.png" id="image_kjn_3d5_r4b" scope="external" />
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_31_V21.png" id="image_ljn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>[ライブラリ] パネル下部にある [追加] ボタンを使い、新しいブロック定義をライブラリに簡単に追加できます。図面から図形を選択するか、図面全体を使用します。<fig id="fig_kcw_td5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_32_V21.png" id="image_mjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p><b>ブロックアイコン</b></p>
+         <p>新しいは、<xref keyref="CMD_blockicon" /> サムネイルイメージを作成または更新し、
+ 図面エクスプローラやライブラリなどのさまざまなツールを使用してブロックをプレビューできます。
+ パネル。</p>
+         <p><b>XYZが別尺度を持つブロック</b></p>
+         <p><xref keyref="CMD_explode" />およびでは、<xref keyref="CMD_xplode" /> <xref keyref="SV_explmode" /> スケールが均一でないブロックを分解するときに、が優先されます。</p>
+         <p><b>Insert </b></p>
+         <p><xref keyref="CMD_insert" />は、パラメトリックブロックをサポートするように拡張されました。パラメータが公開されているパラメトリック図形を含むブロック定義は、INSERTコマンドで挿入後にパラメータを変更できるようになりました。パラメトリック BIM を挿入するには
+ とメカニカルコンポーネントの場合は、を使用します <xref keyref="CMD_bminsert" />。</p>
+      </section>
+      <section id="section_njn_3d5_r4b">
+         <title>図面の最適化</title>
+         <p>新しい [図面の最適化] リボンパネルには、図面をクリーンアップおよび最適化するためのツールが用意されています。</p>
+         <p><b>簡略化</b></p>
+         <p>新しいは、<xref keyref="CMD_simplify" /> ポリラインの頂点の数を減らし、
+ 一般的な形状を変更せずにハッチング境界。オプションを使用して、簡略化とスムージングを切り替えることができます。追加のオプションを使用して、元の図形をどの程度簡略化するかコントロールできます。図形を簡略化すると操作が容易になり、ファイルサイズを大幅に削減できます。</p>
+         <p><b>Purge</b></p>
+         <p><xref keyref="CMD_purge" />が拡張され、[バッチ]、[すべて]、[孤立したデータ] オプション
+ 図面からさらに項目を削除します。</p>
+         <p><b>監査 </b></p>
+         <p><xref keyref="CMD_audit" />が拡張され、重複した ACIS アトリビュートがクリーンアップされます。AUDITとCLEANUNUSEDVARIABLESコマンドを組み合わせることで、複数の単独パラメータの図面がクリーンアップされるようになりました。</p>
+         <p><b>重複図形を削除</b></p>
+         <p><xref keyref="CMD_overkill" />では、重複を削除するかどうかを選択できます。
+ エンティティを選択するか、指定したレイヤーに移動します。新しいOVERKILLLAYER設定を使い画層名を指定するか、またはデフォルトの名前「重複図形」のままにすることができます。</p>
+         <p>OVERKILLコマンドの新しいオプションを使用すると、重複するブロック定義を組み合わせることができます。このオプションを選択すると、[重複するブロックを結合] ダイアログボックスが表示され、無視するブロックプロパティを指定できます。比較誤差を入力して、ジオメトリがどの程度一致している必要があるかを指定できます。BricsCADは、比較誤差とプロパティの基準を満たすジオメトリを持つ複数のブロック定義を検出すると、最新の定義を使用して古い定義のインスタンスを置き換えます。古い定義は使用されなくなり、[重複ブロックをパージ] オプションを有効にして、それらの定義を自動的に削除できます。<fig id="fig_fnn_5d5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_33_V21.png" id="image_ojn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Optimize</b></p>
+         <p><xref keyref="CMD_optimize" />新しい機能は、図面内の 2D 線分をクリーンアップするのに役立ちます。[2D線分を最適化] ダイアログボックスが表示され、影響を受ける線分をコントロールできます。BricsCADが最適化の対象とする線分を指定します。線分図形を選択するか、またはBricsCADに図面内のすべての線分図形を解析して最適化させることができます。現在のUCSで、水平、垂直、または45度に対して指定した角度許容差内にある線分が検索され、修正されます。指定した許容差内のギャップを自動的に閉じる追加のオプションもあります。<fig id="fig_w1w_5d5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_34_V21.png" id="image_pjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>[最適化] ツールは、2D線分をクリーンアップする場合に便利です。例えば、このツールを使い、点群から抽出された線分ジオメトリをすばやくクリーンアップできます。<fig id="fig_jj2_vd5_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Productivity_35_V21.png" id="image_qjn_3d5_r4b" scope="external" />
+            </fig><fig id="fig_bzj_vd5_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Productivity_36_V21.png" id="image_rjn_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_sjn_3d5_r4b">
+         <title>オブジェクトのリンクと埋め込み</title>
+         <p>OLE <xref keyref="PNL_properties" /> オブジェクトの機能が強化され、追加の
+ 選択した OLE エンティティの情報。埋め込みや静的などのタイプ、印刷品質、ソースアプリケーションなどの追加情報が表示されます。<fig id="fig_hlv_vd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_37_V21.png" id="image_tjn_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_ujn_3d5_r4b">
+         <title>イメージ</title>
+         <p>BricsCAD V21でイメージ操作機能が強化されました。アタッチしたイメージをグリップなどの編集ツールを使い操作すると、イメージフレームの編集に応じてイメージコンテンツが表示され、更新されます。これにより、イメージコンテンツを参照用に使い、イメージの配置、位置合わせ、尺度変更を行えます。編集中、選択したイメージは重なっているオブジェクトの上に一時的に表示されます。</p>
+      </section>
+      <section id="section_vjn_3d5_r4b">
+         <title>ハイパーリンク</title>
+         <p>[ハイパーリンクの編集] ダイアログボックスで、図面内のレイアウトやビューにリンクできるようになりました。リンクする図面を選択したら、[ターゲット] を選択して [<uicontrol> ターゲットビューを選択 </uicontrol>] ダイアログボックスを開きます。<!--link-->。<fig id="fig_lbf_wd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_38_V21.png" id="image_wjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>[ターゲットビューを選択] ダイアログボックスには、リンク先の図面内の名前の付いたビューとレイアウトが一覧表示されます。<fig id="fig_bmk_wd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_39_V21.png" id="image_xjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>ハイパーリンクにアクセスするには、選択したエンティティのプロパティパネルでハイパーリンクをダブルクリックするか、マウスの右ボタンを押したままメニューから [<uicontrol> ハイパーリンク </uicontrol>] を選択します。</p>
+         <fig id="fig_jdp_t1r_cpb">
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_40_V21.png" id="image_zjn_3d5_r4b" scope="external" />
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_41_V21.png" id="image_akn_3d5_r4b" scope="external" />
+         </fig>
+      </section>
+   </conbody>
+</concept>
