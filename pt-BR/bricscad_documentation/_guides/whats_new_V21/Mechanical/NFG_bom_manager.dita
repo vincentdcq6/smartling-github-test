@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="AE16B7A5-2B7C525-33CEC2334D41F57-AB452D">
+   <title>Gerenciador de BOM</title>
+   <shortdesc />
+
+   <conbody>
+      <p>Criar e editar listas de materiais está mais fácil do que nunca.</p>
+      <section id="section_vql_pxv_54b">
+         <title>aGrupar</title>
+         <p>Com a adição da propriedade de agrupamento, agora você pode agrupar rapidamente o conteúdo da sua tabela BOM em linhas condensadas por propriedades comuns das colunas existentes.<fig id="fig_yqf_2bw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMGrouping_01_V21.png" id="image_wql_pxv_54b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_xql_pxv_54b">
+         <title>Colunas</title>
+         <p>Agora é possível definir um dos vários filtros de coluna predefinidos, para qualquer coluna em uma BOM.<fig id="fig_azk_2bw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMFilter_01_V21.png" id="image_yql_pxv_54b" scope="external" />
+            </fig></p>
+         <p>Colunas agregadas agora são suportadas em tabelas BOM de nível superior e inferior criadas
+ com <xref keyref="CMD_bmbom" />o. Essas permitem calcular soma, valor mínimo, máximo ou da média de uma determinada propriedade, em relação ao agrupamento atual.<fig id="fig_y34_2bw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMAggregate_01_V21.png" id="image_zql_pxv_54b" scope="external" />
+            </fig></p>
+         <p>Uma opção no menu principal do Gerenciador de BOM abre a nova caixa de diálogo Configurator de Filtros. No Configurator de Filtros, você pode filtrar o conteúdo da tabela BOM; e expressões curinga são suportadas para propriedades de frases (strings) em um filtro BOM.<fig id="fig_xgr_2bw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMTableFilter_01_V21.png" id="image_arl_pxv_54b" scope="external" />
+            </fig></p>
+         <p>Colunas Template são um novo tipo de coluna avaliada, que permite combinar valores de várias propriedades em uma única coluna BOM, como texto, usando expressões DIESEL.<fig id="fig_mf5_2bw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMTemplateColumn_01_V21.png" id="image_brl_pxv_54b" scope="external" />
+            </fig></p>
+         <p>Você pode configurar e ter uma prévia da fórmula ou coluna de template usando a caixa de diálogo do editor de expressões.<fig id="fig_jxx_2bw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMTemplateColumn_02_V21.png" id="image_crl_pxv_54b" scope="external" />
+            </fig></p>
+         <p>Com a adição da caixa de diálogo Formatar, agora você pode personalizar a expressão de seus dados em tabelas BOM com prefixo, sufixo e delimitadores.<fig id="fig_sgb_fbw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMFormat_01_V21.png" id="image_drl_pxv_54b" scope="external" />
+            </fig></p>
+         <p>A nova opção Função de Coluna permite especificar qual coluna deve ser a origem dos balões para as vistas do desenho.<fig id="fig_mbf_fbw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMColumnRole_01_V21.png" id="image_erl_pxv_54b" scope="external" />
+            </fig></p>
+         <p>Agora é possível selecionar uma unidade para densidade do material, tanto na caixa de diálogo Materiais Físicos quanto em tabelas BOM na seção Propriedades da coluna. As unidades suportadas são: kg/m³, kg/dm³, g/cm³, lbs/ft³ and lbs/in³.<fig id="fig_jtj_fbw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMDensity_01_V21.png" id="image_frl_pxv_54b" scope="external" />
+            </fig></p>
+         <p>Foi introduzida uma opção para limitar o nível relatado de uma lista BOM hierárquica.<fig id="fig_u5m_fbw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMHeir_01_V21.png" id="image_grl_pxv_54b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_hrl_pxv_54b">
+         <title>Exportar</title>
+         <p>Agora você pode exportar sua tabela BOM para um arquivo CSV.<fig id="fig_ohr_fbw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMExport_01_V21.png" id="image_irl_pxv_54b" scope="external" />
+            </fig></p>
+      </section>
+   </conbody>
+</concept>
