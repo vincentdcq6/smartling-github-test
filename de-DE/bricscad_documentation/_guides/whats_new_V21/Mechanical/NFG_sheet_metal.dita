@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="AE2414D5-24A4DE3-D3B353DC22773EA-A6231C">
+   <title>Blechkonstruktion</title>
+
+   <conbody>
+      <p>Die Blechkonstruktions Werkzeuge in BricsCAD Mechanical v21 bieten mehr Flexibilität und schnellere Arbeitsabläufe. So kann z. B. jedem Volumenkörper eine spezifische Biegetabelle zugewiesen werden und es können Objekte mit unterschiedlicher Stärke im gleichen Block existieren.</p>
+      <section id="section_wtm_bbw_54b">
+         <title>Fase</title>
+         <p>Die neu hinzugefügte Bevel-Funktion wird in der <xref keyref="CMD_smconvert" />, der
+               <xref keyref="CMD_smrepair" /> und der <xref keyref="CMD_smunfold" /> unterstützt.</p>
+      </section>
+      <section id="section_xtm_bbw_54b">
+         <title>Null-Radius Biegungen</title>
+         <p>Eine neues Feature NullBiegung ermöglicht die Erstellung einer Biegung ohne Innenradius für Blechkomponenten.<fig id="fig_tmn_zbw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_SMZeroRBend_01_V21.png" id="image_ytm_bbw_54b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_ztm_bbw_54b">
+         <title>T-Verbindung</title>
+         <p>Ein neues Feature T-Verbindung kann mit BKEXTRUSION auf einer einzelnen Segment-Polylinie, die auf einer Lasche liegt, erzeugt werden, um eine neue Lasche orthogonal zur bestehenden zu erzeugen. Mit der Funktion T-Verbindung können wir sie dann in eine T-Lasche umwandeln, die automatisch Laschen an den orthogonalen Laschen hinzufügt und das notwendige Material vom Original entfernt.<fig id="fig_df1_ccw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_SMTjunction_01_V21.png" id="image_a5m_bbw_54b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_b5m_bbw_54b">
+         <title>Aktualisierte Smart Features</title>
+         <p>Mit dem verbesserten
+ SMSMARTFEATURE-Befehl können Sie jetzt noch schneller Blechzeichnungen erstellen.<!--link--> damit Sie Knoten automatisch erstellen können, wenn Sie das Biegewerkzeug verwenden.<fig id="fig_uqw_qdc_v4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_MCAD_SMJunction_01_V21.png" scope="external" id="image_vqw_qdc_v4b" />
+            </fig><fig id="fig_kjm_sdc_v4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_SMSmartFeature_01_V21.png" scope="external" id="image_ljm_sdc_v4b" />
+            </fig></p>
+      </section>
+      <section id="section_c5m_bbw_54b">
+         <title>Zungen</title>
+         <p>Die <xref keyref="CMD_smtabcreate" /> verfügt jetzt über eine Option zum Erstellen einer gebogenen Lasche an einer
+ gebogenen harten Kante, die einen Flansch und eine Biegung verbindet, einschließlich gebogener Biegungen.<fig id="fig_xky_fcw_54b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_MCAD_SMCurveTabs_01_V21.png" id="image_d5m_bbw_54b" scope="external" />
+            </fig></p>
+         <p><xref keyref="CMD_smunfold" /> bietet ein besseres Verhalten für kegelförmige Biegungen.            Sie können nun analytisch abgewickelt werden, um eine Aufteilung in eine bestimmte Anzahl von Bögen und Laschen zu vermeiden.<fig id="fig_b34_3cw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_SMAnalyticUnfolding_01_V21.png" id="image_e5m_bbw_54b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_f5m_bbw_54b">
+         <title>Baugruppen Export</title>
+         <p>Die Systemvariable SMASSEMBLYEXPORTMODE<!--link--> ermöglicht es Ihnen, erkannte
+ Features für Bleche und schlecht modellierte Blechteile beizubehalten, wenn Sie die <xref keyref="CMD_smassemblyexport" /> verwenden.<fig id="fig_gfb_mcw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_SMAssemblyExport_01_V21.png" id="image_g5m_bbw_54b" scope="external" />
+            </fig></p>
+      </section>
+   </conbody>
+</concept>
