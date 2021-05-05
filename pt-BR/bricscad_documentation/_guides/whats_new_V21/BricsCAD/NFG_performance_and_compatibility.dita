@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A216B4B7-553C371-22474924B23571A-55C5CF">
+   <title>Desempenho e compatibilidade</title>
+   <shortdesc />
+
+   <conbody>
+      <p>O BricsCAD V21 oferece ferramentas novas e aprimoradas para melhorar a performance e a compatibilidade à medida que você trabalha individualmente, ou em um ambiente colaborativo.</p>
+      <section id="section_obc_fr5_r4b">
+         <title>Prévia de Seleção</title>
+         <p>O realce da prévia da seleção está desativado durante as operações de Pan, resultando em uma experiência mais suave do usuário.</p>
+      </section>
+      <section id="section_pbc_fr5_r4b">
+         <title>Carregar RefEx</title>
+         <p>Um novo MTFLAG está adicionado para atrasar o carregamento de RefEx's para o tempo ocioso.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_PerformanceAndCompatibility_01_V21.png" id="image_qbc_fr5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_rbc_fr5_r4b">
+         <title>Controle de Versão Multiusuário (BETA)</title>
+         <p>BricsCAD V21 introduz nova funcionalidade de controle de versão multi-usuário como uma prévia da tecnologia, em fase Beta. Essa funcionalidade vai permitir que vários usuários trabalhem nos mesmos desenhos, simultaneamente. Os desenhos são armazenados na nuvem usando Bricsys 24/7 e fazendo check-in e check-out da máquina local de cada usuário.</p>
+         <p><b>Acesso</b></p>
+         <p>Como esta é ainda uma funcionalidade em fase Beta, para ter acesso ao recurso você deve solicitar, enviando uma Solicitação de Suporte (Support Request).</p>
+         <ol id="ol_sbc_fr5_r4b">
+            <li>Faça Login em sua conta Bricsys.</li>
+            <li>Escolha Submeter novo pedido de suporte.</li>
+            <li>Abra o menu BricsCAD e escolha <menucascade>
+                  <uicontrol>BricsCAD &gt; </uicontrol>                  <uicontrol>Controle de versão</uicontrol>
+               </menucascade>.</li>
+            <li>No campo Assunto entre: Acess to VERSIONCONTROL Beta.</li>
+            <li>Preencha o restante dos campos conforme necessário.</li>
+            <li>Escolha Enviar Pedido de Suporte.</li>
+         </ol>
+         <p><b>Comando CONTROLEVERSAO</b></p>
+         <p>O novo <xref keyref="CMD_versioncontrol" /> oferece as seguintes opções:</p>
+         <ul id="ul_tbc_fr5_r4b">
+            <li>Iniciar</li>
+            <li>Check-out</li>
+            <li>Check-in</li>
+            <li>Atualizar</li>
+            <li>Renomear</li>
+         </ul>
+         <p>A primeira vez que inicia o comando CONTROLEVERSAO numa nova sessão do BricsCAD e escolhe uma das opções, este solicita que você faça Login em sua conta Bricsys.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_PerformanceAndCompatibility_02_V21.png" id="image_ubc_fr5_r4b" scope="external" />
+            </fig></p>
+         <p>Se sua conta não tiver acesso à funcionalidade Beta, esta direciona você para uma página Web com instruções para solicitar o acesso.</p>
+         <p>Se sua conta tiver acesso à funcionalidade Beta, seu Login bem-sucedido será indicado na janela de Comando e solicitará que você entre com o nome do projeto no qual você deseja trabalhar.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_PerformanceAndCompatibility_03_V21.png" id="image_vbc_fr5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Iniciar</b></p>
+         <p>A opção <uicontrol>Iniciar </uicontrol>permite a você criar um Novo Projeto, com intervenção de múltiplos usuários. Insira um novo nome de Projeto, tendo em mente que os nomes de projeto diferenciam maiúsculas e minúsculas. Se você inserir um nome que já existe, ele solicitará que você insira um nome diferente.</p>
+         <p><b>Check-out</b></p>
+         <p>A opção<uicontrol> Check-out</uicontrol> permite que você registre a Saída de um desenho a partir de seus projetos baseados em nuvem. Você deve especificar a qual Projeto pertence o desenho que deseja dar a Saída. Entre o nome do projeto, tendo em mente que os nomes do projeto diferenciam maiúsculas e minúsculas. Se você inserir um nome de projeto que não existe, o BricsCAD vai exibir uma lista com os nomes de Projeto válidos, e vai solicitar que você entre novamente com o nome do Projeto.</p>
+         <p>Depois de inserir um nome de projeto válido, você deve especificar uma pasta para Controle de Versão para esse Projeto. A pasta de Controle de Versão é o local em seu computador onde os desenhos serão armazenados e sincronizados com a nuvem. O local padrão é <filepath>drive:\Users\username\Documents\Bricsys247\projectname</filepath>. No entanto, você pode especificar qualquer local. Se o local ainda não existe, este será criado e definido para funcionar como Controle de Versão. Se o local já existir, ele será definido sob Controle de Versão. Se o local já estiver sob Controle de Versão, você será solicitado a especificar um local diferente.</p>
+         <p><b>Check-in</b></p>
+         <p>A opção <uicontrol>Check-in</uicontrol> permite que você registre a Entrada de desenhos da pasta local, de Controle de Versão para um Projeto baseado na nuvem. Você pode dar Entrada (Check-in) na nuvem de todos os arquivos que existam na pasta de Controle de Versão e também pode confirmar arquivos modificados, que não estejam ainda rastreados.</p>
+         <p>Depois de especificar o que vai dar Entrada (Check-in), você pode inserir uma mensagem relevante de Check-in.</p>
+         <p><b>Atualizar </b></p>
+         <p>A opção <uicontrol>Atualizar</uicontrol>permite sincronizar os desenhos do projeto de sua pasta local com a nuvem.</p>
+         <p><b>Renomear</b></p>
+         <p>A opção <uicontrol>Renomear </uicontrol>permite renomear um desenho que estiver sob Controle de Versão.</p>
+      </section>
+      <section id="section_wbc_fr5_r4b">
+         <title>DGN Exportar</title>
+         <p>Um novo <xref keyref="CMD_-dgnexport" /><!--correct? Or should it be DGNEXPORT export-->
+            permite exportar o desenho atual para o formato de arquivo DGN.</p>
+      </section>
+      <section id="section_xbc_fr5_r4b">
+         <title>3D DWF Saída</title>
+         <p>O <xref keyref="CMD_3ddwf" /> permite que você crie arquivos 3D DWF ou 3D DWFx com base em
+ o valor do novo <xref keyref="SV_dwfformat" />.</p>
+      </section>
+      <section id="section_ybc_fr5_r4b">
+         <title>Gerenciador do Perfil do Usuario</title>
+         <p>O Gerenciador de Perfil de Usuário agora está mais poderoso! Este pode excluir ou substituir perfis de usuário existentes, incluindo o atual. Excluir o perfil atual não o remove completamente, mas vai redefinir todas as configurações para os padrões de fábrica.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_PerformanceAndCompatibility_04_V21.png" id="image_zbc_fr5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_acc_fr5_r4b">
+         <title>Atalhos do Menu Iniciar</title>
+         <p>Os atalhos do menu Iniciar agora definem a pasta do programa em vez da pasta de documentos pessoais como o diretório de trabalho inicial. Esta alteração resolve problemas com a instalação em uma conta de sistema onde as pastas pessoais não estão disponíveis.</p>
+      </section>
+   </conbody>
+</concept>
