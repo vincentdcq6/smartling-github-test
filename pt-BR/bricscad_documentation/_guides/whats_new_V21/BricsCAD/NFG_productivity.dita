@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A527161A-523CBD3-B53C1921286683A-475271">
+   <title>Produtividade</title>
+
+   <conbody>
+      <section id="section_yhn_3d5_r4b">
+         <title>Mover com curvas de guia</title>
+         <p>O novo <xref keyref="CMD_moveguided" /> permite mover entidades selecionadas usando
+ curvas de referência.</p>
+         <p>Quando você inicia o comando MOVERGUIADA e seleciona as entidades que deseja mover, as entidades que se enquadram (são envolvidas) completamente na janela de seleção serão movidas. E as entidades que cruzam (interceptam) a janela de seleção são usadas como curvas de referência.Vetores azuis que aparecem nas entidades selecionadas representam as curvas de referência.À medida que você move as entidades selecionadas próximo de geometrias que correspondem às curvas de referência, estas se encaixam automaticamente no lugar.            A geometria relevante no novo local é cortada automaticamente e a geometria no local original é corrigida (restaurada) automaticamente. Isso reduz significativamente a quantidade de trabalho manual necessária para edição!<fig id="fig_xyf_jd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_01_V21.png" id="image_zhn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Para obter mais flexibilidade, você pode primeiro selecionar as entidades que deseja mover e, então iniciar o comando MOVERGUIADA. As entidades pré-selecionadas são usadas para o conjunto de seleção Mover e você será solicitado a selecionar entidades a serem usadas como curvas de referência.</p>
+      </section>
+      <section id="section_a3n_3d5_r4b">
+         <title>Copiar em uma matriz linear</title>
+         <p>O <xref keyref="CMD_copy" /> agora inclui uma nova opção <uicontrol>Array</uicontrol>
+ permitindo que você copie entidades selecionadas em uma matriz linear. A nova opção Matriz está disponível depois que você especificar o ponto base para a operação de cópia.<fig id="fig_v5z_jd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_02_V21.png" id="image_b3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Você especifica o número de cópias para a matriz, e então escolher um ponto para especificar a distância e o ângulo entre os dois primeiros conjuntos de entidades, ou usa a opção <uicontrol>Ajustar </uicontrol>para especificar a distância e o ângulo entre o primeiro e o último conjuntos de entidades.<fig id="fig_iw3_kd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_03_V21.png" id="image_c3n_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_d3n_3d5_r4b">
+         <title>Desfazer por entidade</title>
+         <p>Um novo controle de histórico no <xref keyref="PNL_properties" /> permite desfazer a edição
+ operações para uma entidade selecionada. A propriedade Histórico só é exibida quando você seleciona uma entidade isolada. Abra a lista suspensa Histórico para desfazer a entidade de volta para uma das etapas anteriores, sem desfazer todos os demais comandos, e exibir operações que foram executadas desde então.<fig id="fig_wjs_kd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_04_V21.png" id="image_e3n_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_f3n_3d5_r4b">
+         <title>Manipulator</title>
+         <p>Pressione a tecla SHIFT para rotacionar o Manipulator a 90 graus em torno de seu eixo normal.<fig id="fig_u2b_ld5_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Productivity_05_V21.png" id="image_g3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>As opções Copiar e Repetir no Manipulator agora estão visíveis, clicáveis, e localizadas.<fig id="fig_sgj_ld5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_06_V21.png" id="image_h3n_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_i3n_3d5_r4b">
+         <title>Distância +Próxima</title>
+         <p>O <xref keyref="SV_nearestdistance" />
+            <!--no link to such a command, is it a SV?--> oferece melhor desempenho e comportamento
+ incluindo suporte para entidades pontuais.<fig id="fig_k45_ld5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_07_V21.png" id="image_j3n_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_k3n_3d5_r4b">
+         <title>Camadas</title>
+         <p>O BricsCAD V21 oferece vários aprimoramentos de camada para ajudar a aumentar sua produtividade.</p>
+         <p><b>Tradutor de Camadas</b></p>
+         <p>O novo <xref keyref="CMD_laytrans" /> permite aplicar rapidamente nomes de camadas e propriedades de outro arquivo de desenho ao desenho atual. Quando você inicia o comando TRADCAMADA, a caixa de diálogo Tradutor de Camadas é exibida. Todos os nomes das camadas no desenho atual são exibidos na lista Traduzir De. Você pode especificar as camadas para as quais deseja mapear carregando informações da camada de um arquivo DWG, DWS ou DWT existente.<fig id="fig_bwg_md5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_08_V21.png" id="image_l3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Você também pode criar novas camadas. Basta digitar o nome da camada e as propriedades para as quais você deseja mapear a camada existente.<fig id="fig_x2n_md5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_09_V21.png" id="image_m3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Você pode selecionar uma ou mais camadas do desenho atual, a lista à esquerda, para mapear para uma camada da lista à direita. Se você escolher <uicontrol>Mapear o Mesmo</uicontrol>, quaisquer nomes de camada no desenho atual com nomes correspondentes na lista à direita herdarão as propriedades da lista à esquerda. Os mapeamentos de camada que você selecionou são exibidos na lista Mapeamentos de Tradução.<fig id="fig_pj5_md5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_10_V21.png" id="image_n3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Independentemente de como você adiciona camadas à lista Mapeamentos de Tradução, você pode modificar as propriedades de mapeamento daquelas. Clique duas vezes em uma camada ou escolha <uicontrol>Editar</uicontrol> para abrir a caixa de diálogo Editar Camada com as mesmas opções na caixa de diálogo Nova Camada. Você também pode remover camadas da lista Mapeamentos de Tradução ou salvar a lista de mapeamento para usar novamente no futuro.</p>
+         <p>A caixa de diálogo Opções oferece controles adicionais para mapeamentos de camadas.<fig id="fig_ipb_nd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_11_V21.png" id="image_o3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Definido por Camada</b></p>
+         <p>O novo <xref keyref="CMD_setbylayer" /> e <xref keyref="CMD_-setbylayer" /> habilitá-lo
+ altere rapidamente as substituições de propriedade de entidades selecionadas para ByLayer.</p>
+         <p>Use o novo <xref keyref="SV_setbylayermode" /> para controlar quais propriedades são afetadas pelos comandos SETBYLAYER. O valor é armazenado como um bitcode usando a soma dos valores de todas as opções selecionadas:</p>
+         <ul id="ul_p3n_3d5_r4b">
+            <li>1: Cor</li>
+            <li>2: Tipo de linha</li>
+            <li>4: Esp. de linha</li>
+            <li>8: Material</li>
+            <li>16: Estilo de plotagem</li>
+            <li>32: ProBloco</li>
+            <li>64: Blocos</li>
+            <li>128: Transparência</li>
+         </ul>
+         <p><b>Propriedades da camada por Viewport</b></p>
+         <p>O <xref keyref="CMD_vplayer" /> é melhorado no 21 permitindo a você selecionar entidades em camadas para as quais você deseja aplicar substituições da porta de visualização. Depois de selecionar qual propriedade de camada você deseja modificar para a viewport, você pode digitar o nome da camada ou pressionar enter para especificar a camada selecionando uma entidade nessa camada.<fig id="fig_wln_nd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_12_V21.png" id="image_q3n_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_r3n_3d5_r4b">
+         <title>Tipo-Linhas</title>
+         <p>BricsCAD agora suporta a seleção de lacunas de tipo de linha com a adição do <xref keyref="SV_ltgapselection" />. Com LTGAPSELECTION habilitado entidades são destacadas e selecionadas mesmo quando você clicar numa lacuna de linha descontínua.<fig id="fig_k1v_nd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_13_V21.png" id="image_s3n_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_t3n_3d5_r4b">
+         <title>Parâmetros &amp; Restrições</title>
+         <p>O BricsCAD V21 oferece melhorias poderosas para criar desenhos paramétricos e definições de blocos.</p>
+         <p><b>Painel Parâmetros &amp; Restrições</b></p>
+         <p>Todos os níveis de licença do BricsCAD agora suportam parâmetros e restrições em 2D. Exibir e modificar parâmetros e restrições no painel Parâmetros e Restrições. O painel é estendido para exibir restrições geométricas 3D, restrições dimensionais 2D, blocos paramétricos e matrizes.<fig id="fig_cld_4d5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_14_V21.png" id="image_u3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>O menu de clique com botão-direito do mouse para parâmetros e restrições permite a você especificar se os parâmetros são orientados-por-geometria. Expressões para tais parâmetros não podem ser editadas (você pode desativar o status orientado-por-geometria para editá-los) — em vez disso, elas são automaticamente computadas a partir da geometria 3D por meio de restrições dimensionais 3D que dependem, direta ou indiretamente, de parâmetros orientados-por-geometria. Expressões aritméticas simples para tais restrições dimensionais 3D são resolvidas dinamicamente quando você altera sua geometria com ferramentas de edição direta, como DMPUSHPULL ou DMMOVE/DMROTATE.<fig id="fig_omm_4d5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_15_V21.png" id="image_v3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>O menu do botão-direito também permite controlar se um parâmetro está exposto para edição quando inserido como um bloco.</p>
+         <p>Se você abrir um modelo paramétrico 3D com uma licença BricsCAD Lite, as restrições 3D serão mostradas em magenta. Você pode visualizar e editar suas expressões, com o BricsCAD Lite. No entanto, o modelo 3D só vai refletir as mudanças depois que for aberto com uma licença do BricsCAD Pro ou superior.</p>
+         <p><b>Restrição Automática</b></p>
+         <p>O novo <xref keyref="CMD_autoconstrain" /> permite a você aplicar automaticamente restrições 2D geométricas e dimensionais à geometria 2D selecionada. O BricsCAD restringe totalmente a geometria, garantindo não restringi-la demais. As restrições geométricas e dimensionais são exibidas na geometria. Você pode ver, adicionar, remover, e modificar os parâmetros e restrições no painel Parâmetros e Restrições.<fig id="fig_zkb_pd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_16_V21.png" id="image_w3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Curvas de Referência</b></p>
+         <p>O novo <xref keyref="CMD_referencecurves" /> permite especificar geometria de referência
+ para blocos. Quando você seleciona a geometria a ser usada para referência, o BricsCAD cria uma camada REFERENCE_CURVES (se ela ainda não existir) e adiciona as entidades selecionadas a essa camada.</p>
+         <p>Com curvas de referência especificadas em um desenho ou definição de bloco, você pode alinhar automaticamente o bloco ou desenho à geometria relevante ao inseri-lo. O número de curvas de referência e a distância entre elas determinam com qual geometria este pode se alinhar. À medida que o cursor se aproxima da geometria relevante, o bloco pode inverter automaticamente, oferecendo várias opções de inserção. Distâncias entre as extremidades da geometria relevante e o bloco são exibidas, permitindo que inserir valores específicos, se você desejar. E, se as curvas de referência incluírem lacunas, a geometria relevante será automaticamente cortada para produzir lacunas correspondentes.<fig id="fig_bdk_pd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_17_V21.png" id="image_x3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Você também pode usar curvas de referência para alinhar automaticamente com os cantos. O exemplo a seguir inclui 4 curvas de referência paralelas e uma curva única de referência de canto, permitindo que o bloco da porta se alinhe com a geometria que corresponde às quatro linhas paralelas e a única linha perpendicular isolada.<fig id="fig_wdq_pd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_18_V21.png" id="image_y3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Estados de Visibilidade</b></p>
+         <p>O novo <xref keyref="CMD_visibilitystates" /> permite definir parâmetros e estados de visibilidade. Você pode criar vários parâmetros de visibilidade em um desenho ou definição de bloco. Além disso, você pode criar vários estados de visibilidade em cada parâmetro de visibilidade. Ao inserir o desenho ou bloco, você pode alterar a visibilidade de cada instância. Por exemplo, você pode criar um bloco de porta com dois parâmetros de visibilidade, SwingAngle (AnguloAbertura) e Header (CabeçaMarco).</p>
+         <p>O parâmetro SwingAngle inclui 5 estados de visibilidade: Fechado, 30, 45, 60 e 90 (graus).<fig id="fig_rhy_pd5_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Productivity_19_V21.png" id="image_z3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>O parâmetro Header inclui dois estados de visibilidade: <uicontrol>On</uicontrol> e <uicontrol>Off</uicontrol> .<fig id="fig_asg_qd5_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Productivity_20_V21.png" id="image_ajn_3d5_r4b" scope="external" />
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Productivity_21_V21.png" id="image_bjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Você cria toda a geometria para cada um dos estados de visibilidade e, em seguida, selecione a geometria apropriada a ser exibida em cada estado de cada parâmetro. Geometria(s) que não pertence a um estado de visibilidade é sempre exibida. Este exemplo de porta permite 10 variações de inserções de bloco.<fig id="fig_sls_qd5_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Productivity_22_V21.png" id="image_cjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Você pode alterar facilmente os estados de visibilidade de uma inserção de bloco selecionada usando o painel Propriedades.<fig id="fig_erw_qd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_23_V21.png" id="image_djn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Restrições de Raio 3D</b></p>
+         <p>O <xref keyref="CMD_dmradius3d" /> permite que você crie raio 3D orientado por geometria
+ restrições para medir o raio de entidades dentro de blocos.<fig id="fig_z5b_rd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_25_V21.png" id="image_ejn_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_fjn_3d5_r4b">
+         <title>Blocos</title>
+         <p>BricsCAD V21 oferece muitos aprimoramentos para aumentar sua produtividade ao trabalhar com blocos.</p>
+         <p><b>Propriedades do Atributo de Bloco</b></p>
+         <p>Agora você pode acessar as propriedades do atributo de bloco no painel Propriedades. Isso permite que você visualize e edite vários atributos ao mesmo tempo. Pressione a tecla Ctrl para selecionar um ou mais atributos dentro de instâncias de bloco. Abra o painel Propriedades para exibir o tipo de Atributos da entidade, com todas as propriedades de atributo relevantes.<fig id="fig_a5h_rd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_27_V21.png" id="image_gjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Painel Biblioteca</b></p>
+         <p>O novo painel Biblioteca oferece um local central para acessar bibliotecas de blocos 2D e 3D. Este substitui os painéis Componentes e Blocos Paramétricos 2D, usados nas versões anteriores.<fig id="fig_jct_rd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_28_V21.png" id="image_hjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Um menu no canto superior direito permite controlar qual conteúdo é exibido no painel Biblioteca. Este pode incluir conteúdo predefinido de bibliotecas Bricsys, assim como a biblioteca Definida pelo Usuário, com seu próprio conteúdo.<fig id="fig_iz1_sd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_29_V21.png" id="image_ijn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Você pode especificar onde o BricsCAD procura pelo conteúdo da biblioteca selecionando a opção Gerenciar bibliotecas. Este oferece acesso rápido à configuração COMPONENTSPATH para que você possa visualizar e modificar os locais das pastas da biblioteca. Outra opção de menu gera automaticamente imagens em miniatura para qualquer uma que esteja faltando.</p>
+         <p>Você pode pesquisar conteúdo digitando palavras-chave na caixa Pesquisar ou expandir uma categoria para ver todo o conteúdo dentro dessa categoria. E você pode exibir o conteúdo em uma vista em grade ou lista.<fig id="fig_vn4_r1r_cpb">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_30_V21.png" id="image_kjn_3d5_r4b" scope="external" />
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_31_V21.png" id="image_ljn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Você pode adicionar facilmente novas definições de bloco à biblioteca usando o botão Adicionar na parte inferior do painel Biblioteca. Selecione entidades específicas a partir do desenho, ou use o desenho inteiro.<fig id="fig_kcw_td5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_32_V21.png" id="image_mjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Ícones de Bloco</b></p>
+         <p>O novo <xref keyref="CMD_blockicon" /> cria ou atualiza imagens em miniatura que permitem
+ você para visualizar blocos com várias ferramentas, incluindo o Explorer do Desenho e a Biblioteca
+ painel.</p>
+         <p><b>Blocos escalados não-uniformemente</b></p>
+         <p>O <xref keyref="CMD_explode" /> e o <xref keyref="CMD_xplode" /> agora honram o <xref keyref="SV_explmode" /> quando explodir blocos não uniformemente escalados.</p>
+         <p><b>Inserir </b></p>
+         <p>O <xref keyref="CMD_insert" /> é aprimorado para suportar blocos paramétricos. Definições de Bloco contendo entidades paramétricas com parâmetros expostos, agora podem ser alteradas parametricamente após a inserção pelo comando INSERIR. Para inserir BIM paramétrico
+ e componentes mecânicos, use <xref keyref="CMD_bminsert" />o.</p>
+      </section>
+      <section id="section_njn_3d5_r4b">
+         <title>Otimizações do Desenho</title>
+         <p>Um novo painel da Faixa de opções, de nome Otimizações do Desenho, oferece ferramentas para limpar e otimizar seus desenhos.</p>
+         <p><b>Simplificar</b></p>
+         <p>O novo <xref keyref="CMD_simplify" /> reduz o número de vértices de polilinhas e
+ chocar limites sem alterar sua forma geral. As opções permitem alternar entre simplificar e suavizar. As opções adicionais permitem controlar a quantidade de desvio em relação à entidade original. Entidades simplificadas são mais fáceis de manipular e podem reduzir significativamente o tamanho do arquivo.</p>
+         <p><b>Eliminar</b></p>
+         <p>O <xref keyref="CMD_purge" /> é aprimorado para que as opções de dados em lote, todos e órfãos
+ remova mais itens do desenho.</p>
+         <p><b>Inspecionar </b></p>
+         <p>O <xref keyref="CMD_audit" /> é aprimorado para limpar atributos ACIS duplicados. Uma combinação de INSPECIONAR e CLEANUNUSEDVARIABLES agora limpa um desenho de vários parâmetros órfãos.</p>
+         <p><b>Excluir Entidades Duplicadas</b></p>
+         <p>O <xref keyref="CMD_overkill" /> permite a você escolher se deseja excluir entidades duplicadas ou movê-las para uma camada especificada. Você pode especificar o nome da camada usando a nova configuração OVERKILLLAYER ou deixar o nome padrão, Entidades Duplicadas.</p>
+         <p>Uma nova opção no comando LIMPEZA permite combinar definições de bloco em duplicidade.            A escolha desta opção exibe a caixa de diálogo Combinar Blocos Duplicados, onde você pode especificar quaisquer propriedades de bloco que deseja ignorar. Você pode especificar quão próximo a geometria deve corresponder, inserindo uma tolerância para comparação. Se o BricsCAD encontrar mais de uma definição de bloco cuja geometria atende aos critérios de tolerância e propriedades, ele usará a definição mais recente para substituir quaisquer outras instâncias de blocos mais antigas. As definições mais antigas de blocos não são mais usadas e você pode habilitar a opção Eliminar blocos duplicados para eliminá-los automaticamente.<fig id="fig_fnn_5d5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_33_V21.png" id="image_ojn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Otimizar</b></p>
+         <p>O novo <xref keyref="CMD_optimize" /> ajuda você a limpar linhas 2D em seus desenhos. Este exibe a caixa de diálogo Otimizar Linhas 2D onde você pode controlar quais linhas serão afetadas. Especifique quais linhas o BricsCAD deverá considerar para otimização. Você pode selecionar entidades de linha específicas ou fazer com que o BricsCAD analise e otimize todas as entidades de linha no desenho. Ele pode encontrar e corrigir linhas que estão dentro de uma tolerância de ângulo especificada em relação a horizontal, vertical, ou 45 graus, no UCS atual. Uma opção adicional também fecha automaticamente lacunas, dentro de uma tolerância especificada.<fig id="fig_w1w_5d5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_34_V21.png" id="image_pjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>A ferramenta Otimizar é útil para limpar quaisquer linhas 2D. Por exemplo, você pode usá-lo para limpar rapidamente geometrias de linha extraídas de nuvens de pontos.<fig id="fig_jj2_vd5_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Productivity_35_V21.png" id="image_qjn_3d5_r4b" scope="external" />
+            </fig><fig id="fig_bzj_vd5_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Productivity_36_V21.png" id="image_rjn_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_sjn_3d5_r4b">
+         <title>Object Linking and Embedding (Objetos OLE)</title>
+         <p>O <xref keyref="PNL_properties" /> para objetos OLE é aprimorado para fornecer adicional
+ informações para a entidade OLE selecionada. As informações adicionais podem incluir Tipo, como Incorporado ou Estático, Qualidade de plotagem e aplicação de Origem.<fig id="fig_hlv_vd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_37_V21.png" id="image_tjn_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_ujn_3d5_r4b">
+         <title>Imagens</title>
+         <p>A manipulação de imagem está aprimorada no BricsCAD V21. Quando você manipula uma imagem anexada usando alças e outras ferramentas de edição, o conteúdo da imagem exibe e atualiza à medida que você edita o quadro da imagem. Isso permite posicionar, alinhar e escalar a imagem usando o conteúdo da imagem para referência. A imagem selecionada é exibida temporariamente acima de qualquer objeto sobreposto à medida que você a edita.</p>
+      </section>
+      <section id="section_vjn_3d5_r4b">
+         <title>Hiperlinks</title>
+         <p>A caixa de diálogo Editar hiperlink agora permite vincular a layouts e vistas dentro de um desenho. Depois de selecionar o desenho ao qual deseja vincular, escolha <uicontrol>Destino </uicontrol>para abrir a caixa de diálogo Selecionar Vista de Destino.<!--link-->.<fig id="fig_lbf_wd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_38_V21.png" id="image_wjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>A caixa de diálogo Selecionar Vista de Destino exibe uma lista de todas as vistas e layouts nomeados no desenho vinculado.<fig id="fig_bmk_wd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_39_V21.png" id="image_xjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Para acessar um hiperlink, clique-duplo no hiperlink, no painel Propriedades da entidade selecionada, ou pressione e segure o botão-direito do mouse e escolha <uicontrol>Hiperlink </uicontrol>no menu.</p>
+         <fig id="fig_jdp_t1r_cpb">
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_40_V21.png" id="image_zjn_3d5_r4b" scope="external" />
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_41_V21.png" id="image_akn_3d5_r4b" scope="external" />
+         </fig>
+      </section>
+   </conbody>
+</concept>
