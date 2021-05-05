@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A527161A-523CBD3-B53C1921286683A-475271">
+   <title>Produktivität</title>
+
+   <conbody>
+      <section id="section_yhn_3d5_r4b">
+         <title>Verschieben mit Führungskurven</title>
+         <p>Mit dem neuen <xref keyref="CMD_moveguided" /> können Sie ausgewählte Elemente mit Hilfe von
+ Referenzkurven verschieben.</p>
+         <p>Wenn Sie den Befehl SCHIEBENGEFÜHRT aufrufen und die zu verschiebenden Objekte auswählen, werden die Objekte verschoben, die vollständig innerhalb des Auswahlfensters liegen. Objekte, die das Auswahlfenster kreuzen, werden als Referenzkurven verwendet. Blaue Vektoren auf den ausgewählten Objekten stellen die Referenzkurven dar. Wenn Sie die ausgewählten Objekte in die Nähe von Geometrie bewegen, die mit den Referenzkurven übereinstimmt, rasten sie automatisch ein.            Relevante Geometrie an der neuen Position wird automatisch getrimmt und Geometrie an der ursprünglichen Position wird automatisch nachgearbeitet. Dies reduziert den manuellen Bearbeitungsaufwand erheblich!<fig id="fig_xyf_jd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_01_V21.png" id="image_zhn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Für mehr Flexibilität können Sie zunächst die zu verschiebenden Objekte auswählen und dann den Befehl SCHIEBENGEFÜHRT aufrufen. Die vorausgewählten Objekte werden für den Auswahlsatz &quot; Verschieben&quot; verwendet und Sie werden aufgefordert, Objekte auszuwählen, die als Referenzkurven verwendet werden sollen.</p>
+      </section>
+      <section id="section_a3n_3d5_r4b">
+         <title>Kopieren in einer linearen Reihe</title>
+         <p>Die Option <xref keyref="CMD_copy" /> enthält jetzt eine neue <uicontrol>Array</uicontrol>-Option, mit der Sie ausgewählte Entitäten in ein lineares Array kopieren können. Die neue Option Reihe ist verfügbar, nachdem Sie den Basispunkt für den Kopiervorgang festgelegt haben.<fig id="fig_v5z_jd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_02_V21.png" id="image_b3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Sie geben die Anzahl der Kopien für die Reihe an und wählen dann einen Punkt aus, um den Abstand und den Winkel zwischen den ersten beiden Sätzen von Objekten anzugeben, oder Sie verwenden die Option &quot;<uicontrol>Anpassen</uicontrol>&quot;, um den Abstand und den Winkel zwischen dem ersten und dem letzten Satz von Objekten anzugeben.<fig id="fig_iw3_kd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_03_V21.png" id="image_c3n_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_d3n_3d5_r4b">
+         <title>Zurück pro Objekt</title>
+         <p>Ein neues Steuerelement für die Historie in <xref keyref="PNL_properties" /> ermöglicht es Ihnen, die Bearbeitung
+ eines ausgewählten Objekts rückgängig zu machen. Die Verlaufseigenschaft wird nur angezeigt, wenn Sie ein einzelnes Objekt auswählen. Öffnen Sie die Dropdown-Liste &quot;Verlauf&quot;, um das Objekt bis zu einem der vorherigen Schritte rückgängig zu machen, ohne alle anderen Befehle rückgängig zu machen, und sehen Sie sich die Operationen an, die seitdem ausgeführt wurden.<fig id="fig_wjs_kd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_04_V21.png" id="image_e3n_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_f3n_3d5_r4b">
+         <title>Manipulator</title>
+         <p>Drücken Sie die UMSCHALT-Taste, um den Manipulator um 90 Grad um seine Normalen Achse zu drehen.<fig id="fig_u2b_ld5_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Productivity_05_V21.png" id="image_g3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Die Optionen Kopieren und Wiederholen im Manipulator sind jetzt sichtbar, anklickbar und lokalisiert.<fig id="fig_sgj_ld5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_06_V21.png" id="image_h3n_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_i3n_3d5_r4b">
+         <title>Nächstgelegene Entfernung</title>
+         <p>Die <xref keyref="SV_nearestdistance" />
+            <!--no link to such a command, is it a SV?--> bietet verbesserte Leistung und ein besseres Verhalten, einschließlich Unterstützung für Punkt-Entitäten.<fig id="fig_k45_ld5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_07_V21.png" id="image_j3n_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_k3n_3d5_r4b">
+         <title>Layer</title>
+         <p>BricsCAD v21 bietet mehrere Layer-Erweiterungen, um Ihre Produktivität zu steigern.</p>
+         <p><b>Layer Übersetzer</b></p>
+         <p>Mit der neuen <xref keyref="CMD_laytrans" /> können Sie schnell Layernamen und Eigenschaften aus einem anderen Teilbild in die aktuelle Zeichnung übernehmen. Wenn Sie den Befehl LAYTRANS aufrufen, wird der Dialog Layer Übersetzer angezeigt. Alle Layernamen in der aktuellen Zeichnung werden in der Liste &quot;Übersetzen von&quot; angezeigt. Sie können die Layer angeben, auf die sie abgebildet werden sollen, indem Sie Layerinformationen aus einer vorhandenen DWG-, DWS- oder DWT-Datei laden.<fig id="fig_bwg_md5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_08_V21.png" id="image_l3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Sie können auch neue Layer erstellen. Geben Sie einfach den Namen des Layers und die Eigenschaften ein, auf die Sie den vorhandenen Layer abbilden möchten.<fig id="fig_x2n_md5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_09_V21.png" id="image_m3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Sie können einen oder mehrere Layer aus der aktuellen Zeichnung, der Liste auf der linken Seite, auswählen, um sie einem Layer aus der Liste auf der rechten Seite zuzuordnen. Wenn Sie &quot;<uicontrol>Gleiche zuordnen</uicontrol>&quot; wählen, erben alle Layernamen in der aktuellen Zeichnung mit den entsprechenden Namen in der Liste auf der rechten Seite die Eigenschaften aus der Liste auf der rechten Seite. Die von Ihnen ausgewählten Layer-Zuordnungen werden in der Liste Übersetzungs Zuordnungen angezeigt.<fig id="fig_pj5_md5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_10_V21.png" id="image_n3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Unabhängig davon, wie Sie Layer zur Liste der Übersetzungs Zuordnungen hinzufügen, können Sie deren Zuordnungseigenschaften ändern. Doppelklicken Sie auf eine Ebene oder wählen Sie <uicontrol>Bearbeiten</uicontrol> , um das Dialogfeld Ebene bearbeiten mit den gleichen Optionen wie im Dialogfeld Neue Ebene zu öffnen. Sie können auch Layer aus der Liste der Übersetzungs Zuordnungen entfernen oder die Zuordnungsliste speichern, um sie in Zukunft wieder zu verwenden.</p>
+         <p>Der Dialog &quot;Optionen&quot; bietet zusätzliche Steuerelemente für Layer-Zuordnungen.<fig id="fig_ipb_nd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_11_V21.png" id="image_o3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Nach VonLayer setzen</b></p>
+         <p>Mit den neuen <xref keyref="CMD_setbylayer" /> und <xref keyref="CMD_-setbylayer" /> können Sie die Eigenschaftsüberschreibungen ausgewählter Entitäten schnell in ByLayer ändern.</p>
+         <p>Verwenden Sie das neue <xref keyref="SV_setbylayermode" />, um zu steuern, welche Eigenschaften von den Befehlen SETBYLAYER betroffen sind. Der Wert wird als Bitcode mit der Summe der Werte aller ausgewählten Optionen gespeichert:</p>
+         <ul id="ul_p3n_3d5_r4b">
+            <li>1: Farbe</li>
+            <li>2: Linientyp</li>
+            <li>4: Linienstärke</li>
+            <li>8: Material</li>
+            <li>16: Plotstil</li>
+            <li>32: VonBlock</li>
+            <li>64: Blöcke</li>
+            <li>128: Transparenz</li>
+         </ul>
+         <p><b>Layer-Eigenschaften nach Ansichtsfenster</b></p>
+         <p>Mit der Erweiterung <xref keyref="CMD_vplayer" /> in 21 können Sie Entitäten für Layer auswählen, für die Sie Viewport-Overrides anwenden möchten. Nachdem Sie ausgewählt haben, welche Layer-Eigenschaft Sie für das Ansichtsfenster ändern möchten, können Sie den Namen des Layers eingeben oder die Eingabetaste drücken, um den Layer durch Auswahl eines Objekts auf diesem Layer anzugeben.<fig id="fig_wln_nd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_12_V21.png" id="image_q3n_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_r3n_3d5_r4b">
+         <title>Linientypen</title>
+         <p>BricsCAD unterstützt nun die Auswahl von Linetyp-Lücken mit dem Hinzufügen des <xref keyref="SV_ltgapselection" />. Wenn LTGAPSELECTION aktiviert ist, werden Objekte hervorgehoben und ausgewählt, auch wenn Sie in der Lücke auswählen.<fig id="fig_k1v_nd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_13_V21.png" id="image_s3n_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_t3n_3d5_r4b">
+         <title>Parameter &amp; Abhängigkeiten</title>
+         <p>BricsCAD v21 bietet leistungsstarke Erweiterungen für die Erstellung von parametrischen Zeichnungen und Blockdefinitionen.</p>
+         <p><b>Parameter &amp; Abhängigkeiten Panel</b></p>
+         <p>Alle BricsCAD Lizenzstufen unterstützen jetzt 2D Parameter und Abhängigkeiten. Anzeigen und Ändern von Parametern und Abhängigkeiten im Panel &quot;Parameter und Abhängigkeiten&quot;. Das Panel wurde erweitert, um 3D geometrische Abhängigkeiten, 2D Bemaßungs Abhängigkeiten, parametrische Blöcke und Reihen anzuzeigen.<fig id="fig_cld_4d5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_14_V21.png" id="image_u3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Über das Rechtsklickmenü für Parameter und Abhängigkeiten können Sie festlegen, ob Parameter geometriegesteuert sind. Ausdrücke für solche Parameter können nicht bearbeitet werden (Sie können den geometriegesteuerten Status ausschalten, um sie zu bearbeiten) - stattdessen werden sie automatisch aus der 3D-Geometrie über 3D-Bemaßungs Abhängigkeiten berechnet, die direkt oder indirekt von geometriegesteuerten Parametern abhängen. Einfache arithmetische Ausdrücke für solche 3D-Bemaßungs Abhängigkeiten werden dynamisch gelöst, wenn Sie Ihre Geometrie mit direkten Editierwerkzeugen wie DMDRÜCKENZIEHEN oder DMSCHIEBEN/DMDREHEN ändern.<fig id="fig_omm_4d5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_15_V21.png" id="image_v3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Über das Rechtsklickmenü können Sie auch steuern, ob ein Parameter zur Bearbeitung freigegeben wird, wenn er als Block eingefügt wird.</p>
+         <p>Wenn Sie ein parametrisches 3D-Modell mit einer BricsCAD Lite Lizenz öffnen, werden die 3D-ZAbhängigkeiten in Magenta angezeigt. Sie können ihre Ausdrücke mit BricsCAD Lite anzeigen und bearbeiten. Das 3D-Modell spiegelt die Änderungen jedoch erst wieder, nachdem es mit einer BricsCAD Pro Lizenz oder höher geöffnet wurde.</p>
+         <p><b>Automatische Abhängigkeiten</b></p>
+         <p>Mit der neuen <xref keyref="CMD_autoconstrain" /> können Sie automatisch geometrische und dimensionale Zwangsbedingungen auf ausgewählte 2D-Geometrie anwenden
+. BricsCAD schränkt die Geometrie vollständig ein
+, wobei sichergestellt wird, dass sie nicht überbestimmt wird. Die geometrischen und
+ Bemaßungs Abhängigkeiten werden an der Geometrie angezeigt. Sie können die Parameter und
+ Abhängigkeiten im Panel &quot;Parameter und Abhängigkeiten&quot; anzeigen, hinzufügen, entfernen und ändern.<fig id="fig_zkb_pd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_16_V21.png" id="image_w3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Referenz Kurven</b></p>
+         <p>Mit der neuen <xref keyref="CMD_referencecurves" /> können Sie die Referenzgeometrie
+ für Blöcke festlegen. Wenn Sie Geometrie auswählen, die als Referenz verwendet werden soll, erstellt BricsCAD einen REFERENCE_CURVES Layer (falls er nicht bereits existiert) und fügt die ausgewählten Objekte zu diesem Layer hinzu.</p>
+         <p>Mit Referenzkurven, die in einer Zeichnung oder Blockdefinition angegeben sind, können Sie den Block oder die Zeichnung beim Einfügen automatisch an der entsprechenden Geometrie ausrichten. Die Anzahl der Referenzkurven und der Abstand zwischen ihnen bestimmt, mit welcher Geometrie er sich ausrichten kann. Wenn sich der Cursor der relevanten Geometrie nähert, kann der Block automatisch umklappen und bietet so mehrere Einfüge-Optionen. Die Abstände zwischen den Enden der jeweiligen Geometrie und des Blocks werden angezeigt, so dass Sie auf Wunsch bestimmte Werte eingeben können. Und wenn die Referenzkurven Lücken enthalten, wird die entsprechende Geometrie automatisch getrimmt, um passende Lücken zu erzeugen.<fig id="fig_bdk_pd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_17_V21.png" id="image_x3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Sie können Referenzkurven auch zum automatischen Ausrichten an Ecken verwenden. Das folgende Beispiel enthält 4 parallele Referenzkurven und eine einzelne Eckreferenz-Kurve, die es dem Türblock ermöglicht, sich an einer Geometrie auszurichten, die mit den vier parallelen Linien und der einzelnen senkrechten Linie übereinstimmt.<fig id="fig_wdq_pd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_18_V21.png" id="image_y3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Sichtbarkeits Status</b></p>
+         <p>Mit der neuen <xref keyref="CMD_visibilitystates" /> können Sie Sichtbarkeitsparameter und -zustände definieren. Sie können mehrere Sichtbarkeits-Parameter in einer Zeichnung oder Blockdefinition erstellen. Außerdem können Sie in jedem Sichtbarkeitsparameter mehrere Sichtbarkeitszustände erstellen. Wenn Sie die Zeichnung oder den Block einfügen, können Sie die Sichtbarkeit jeder Instanz ändern. Sie könnten zum Beispiel einen Türblock mit zwei Sichtbarkeitsparametern, SwingAngle und Header, erstellen.</p>
+         <p>Der Parameter SwingAngle umfasst 5 Sichtbarkeitszustände: Geschlossen, 30, 45, 60 und 90.<fig id="fig_rhy_pd5_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Productivity_19_V21.png" id="image_z3n_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Der Parameter &quot;Kopfzeile&quot; enthält zwei Sichtbarkeitsstatus: <uicontrol>Ein</uicontrol> und <uicontrol>Aus</uicontrol>.<fig id="fig_asg_qd5_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Productivity_20_V21.png" id="image_ajn_3d5_r4b" scope="external" />
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Productivity_21_V21.png" id="image_bjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Sie erstellen die gesamte Geometrie für jeden der Sichtbarkeitszustände und wählen dann die entsprechende Geometrie aus, die in jedem Zustand der einzelnen Parameter angezeigt werden soll. Geometrie, die nicht zu einem Sichtbarkeitsstatus gehört, wird immer angezeigt. Dieses Türbeispiel ermöglicht 10 Variationen von Block-Einfügungen.<fig id="fig_sls_qd5_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Productivity_22_V21.png" id="image_cjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Sie können die Sichtbarkeitszustände für eine ausgewählte Blockeinfügung ganz einfach über das Panel &quot;Eigenschaften&quot; ändern.<fig id="fig_erw_qd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_23_V21.png" id="image_djn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p><b>3D Radius Abhängigkeiten</b></p>
+         <p>Mit <xref keyref="CMD_dmradius3d" /> können Sie geometriegesteuerte 3D-Radius-Bedingungen
+ erstellen, um den Radius von Objekten innerhalb von Blöcken zu messen.<fig id="fig_z5b_rd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_25_V21.png" id="image_ejn_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_fjn_3d5_r4b">
+         <title>Blöcke</title>
+         <p>BricsCAD v21 bietet viele Erweiterungen, um Ihre Produktivität bei der Arbeit mit Blöcken zu erhöhen.</p>
+         <p><b>Block Attribut Eigenschaften</b></p>
+         <p>You can now access block attribute properties in the Properties panel. This allows you to view and edit multiple attributes at the same time. Drücken Sie die Strg-Taste, um ein oder mehrere Attribute innerhalb von Blockinstanzen auszuwählen. Öffnen Sie das Panel Eigenschaften, um den Objekttyp Attribute mit allen relevanten Attributeigenschaften anzuzeigen.<fig id="fig_a5h_rd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_27_V21.png" id="image_gjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Bibliotheks Panel</b></p>
+         <p>Das neue Bibliotheks-Panel bietet einen zentralen Ort für den Zugriff auf 2D- und 3D-Blockbibliotheken. Es ersetzt sowohl das Panel Komponenten als auch das Panel 2D Parametrische Blöcke aus früheren Versionen.<fig id="fig_jct_rd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_28_V21.png" id="image_hjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Über ein Menü in der oberen rechten Ecke können Sie steuern, welche Inhalte im Bibliotheks-Panel angezeigt werden. Sie kann sowohl vordefinierte Inhalte aus Bricsys-Bibliotheken als auch die benutzerdefinierte Bibliothek mit Ihren eigenen Inhalten enthalten.<fig id="fig_iz1_sd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_29_V21.png" id="image_ijn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Sie können festlegen, wo BricsCAD nach Bibliotheksinhalten sucht, indem Sie die Option &quot;Bibliotheken verwalten&quot; auswählen. Sie bietet schnellen Zugriff auf die COMPONENTSPATH Einstellung, sodass Sie die Speicherorte der Bibliotheksordner anzeigen und ändern können. Eine weitere Menüoption erzeugt automatisch Miniaturbilder für alle, die noch nicht vorhanden sind.</p>
+         <p>Sie können nach Inhalten suchen, indem Sie Schlüsselwörter in das Suchfeld eingeben oder eine Kategorie erweitern, um alle Inhalte innerhalb dieser Kategorie zu sehen. Und Sie können den Inhalt in einer Raster- oder Listenansicht anzeigen.<fig id="fig_vn4_r1r_cpb">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_30_V21.png" id="image_kjn_3d5_r4b" scope="external" />
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_31_V21.png" id="image_ljn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Sie können ganz einfach neue Blockdefinitionen zur Bibliothek hinzufügen, indem Sie die Schaltfläche Hinzufügen am unteren Rand des Bibliotheks-Panels verwenden. Wählen Sie bestimmte Objekte in der Zeichnung aus oder nehmen Sie die gesamte Zeichnung.<fig id="fig_kcw_td5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_32_V21.png" id="image_mjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Block Symbole</b></p>
+         <p>Das neue <xref keyref="CMD_blockicon" /> erstellt oder aktualisiert Miniaturbilder, mit denen
+ Sie eine Vorschau von Blöcken mit verschiedenen Werkzeugen wie dem Zeichnungsexplorer und dem Bedienfeld Bibliothek
+ anzeigen können.</p>
+         <p><b>Nicht gleichmäßig skalierte Blöcke</b></p>
+         <p>Die <xref keyref="CMD_explode" /> und die <xref keyref="CMD_xplode" /> beachten jetzt die <xref keyref="SV_explmode" /> beim Explodieren von nicht gleichmäßig skalierten Blöcken.</p>
+         <p><b>Einfügen </b></p>
+         <p>Die <xref keyref="CMD_insert" /> wurde erweitert, um parametrische Blöcke zu unterstützen. Blockdefinitionen, die parametrische Objekte mit offengelegten Parametern enthalten, können jetzt nach dem Einfügen mit dem Befehl EINFÜGE parametrisch geändert werden. Um parametrische BIM
+ und mechanische Komponenten einzufügen, verwenden Sie die <xref keyref="CMD_bminsert" />.</p>
+      </section>
+      <section id="section_njn_3d5_r4b">
+         <title>Zeichnungs-Optimierungen</title>
+         <p>Eine neue Multifunktionsleisten Panel bietet einfachen Zugriff auf Werkzeuge zur Bereinigung und Optimierung von Zeichnungen.</p>
+         <p><b>Vereinfachen</b></p>
+         <p>Das neue <xref keyref="CMD_simplify" /> reduziert die Anzahl der Scheitelpunkte von Polylinien und
+ Schraffurbegrenzungen, ohne deren allgemeine Form zu verändern. Mit den Optionen können Sie zwischen Vereinfachen und Glätten umschalten. Mit zusätzlichen Optionen können Sie den Grad der Abweichung vom ursprünglichen Objekt steuern. Vereinfachte Objekte sind einfacher zu handhaben und können die Dateigröße erheblich reduzieren.</p>
+         <p><b>Bereinigen</b></p>
+         <p>Die <xref keyref="CMD_purge" /> wird verbessert, sodass die Datenoptionen Batch, All und Orphaned mehr Elemente aus der Zeichnung entfernen.</p>
+         <p><b>Prüfung </b></p>
+         <p>Die <xref keyref="CMD_audit" /> wird erweitert, um doppelte ACIS-Attribute zu bereinigen. Eine Kombination aus PRÜFUNG und CLEANUNUSEDVARIABLES bereinigt nun eine Zeichnung von mehreren verwaisten Parametern.</p>
+         <p><b>Doppelte Objekte löschen</b></p>
+         <p>Unter <xref keyref="CMD_overkill" /> können Sie wählen, ob Sie doppelte
+ Elemente löschen oder auf eine bestimmte Ebene verschieben möchten. Sie können den Layer-Namen mit der neuen Einstellung OVERKILLLAYER festlegen oder den Standardnamen, Duplicate Entities, belassen.</p>
+         <p>Mit einer neuen Option im Befehl AUFRÄUM können Sie doppelte Blockdefinitionen zusammenfassen.            Wenn Sie diese Option wählen, wird der Dialog &quot;Kombiniere doppelte Block Definitionen&quot; angezeigt, in dem Sie alle Blockeigenschaften angeben können, die Sie ignorieren möchten. Sie können angeben, wie genau die Geometrie übereinstimmen muss, indem Sie eine Vergleichstoleranz eingeben. Wenn BricsCAD mehr als eine Blockdefinition findet, deren Geometrie den Toleranz- und Eigenschaftskriterien entspricht, verwendet es die neueste Definition, um alle Instanzen der älteren Definitionen zu ersetzen. Die älteren Definitionen werden nicht mehr verwendet und Sie können die Option &quot;Doppelte Blöcke bereinigen&quot; aktivieren, um sie automatisch zu bereinigen.<fig id="fig_fnn_5d5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_33_V21.png" id="image_ojn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Optimiere</b></p>
+         <p>Das neue <xref keyref="CMD_optimize" /> hilft Ihnen, 2D-Linien in Ihren Zeichnungen zu bereinigen. Er zeigt den Dialog Optimiere 2D-Linien an, in dem Sie steuern können, welche Linien von den Änderungen erfasst werden. Spezifizieren Sie, welche Linien BricsCAD für die Optimierung berücksichtigen soll. Sie können bestimmte Objekte auswählen oder BricsCAD alle Objekte in der Zeichnung analysieren und optimieren lassen. Es kann Linien finden und korrigieren, die innerhalb einer bestimmten Winkeltoleranz relativ zur Horizontalen, Vertikalen oder 45 Grad im aktuellen BKS liegen. Eine zusätzliche Option schließt Lücken innerhalb einer festgelegten Toleranz automatisch.<fig id="fig_w1w_5d5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_34_V21.png" id="image_pjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Das Werkzeug &quot;Optimieren&quot; ist nützlich, um 2D-Linien zu bereinigen. Sie können damit z. B. Liniengeometrie, die aus Punktwolken extrahiert wurde, schnell bereinigen.<fig id="fig_jj2_vd5_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Productivity_35_V21.png" id="image_qjn_3d5_r4b" scope="external" />
+            </fig><fig id="fig_bzj_vd5_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Productivity_36_V21.png" id="image_rjn_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_sjn_3d5_r4b">
+         <title>Objekt-Verknüpfung und -einbettung</title>
+         <p>Die <xref keyref="PNL_properties" /> für OLE-Objekte wurde erweitert, um zusätzliche
+ Informationen für das ausgewählte OLE-Objekt bereitzustellen. Die zusätzlichen Informationen können Typ, wie z. B. eingebettet oder statisch, Plotqualität und Quellanwendung umfassen.<fig id="fig_hlv_vd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_37_V21.png" id="image_tjn_3d5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_ujn_3d5_r4b">
+         <title>Bilder</title>
+         <p>Die Bildbearbeitung wurde in BricsCAD v21 erweitert. Wenn Sie ein angehängtes Bild mit Griffen und anderen Bearbeitungswerkzeugen manipulieren, wird der Bildinhalt angezeigt und aktualisiert, während Sie den Bildrahmen bearbeiten. Damit können Sie das Bild positionieren, ausrichten und skalieren, wobei der Bildinhalt als Referenz dient. Das ausgewählte Bild wird während der Bearbeitung vorübergehend über allen sich überlappenden Objekten angezeigt.</p>
+      </section>
+      <section id="section_vjn_3d5_r4b">
+         <title>Hyperlinks</title>
+         <p>Der Dialog &quot;Hyperlink bearbeiten&quot; ermöglicht jetzt die Verknüpfung mit Layouts und Ansichten innerhalb einer Zeichnung. Nachdem Sie die Zeichnung ausgewählt haben, mit der Sie eine Verknüpfung herstellen möchten, wählen Sie <uicontrol>Ziel</uicontrol>, um den Dialog Zielansicht auswählen zu öffnen.<!--link-->.<fig id="fig_lbf_wd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_38_V21.png" id="image_wjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Der Dialog &quot;Zielansicht auswählen&quot; zeigt eine Liste aller benannten Ansichten und Layouts in der verknüpften Zeichnung an.<fig id="fig_bmk_wd5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_39_V21.png" id="image_xjn_3d5_r4b" scope="external" />
+            </fig></p>
+         <p>Um auf einen Hyperlink zuzugreifen, doppelklicken Sie auf den Hyperlink im Panel &quot;Eigenschaften&quot; für das ausgewählte Objekt oder halten Sie die rechte Maustaste gedrückt und wählen Sie im Menü &quot;<uicontrol>Hyperlink</uicontrol>&quot;.</p>
+         <fig id="fig_jdp_t1r_cpb">
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_40_V21.png" id="image_zjn_3d5_r4b" scope="external" />
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Productivity_41_V21.png" id="image_akn_3d5_r4b" scope="external" />
+         </fig>
+      </section>
+   </conbody>
+</concept>
