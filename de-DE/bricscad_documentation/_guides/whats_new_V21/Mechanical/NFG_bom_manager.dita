@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="AE16B7A5-2B7C525-33CEC2334D41F57-AB452D">
+   <title>Stücklisten Manager</title>
+   <shortdesc />
+
+   <conbody>
+      <p>Das Erstellen und Bearbeiten von Stücklisten ist so einfach wie nie zuvor.</p>
+      <section id="section_vql_pxv_54b">
+         <title>Gruppierung</title>
+         <p>Mit dem Hinzufügen der Gruppierungseigenschaft können Sie jetzt den Inhalt Ihrer Stücklisten Tabelle schnell nach gemeinsamen Eigenschaften der vorhandenen Spalten in zusammengefassten Zeilen gruppieren.<fig id="fig_yqf_2bw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMGrouping_01_V21.png" id="image_wql_pxv_54b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_xql_pxv_54b">
+         <title>Spalten</title>
+         <p>Es ist jetzt möglich, für jede Spalte in einer Stückliste einen von mehreren vordefinierten Spaltenfiltern festzulegen.<fig id="fig_azk_2bw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMFilter_01_V21.png" id="image_yql_pxv_54b" scope="external" />
+            </fig></p>
+         <p>Aggregierte Spalten werden nun in BOM-Tabellen auf oberster und unterer Ebene unterstützt, die mit <xref keyref="CMD_bmbom" /> erstellt wurden. Sie ermöglichen die Berechnung der Summe, der Minimal-, Maximal- oder Durchschnittswerte einer bestimmten Eigenschaft in Bezug auf die aktuelle Gruppierung.<fig id="fig_y34_2bw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMAggregate_01_V21.png" id="image_zql_pxv_54b" scope="external" />
+            </fig></p>
+         <p>Eine Option im Hauptmenü des Stücklisten Managers öffnet den neuen Dialog &quot;Filter Konfigurator&quot;. Im Filter Konfigurator können Sie den Inhalt Ihrer Stücklisten Tabelle überprüfen; und Wildcard-Ausdrücke werden für Zeichenketten-Eigenschaften in einem Stücklistenfilter unterstützt.<fig id="fig_xgr_2bw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMTableFilter_01_V21.png" id="image_arl_pxv_54b" scope="external" />
+            </fig></p>
+         <p>Vorlagenspalten sind ein neuer Typ von ausgewerteten Spalten, die es dem Benutzer ermöglichen, Werte mehrerer Eigenschaften mit Hilfe von DIESEL Ausdrücken als Text in einer einzigen Stücklisten Spalte zu kombinieren.<fig id="fig_mf5_2bw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMTemplateColumn_01_V21.png" id="image_brl_pxv_54b" scope="external" />
+            </fig></p>
+         <p>Sie können Formel- oder Vorlagenspaltenausdrücke mit dem Ausdruck Editor Dialog konfigurieren und in der Vorschau anzeigen.<fig id="fig_jxx_2bw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMTemplateColumn_02_V21.png" id="image_crl_pxv_54b" scope="external" />
+            </fig></p>
+         <p>Mit der Erweiterung des Dialog &quot;Format&quot; können Sie nun den Ausdruck Ihrer Daten in Stücklisten Tabellen mit Präfix, Suffix und Trennzeichen anpassen.<fig id="fig_sgb_fbw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMFormat_01_V21.png" id="image_drl_pxv_54b" scope="external" />
+            </fig></p>
+         <p>Mit der neuen Option &quot;Spalten Rolle&quot; können Sie festlegen, welche Spalte die Quelle der Positionsnummern für die Zeichnungs-Ansichten sein soll.<fig id="fig_mbf_fbw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMColumnRole_01_V21.png" id="image_erl_pxv_54b" scope="external" />
+            </fig></p>
+         <p>Es ist jetzt möglich, eine Einheit für die Materialdichte auszuwählen, sowohl im Dialog Technische Materialien als auch in den Stücklisten Tabellen unter dem Abschnitt Spalteneigenschaften. Unterstützte Einheiten sind: kg/m³, kg/dm³, g/cm³, lbs/ft³ and lbs/in³.<fig id="fig_jtj_fbw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMDensity_01_V21.png" id="image_frl_pxv_54b" scope="external" />
+            </fig></p>
+         <p>Eine Option zur Begrenzung der angezeigten Ebene einer hierarchischen Stückliste wurde eingeführt.<fig id="fig_u5m_fbw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMHeir_01_V21.png" id="image_grl_pxv_54b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_hrl_pxv_54b">
+         <title>Exportieren</title>
+         <p>Sie können nun Ihre StücklistenTabelle in eine CSV-Datei exportieren.<fig id="fig_ohr_fbw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMExport_01_V21.png" id="image_irl_pxv_54b" scope="external" />
+            </fig></p>
+      </section>
+   </conbody>
+</concept>
