@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A216B4B7-553C371-22474924B23571A-55C5CF">
+   <title>Performance und Kompatibilität</title>
+   <shortdesc />
+
+   <conbody>
+      <p>BricsCAD V21 bietet neue und verbesserte Tools zur Verbesserung von Leistung und Kompatibilität, wenn Sie einzeln oder in einer kollaborativen Umgebung arbeiten.</p>
+      <section id="section_obc_fr5_r4b">
+         <title>Auswahl Vorschau</title>
+         <p>Die Hervorhebung der Auswahlvorschau ist während der Pan-Operationen deaktiviert, was zu einer flüssigeren Benutzererfahrung führt.</p>
+      </section>
+      <section id="section_pbc_fr5_r4b">
+         <title>Xref wird geladen</title>
+         <p>Ein neues MTFLAG wurde hinzugefügt, um das Laden von Xrefs auf die Leerlaufzeit zu verzögern.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_PerformanceAndCompatibility_01_V21.png" id="image_qbc_fr5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_rbc_fr5_r4b">
+         <title>Mehrbenutzer-Versionskontrolle (BETA)</title>
+         <p>BricsCAD V21 stellt neue Multi-User-Versionskontrollfunktionen als Beta-Technologie-Vorschau vor. Diese Funktionalität ermöglicht es mehreren Benutzern, gleichzeitig an denselben Zeichnungen zu arbeiten. Zeichnungen werden in der Cloud mit Bricsys 24/7 gespeichert und auf dem lokalen Computer jedes Benutzers ein- und ausgecheckt.</p>
+         <p><b>Zugriff</b></p>
+         <p>Da es sich um eine Beta-Funktionalität handelt, müssen Sie den Zugriff über eine Support-Anfrage anfordern.</p>
+         <ol id="ol_sbc_fr5_r4b">
+            <li>Melden Sie sich bei Ihrem Bricsys-Konto an.</li>
+            <li>Wählen Sie Neue Support-Anfrage.</li>
+            <li>Öffnen Sie das BricsCAD-Menü und wählen Sie <menucascade>
+                  <uicontrol>BricsCAD &gt; </uicontrol>
+                   <uicontrol> Versionskontrolle</uicontrol>
+               </menucascade>.</li>
+            <li>Geben Sie in das Feld Subject ein: Zugang zu VERSIONCONTROL Beta.</li>
+            <li>Füllen Sie die restlichen Felder nach Bedarf aus.</li>
+            <li>Wählen Sie Supportanfrage senden aus.</li>
+         </ol>
+         <p><b>Befehl VERSIONCONTROL</b></p>
+         <p>Das neue <xref keyref="CMD_versioncontrol" /> bietet die folgenden Optionen:</p>
+         <ul id="ul_tbc_fr5_r4b">
+            <li>Init</li>
+            <li>Checkout</li>
+            <li>Checkin</li>
+            <li>Aktualisiere</li>
+            <li>Umbenennen</li>
+         </ul>
+         <p>Wenn Sie VERSIONCONTROL zum ersten Mal in einer neuen BricsCAD-Sitzung starten und eine der Optionen wählen, werden Sie aufgefordert, sich bei Ihrem Bricsys-Konto anzumelden.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_PerformanceAndCompatibility_02_V21.png" id="image_ubc_fr5_r4b" scope="external" />
+            </fig></p>
+         <p>Wenn Ihrem Konto kein Zugriff auf die Beta-Funktionalität gewährt wurde, werden Sie auf eine Webseite mit Anweisungen zur Beantragung des Zugriffs weitergeleitet.</p>
+         <p>Wenn Ihr Konto Zugriff auf die Beta-Funktion hat, wird Ihre erfolgreiche Anmeldung im Fenster &quot;Befehl&quot; angezeigt und Sie werden aufgefordert, den Namen des Projekts einzugeben, an dem Sie arbeiten möchten.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_PerformanceAndCompatibility_03_V21.png" id="image_vbc_fr5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Init</b></p>
+         <p>Mit der Option <uicontrol>Init</uicontrol> können Sie ein neues Mehrbenutzerprojekt erstellen. Geben Sie einen neuen Projektnamen ein. Beachten Sie, dass bei Projektnamen Groß- und Kleinschreibung beachtet wird. Geben Sie einen bereits vorhandenen Namen ein, werden Sie aufgefordert, einen anderen Namen einzugeben.</p>
+         <p><b>Checkout</b></p>
+         <p>Mit der Option <uicontrol>Checkout</uicontrol> können Sie eine Zeichnung aus Ihren cloudbasierten Projekten auschecken. Sie müssen angeben, aus welchem Projekt Sie eine Zeichnung auschecken möchten. Geben Sie den Projektnamen ein und beachten Sie dabei die Groß- und Kleinschreibung. Wenn Sie einen Projektnamen eingeben, der nicht existiert, zeigt BricsCAD eine Liste mit gültigen Projektnamen an und fordert Sie auf, den Projektnamen erneut einzugeben.</p>
+         <p>Nachdem Sie einen gültigen Projektnamen eingegeben haben, müssen Sie einen Versionssteuerungsordner für dieses Projekt angeben. Der Versionskontrollordner ist der Speicherort auf Ihrem lokalen Computer, an dem Ihre Zeichnungen gespeichert und mit der Cloud synchronisiert werden. Der Standardspeicherort ist <filepath>Laufwerk:\Benutzer\Benutzername\Dokumente\Bricsys247\Projektname</filepath>. Sie können jedoch jede beliebige Position angeben. Wenn die Position nicht vorhanden ist, wird sie erstellt und unter Versionskontrolle festgelegt. Wenn die Position bereits vorhanden ist, wird sie unter Versionskontrolle festgelegt. Wenn der Speicherort bereits unter Versionskontrolle steht, werden Sie aufgefordert, einen anderen Speicherort anzugeben.</p>
+         <p><b>Checkin</b></p>
+         <p>Mit der Option <uicontrol>Check-in</uicontrol> können Sie Zeichnungen aus Ihrem lokalen Versionssteuerungsordner in das Cloud-basierte Projekt einchecken. Sie können alle Dateien im Versionskontrollordner einchecken oder geänderte und nicht getrackte Dateien übertragen.</p>
+         <p>Nachdem Sie festgelegt haben, was eingecheckt werden soll, können Sie eine entsprechende Eincheck-Nachricht eingeben.</p>
+         <p><b>Aktualisiere </b></p>
+         <p>Die Option <uicontrol>Update</uicontrol> ermöglicht es Ihnen, Projektzeichnungen aus Ihrem lokalen Ordner mit der Cloud zu synchronisieren.</p>
+         <p><b>Umbenennen</b></p>
+         <p>Mit der Option <uicontrol>Umbenennen</uicontrol> können Sie eine Zeichnung umbenennen, die unter Versionskontrolle steht.</p>
+      </section>
+      <section id="section_wbc_fr5_r4b">
+         <title>DGN-Export</title>
+         <p>Eine neue <xref keyref="CMD_-dgnexport" /><!--correct? Or should it be DGNEXPORT export-->
+            ermöglicht es Ihnen, die aktuelle Zeichnung in das DGN-Dateiformat zu exportieren.</p>
+      </section>
+      <section id="section_xbc_fr5_r4b">
+         <title>3D-DWF-Ausgabe</title>
+         <p><xref keyref="SV_dwfformat" />Mit <xref keyref="CMD_3ddwf" /> können Sie 3D-DWF- oder 3D-DWFx-Dateien erstellen, die auf
+ basieren.</p>
+      </section>
+      <section id="section_ybc_fr5_r4b">
+         <title>Benutzer Profil Manager</title>
+         <p>Der Benutzerprofil-Manager ist jetzt noch leistungsfähiger. Er kann nun bestehende Benutzer-Profile, einschließlich des aktuellen, löschen oder ersetzen. Durch das Löschen des aktuellen Profils wird es nicht vollständig entfernt, aber es werden alle Einstellungen auf die Werkseinstellungen zurückgesetzt.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_PerformanceAndCompatibility_04_V21.png" id="image_zbc_fr5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_acc_fr5_r4b">
+         <title>Startmenü-Verknüpfungen</title>
+         <p>Startmenü-Verknüpfungen setzen nun den Programmordner anstelle des Ordners für persönliche Dokumente als erstes Arbeitsverzeichnis. Diese Änderung löst Probleme bei der Installation unter einem Systemkonto, bei dem keine persönlichen Ordner verfügbar sind.</p>
+      </section>
+   </conbody>
+</concept>
