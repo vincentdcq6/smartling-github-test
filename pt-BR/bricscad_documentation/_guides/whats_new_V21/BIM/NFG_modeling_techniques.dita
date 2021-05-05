@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A62B454D-35A2375-2224A73561257B5-BB3EE2">
+   <title>Tecnicas de Modelagem</title>
+
+   <conbody>
+      <section id="section_lc2_t3x_s4b">
+         <title>BIM Perfis</title>
+         <p><b>BIMAPLICARPERFIL / BIMLINEARSOLIDO</b></p>
+         <p>O material de composição de um perfil agora está ligado ao sólido criado nos <xref keyref="CMD_bimlinearsolid" /> comandos <xref keyref="CMD_bimapplyprofile" /> e.<fig id="fig_pq2_x3x_s4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingBimApplyProfile_01_V21.png" id="image_mc2_t3x_s4b" scope="external" />
+            </fig></p>
+         <p><b>BIMPERFIS</b></p>
+         <p>Ao alterar a propriedade Deslocamento de um perfil FormaPersonalizada através da caixa de diálogo dos Perfis, você pode escolher se deseja manter a posição do sólido ou seu eixo, para sólidos lineares usando o referido perfil.<fig id="fig_x11_y3x_s4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingBimProfiles_01_V21.png" id="image_nc2_t3x_s4b" scope="external" />
+            </fig></p>
+         <p><b>BIMPERFILPADROES</b></p>
+         <p>A configuração BIMPROFILESTANDARDS<!--link--> não diferencia maiúsculas e minúsculas Caso não haja perfis correspondentes ao valor da configuração BIMPERFILPADROES, uma mensagem de aviso é exibida.</p>
+      </section>
+      <section id="section_oc2_t3x_s4b">
+         <title>Ferramentas de Modelagem em Massa</title>
+         <p>O primeiro protótipo do novo <xref keyref="CMD_bimquickbuilding" /> foi
+ implementado. A ferramenta QuickBuilding permite gerar um edifício BIM a partir de um simples sólido de massa. Este comando gera automaticamente diferentes níveis, paredes, localizações espaciais, etc. Pode ser muito útil nos estágios iniciais de design, estudos de volume e design conceitual.            A ferramenta vai atribuir propriedades BIM a cada parte do novo edifício.</p>
+         <p>Localizações espaciais agora podem ser usadas como entrada para BIMQUICKBUILDING. Esse fluxo de trabalho permite que você processe diferentes edifícios simultaneamente.</p>
+         <p>O comando também funciona em sólidos sem bordas, por exemplo, uma esfera ou um toro.</p>
+         <fig id="fig_bx5_djx_s4b">
+            <image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_ModelingQuickBuilding_01_V21.png" id="image_qc2_t3x_s4b" scope="external" />
+            <image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_ModelingQuickBuilding_02_V21.png" id="image_rc2_t3x_s4b" scope="external" />
+            <image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_ModelingQuickBuilding_03_V21.png" id="image_sc2_t3x_s4b" scope="external" />
+         </fig>
+      </section>
+      <section id="section_tc2_t3x_s4b">
+         <title>Inserir Componente BIM</title>
+         <p>O <xref keyref="CMD_bminsert" /> agora inclui uma opção de inserção SMART, que
+ ajusta automaticamente as peças para corresponder às peças atuais e relevantes no arquivo de modelo quando
+ inserido.</p>
+         <p>Você pode selecionar uma inserção INTELIGENTE clicando na opção na linha de comando, ou alternar CTRL para o ícone mais à direita quando solicitado no Assistente HKA de teclas de atalho.<fig id="fig_qc3_fjx_s4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingSmartInsertHKA_01_V21.png" id="image_uc2_t3x_s4b" scope="external" />
+            </fig></p>
+         <p>Ao detectar e criar restrições 3D entre os pontos de conexão relevantes, a inserção INTELIGENTE redimensiona e anexa o(s) componente desejado ao componente atual com restrições de montagem e parâmetros comuns para formar uma parte maior de um conjunto paramétrico. Isto é particularmente útil na modelagem de sistemas de tubulação paramétricos MEP.</p>
+         <fig id="fig_ktn_yzq_cpb">
+            <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingSmartInsert_01_V21.png" id="image_wc2_t3x_s4b" scope="external" />
+            <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingSmartInsert_02_V21.png" id="image_xc2_t3x_s4b" scope="external" />
+         </fig>
+         <fig id="fig_dnr_k1r_cpb">
+            <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingSmartInsert_03_V21.png" id="image_yc2_t3x_s4b" scope="external" />
+            <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingSmartInsert_04_V21.png" id="image_zc2_t3x_s4b" scope="external" />
+         </fig>
+      </section>
+      <section id="section_ad2_t3x_s4b">
+         <title>Desconectar</title>
+         <p>Os <xref keyref="CMD_bimstructuralconnect" /> comandos <xref keyref="CMD_lconnect" /> e
+ agora incluem uma quarta opção: DESCONECTADO. Você pode percorrer as opções com o botão CTRL no Assistente HKA de teclas de atalho.</p>
+         <fig id="fig_q14_tjx_s4b">
+            <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingDisconnect_01_V21.png" id="image_cd2_t3x_s4b" scope="external" />
+            <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingDisconnect_02_V21.png" id="image_dd2_t3x_s4b" scope="external" />
+         </fig>
+         <fig id="fig_uyc_l1r_cpb">
+            <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingDisconnect_03_V21.png" id="image_ed2_t3x_s4b" scope="external" />
+            <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingDisconnect_04_V21.png" id="image_fd2_t3x_s4b" scope="external" />
+         </fig>
+      </section>
+      <section id="section_gd2_t3x_s4b">
+         <title>Quickdraw</title>
+         <p>O cursor Quickdraw agora suporta encaixe para linhas (duplas) dentro de RefEx's. As paredes agora herdam a localização espacial da laje em que são criadas.</p>
+      </section>
+      <section id="section_hd2_t3x_s4b">
+         <title>Peças Padrão</title>
+         <p>Peças de tubulação foram adicionadas à categoria de peças padrão do painel Biblioteca.<fig id="fig_nyj_xjx_s4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingLibrary_01_V21.png" id="image_id2_t3x_s4b" scope="external" />
+            </fig></p>
+      </section>
+   </conbody>
+</concept>
