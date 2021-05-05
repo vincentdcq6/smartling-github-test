@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A5F13434-735352C-7CBC10EF1557792-42321B">
+   <title>Interface do usuário</title>
+   <shortdesc />
+
+   <conbody>
+      <p>O BricsCAD v21 oferece uma variedade de aprimoramentos na interface do usuário para ajudar a aumentar sua produtividade sem interromper seu fluxo de trabalho existente.</p>
+      <section id="section_mwz_w3t_r4b">
+         <title>Lançador BricsCAD</title>
+         <p>O Lançador BricsCAD, redesenhado, permite que você inicie o BricsCAD em um ambiente mais relevante para suas tarefas de projeto e no nível da licença.</p>
+         <p>As opções de ambiente disponíveis dependem do seu nível de licença. Você pode alterar o
+ nível de licença usando o novo <xref keyref="CMD_setlicenselevel" /> que controla
+ <xref keyref="SV_runaslevel" />. Se você estiver usando uma licença de avaliação (Trial), pode escolher qualquer ambiente. De outra forma, você pode escolher um ambiente que seja suportado pelo nível de licença que comprou. Por exemplo, uma licença Ultimate suporta todos os ambientes. Na outra ponta, uma licença Lite suporta apenas o ambiente Desenho 2D.</p>
+         <p>A nova opção Unidades permite definir as unidades de medida (<xref keyref="SV_measureinit" />) que determinam quais padrão de hachura e arquivos de definição de tipo de linha usar. Esse controle também especifica as unidades de desenho para novos desenhos criados sem arquivo template.<fig id="fig_emz_535_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_01_V21.png" id="image_nwz_w3t_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_owz_w3t_r4b">
+         <title>Comandos</title>
+         <p>A janela Comando agora suporta opções de comando clicáveis, permitindo que você selecione opções na linha de comando sem ter que digitar no teclado.<fig id="fig_ixm_v35_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_02_V21.png" id="image_pwz_w3t_r4b" scope="external" />
+            </fig></p>
+         <p>O <xref keyref="CMD_commands" /> permite que você procure os comandos disponíveis. No BricsCAD V21 foi atualizado para listar somente os comandos que estão disponíveis com seu nível de licença atual.</p>
+      </section>
+      <section id="section_qwz_w3t_r4b">
+         <title>Faixa de opções</title>
+         <p>A Faixa de opções permite que você percorra as abas da Faixa de opções usando a rodinha do mouse. Basta colocar o cursor em qualquer lugar na Faixa e rolar a rodinha.</p>
+         <p>O <xref keyref="SV_ribbontoolsize" /> define o tamanho dos botões da ferramenta na faixa de opções. As opções são <uicontrol>Pequenas</uicontrol>, <uicontrol>Grandes</uicontrol>e <uicontrol>Extra Grandes</uicontrol>.</p>
+      </section>
+      <section id="section_rwz_w3t_r4b">
+         <title>Barras</title>
+         <p>Novas barras de ferramentas de opções UCS e UCS<!--link--> oferece fácil acesso aos comandos e opções do UCS. Você um acesso a essas barras de ferramentas clicando com o botão direito em uma barra de ferramentas, um painel ou a faixa de opções e expandindo o <menucascade>
+               <uicontrol>Barras de ferramentas</uicontrol>
+ <uicontrol>BricsCAD</uicontrol>
+            </menucascade> menu.</p>
+         <fig id="fig_bpr_bbr_cpb">
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_03_V21.png" id="image_swz_w3t_r4b" scope="external" />
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_04_V21.png" id="image_twz_w3t_r4b" scope="external" />
+         </fig>
+         <fig id="fig_gwt_x35_r4b">
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_05_V21.png" id="image_uwz_w3t_r4b" scope="external" />
+         </fig>
+         <p>O <xref keyref="SV_toolbuttonsize" /> aplica-se apenas a barras de ferramentas, não mais aos botões da ferramenta da faixa de opções (veja acima).</p>
+      </section>
+      <section id="section_vwz_w3t_r4b">
+         <title>Menus</title>
+         <p>O menu que é exibido quando você arrasta e solta um arquivo dwg no BricsCAD, usando o botão direito do mouse, oferece uma nova opção para <uicontrol>Abrir como Somente-leitura</uicontrol>.<fig id="fig_ess_fj5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_06_V21.png" id="image_wwz_w3t_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_xwz_w3t_r4b">
+         <title>Layouts</title>
+         <p>O Gerenciador de Layout foi estendido para habilitar a publicação de múltiplos layouts.<fig id="fig_hky_y35_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_07_V21.png" id="image_ywz_w3t_r4b" scope="external" />
+            </fig></p>
+         <p>Quando você define um layout atual no Gerenciador de Layout, a aba de layout ativa rola automaticamente, para permanecer visível na lista de abas de layout.<fig id="fig_p1f_z35_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_08_V21.png" id="image_zwz_w3t_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_axz_w3t_r4b">
+         <title>Snap a Entidades</title>
+         <p>A opção <uicontrol>Ajustar ao Ponto</uicontrol> nos Snaps de Entidade<!--link--> barra de ferramentas e menu são renomeados para <uicontrol>Snap to Node</uicontrol>.</p>
+         <fig id="fig_fsh_hbr_cpb">
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_10_V21.png" id="image_cgd_fdx_54b" scope="external" />
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_09_V21.png" id="image_ow3_kdx_54b" scope="external" />
+         </fig>
+      </section>
+   </conbody>
+</concept>
