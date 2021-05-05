@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="AE2414D5-24A4DE3-D3B353DC22773EA-A6231C">
+   <title>Sheet Metal</title>
+
+   <conbody>
+      <p>As ferramentas de Skeet Metal no BricsCAD Mechanical V21 oferecem mais flexibilidade e fluxos de trabalho mais rápidos. Por exemplo, uma tabela de dobra específica pode ser atribuída a cada sólido, e artefatos com espessura diferente podem existir no mesmo bloco.</p>
+      <section id="section_wtm_bbw_54b">
+         <title>Biséis</title>
+         <p>O recurso de chanfro recém-adicionado é <xref keyref="CMD_smconvert" />suportado no
+ <xref keyref="CMD_smrepair" /> e <xref keyref="CMD_smunfold" />o.</p>
+      </section>
+      <section id="section_xtm_bbw_54b">
+         <title>Curvas Raio Zero</title>
+         <p>Um novo recurso DobraZero permite a criação de uma dobra sem raio interno para componentes de Sheet Metal.<fig id="fig_tmn_zbw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_SMZeroRBend_01_V21.png" id="image_ytm_bbw_54b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_ztm_bbw_54b">
+         <title>Junção-T</title>
+         <p>Um novo recurso Junção-T pode ser criado usando SMEXTRUDE em uma polilinha de segmento único, situada numa flange para criar uma nova flange ortogonal para a existente. Usando o recurso Junção-T, podemos então convertê-la em uma Aba-T que irá adicionar automaticamente abas à flange ortogonal e remover o material necessário da original.<fig id="fig_df1_ccw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_SMTjunction_01_V21.png" id="image_a5m_bbw_54b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_b5m_bbw_54b">
+         <title>Recursos Inteligentes Atualizados</title>
+         <p>Agora você pode criar desenhos de chapa metálica ainda mais rápido, utilizando o atualizado
+ Comando SMSMARTFEATURE<!--link--> que permite que você crie automaticamente junções
+ ao utilizar a ferramenta de curvatura.<fig id="fig_uqw_qdc_v4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_MCAD_SMJunction_01_V21.png" scope="external" id="image_vqw_qdc_v4b" />
+            </fig><fig id="fig_kjm_sdc_v4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_SMSmartFeature_01_V21.png" scope="external" id="image_ljm_sdc_v4b" />
+            </fig></p>
+      </section>
+      <section id="section_c5m_bbw_54b">
+         <title>Abas</title>
+         <p>O <xref keyref="CMD_smtabcreate" /> agora tem uma opção para criar uma guia curvada em um
+ borda dura curvada, ligando uma flange e uma curva, incluindo curvas em loft.<fig id="fig_xky_fcw_54b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_MCAD_SMCurveTabs_01_V21.png" id="image_d5m_bbw_54b" scope="external" />
+            </fig></p>
+         <p>As <xref keyref="CMD_smunfold" /> ofertas melhoraram o comportamento para curvas cônicas em loft.
+            Essas agora podem ser desdobradas analiticamente, para evitar dividi-las em um número especificado de dobras e flanges.<fig id="fig_b34_3cw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_SMAnalyticUnfolding_01_V21.png" id="image_e5m_bbw_54b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_f5m_bbw_54b">
+         <title>Exportar Montagem</title>
+         <p>A variável de sistema SMASSEMBLYEXPORTMODE<!--link--> permite que você mantenha reconhecido
+ características para chapas metálicas e peças de chapa mal modeladas ao usar <xref keyref="CMD_smassemblyexport" />o.<fig id="fig_gfb_mcw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_SMAssemblyExport_01_V21.png" id="image_g5m_bbw_54b" scope="external" />
+            </fig></p>
+      </section>
+   </conbody>
+</concept>
