@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A221D243-C3D75C5-53C12286011525B-23A04B">
+   <title>2D作図</title>
+   <shortdesc />
+   <conbody>
+      <p>BricsCAD V21では、2D作図の生産性を高めるために強化された機能が提供されています。</p>
+      <section id="section_vgr_lj5_r4b">
+         <title>テキストをマルチテキストに結合</title>
+         <p>新しい <xref keyref="CMD_txt2mtxt" /> (別名COMBINETEXT) を使用すると、単一の
+ および複数行の文字を 1 つの MText 図形に変換します。[結果のマルチテキスト設定] ダイアログボックスで、文字を結合するときの動作をコントロールできます。<!--link-->。<fig id="fig_kp2_5j5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Drafting_01_V21.png" id="image_wgr_lj5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_xgr_lj5_r4b">
+         <title>円弧に沿ったテキスト</title>
+         <p><xref keyref="PNL_properties" />では、選択したのプロパティを表示および編集できます。
+ 円弧に位置合わせされた文字エンティティ<fig id="fig_fw4_5j5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Drafting_02_V21.png" id="image_ygr_lj5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_zgr_lj5_r4b">
+         <title>文字列の検索と置換</title>
+         <p>[文字の検索と置換] ダイアログボックスには、[<uicontrol> 拡大 </uicontrol>] ボタンと <uicontrol> [縮小 </uicontrol>] ボタンの新しいボタンが追加されました。これにより、[検索と置換] 操作を終了しなくても、図面のコンテキスト内の文字を調べることができるようになりました。<fig id="fig_xzv_5j5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Drafting_03_V21.png" id="image_ahr_lj5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_bhr_lj5_r4b">
+         <title>Field [フィールド]</title>
+         <p>では、<xref keyref="DB_field" /> ネストされた数式フィールドがサポートされます。[フィールド] ダイアログボックスの [式] フィールドを右クリックすると、新しいオプションを使用してフィールドを挿入、編集、更新できます。フィールドを文字に変換することもできます。<fig id="fig_axb_vj5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Drafting_04_V21.png" id="image_chr_lj5_r4b" scope="external" />
+            </fig></p>
+      </section>
+   </conbody>
+</concept>
