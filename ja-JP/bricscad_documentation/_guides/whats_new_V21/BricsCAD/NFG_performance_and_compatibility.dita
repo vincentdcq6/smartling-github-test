@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A216B4B7-553C371-22474924B23571A-55C5CF">
+   <title>パフォーマンスと互換性</title>
+   <shortdesc />
+
+   <conbody>
+      <p>BricsCAD V21では、個別の作業や共同作業環境でのパフォーマンスと互換性を向上させる新しいツールや機能強化が提供されています。</p>
+      <section id="section_obc_fr5_r4b">
+         <title>選択プレビュー</title>
+         <p>画面移動操作中に選択プレビューのハイライト表示が無効になり、よりスムーズなユーザー操作を行えます。</p>
+      </section>
+      <section id="section_pbc_fr5_r4b">
+         <title>外部参照のロード</title>
+         <p>外部参照のロードをアイドル時間まで遅らせる新しいMTFLAGが追加されました。<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_PerformanceAndCompatibility_01_V21.png" id="image_qbc_fr5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_rbc_fr5_r4b">
+         <title>マルチユーザーバージョン管理 (ベータ)</title>
+         <p>BricsCAD V21では、ベータテクノロジープレビューとして、新しいマルチユーザーバージョン管理機能が導入されています。この機能を使用すると、同じ図面上で同時に複数のユーザーが作業を行えます。Bricsys 24/7を使用して図面をクラウドに保存し、各ユーザーのローカルマシンからチェックインとチェックアウトを行えます。</p>
+         <p><b>アクセス</b></p>
+         <p>これはベータ機能であるため、サポートリクエストを送信してアクセスを要求する必要があります。</p>
+         <ol id="ol_sbc_fr5_r4b">
+            <li>Bricsysアカウントにログインします。</li>
+            <li>[新しいサポートリクエスト] を選択します。</li>
+            <li>BricsCAD メニューを開き、 <menucascade>
+                  <uicontrol>BricsCAD &gt; </uicontrol>
+ <uicontrol>バージョン管理 </uicontrol>
+               </menucascade>。</li>
+            <li>[件名] 入力欄に、「Access to VERSIONCONTROL Beta」と入力します。</li>
+            <li>必要に応じて、残りの入力欄に入力します。</li>
+            <li>[サポートリクエストを送信] を選択します。</li>
+         </ol>
+         <p><b>VERSIONCONTROLコマンド</b></p>
+         <p><xref keyref="CMD_versioncontrol" />新しいには、次のオプションがあります。</p>
+         <ul id="ul_tbc_fr5_r4b">
+            <li>開始</li>
+            <li>チェックアウト</li>
+            <li>チェックイン</li>
+            <li>Update</li>
+            <li>名前変更</li>
+         </ul>
+         <p>新しいBricsCADセッションでVERSIONCONTROLを初めて起動し、いずれかのオプションを選択すると、Bricsysアカウントへのログインを求めるプロンプトが表示されます。<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_PerformanceAndCompatibility_02_V21.png" id="image_ubc_fr5_r4b" scope="external" />
+            </fig></p>
+         <p>アカウントにベータ機能へのアクセスが許可されていない場合は、アクセスのリクエスト手順が記載されたウェブページを表示できます。</p>
+         <p>アカウントがベータ機能にアクセスできる場合は、正常にログインした旨がコマンドウィンドウに表示され、作業を行うプロジェクトの名前を入力するよう求められます。<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_PerformanceAndCompatibility_03_V21.png" id="image_vbc_fr5_r4b" scope="external" />
+            </fig></p>
+         <p><b>開始</b></p>
+         <p>[<uicontrol>開始</uicontrol>] オプションを選択すると、新しいマルチユーザープロジェクトを作成できます。新しいプロジェクト名を入力します。プロジェクト名は大文字と小文字が区別されることに注意してください。既に存在する名前を入力すると、別の名前を入力するよう求められます。</p>
+         <p><b>チェックアウト</b></p>
+         <p>[<uicontrol>チェックアウト</uicontrol>] オプションを選択すると、クラウドベースのプロジェクトから図面をチェックアウトできます。図面をチェックアウトするプロジェクトを指定する必要があります。プロジェクト名を入力します。プロジェクト名は大文字と小文字が区別されることに注意してください。存在しないプロジェクト名を入力すると、BricsCADは有効なプロジェクト名を一覧表示し、プロジェクト名を再入力するよう求めるプロンプトを表示します。</p>
+         <p>有効なプロジェクト名を入力したら、そのプロジェクトのバージョン管理フォルダを指定する必要があります。バージョン管理フォルダは、図面が保存され、クラウドと同期させるローカルコンピュータ上の場所です。デフォルトの場所は、<filepath>drive:\Users\username\Documents\Bricsys247\projectname</filepath> です。任意の場所を指定することもできます。この場所が存在しない場合は、バージョン管理の下で作成および設定されます。この場所が既に存在する場合は、バージョン管理の下で設定されます。この場所が既にバージョン管理の対象となっている場合は、別の場所を指定するよう求められます。</p>
+         <p><b>チェックイン</b></p>
+         <p>[<uicontrol>チェックイン</uicontrol>] オプションを選択すると、ローカルのバージョン管理フォルダからクラウドベースのプロジェクトに図面をチェックインできます。バージョン管理フォルダ内のすべてのファイルをチェックインすることも、変更されたファイルや未追跡のファイルをコミットすることもできます。</p>
+         <p>チェックイン対象を指定した後、関連するチェックインメッセージを入力できます。</p>
+         <p><b>Update </b></p>
+         <p>[<uicontrol>更新</uicontrol>] オプションを選択すると、ローカルフォルダのプロジェクト図面をクラウドと同期させることができます。</p>
+         <p><b>名前変更</b></p>
+         <p>[<uicontrol>名前変更</uicontrol>] オプションを選択すると、バージョン管理下にある図面の名前を変更できます。</p>
+      </section>
+      <section id="section_wbc_fr5_r4b">
+         <title>DGN書き出し</title>
+         <p>新しい <xref keyref="CMD_-dgnexport" /><!--correct? Or should it be DGNEXPORT export-->
+            では、現在の図面を DGN ファイル形式に書き出すことができます。</p>
+      </section>
+      <section id="section_xbc_fr5_r4b">
+         <title>3D DWF出力</title>
+         <p><xref keyref="CMD_3ddwf" />では、に基づいて 3D DWF または 3D DWFx ファイルを作成できます。
+ <xref keyref="SV_dwfformat" />新しいの値です。</p>
+      </section>
+      <section id="section_ybc_fr5_r4b">
+         <title>ユーザープロファイル管理</title>
+         <p>ユーザープロファイル管理がより強力になりました。現在のユーザープロファイルを含む、既存のユーザープロファイルを削除または置換できるようになりました。現在のプロファイルを削除しても、完全に削除されるわけではなく、すべての設定が工場出荷時のデフォルトにリセットされます。<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_PerformanceAndCompatibility_04_V21.png" id="image_zbc_fr5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_acc_fr5_r4b">
+         <title>スタートメニューのショートカット</title>
+         <p>[スタート] メニューのショートカットで、個人用ドキュメントフォルダではなく、プログラムフォルダが初期作業ディレクトリとして設定されるようになりました。この変更により、個人用フォルダを使用できないシステムアカウントでのインストールに関する問題が解決されます。</p>
+      </section>
+   </conbody>
+</concept>
