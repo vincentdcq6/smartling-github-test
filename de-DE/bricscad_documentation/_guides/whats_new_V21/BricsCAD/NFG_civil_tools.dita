@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A58F2161-B75AC5B-3597060284AC317-801FC2">
+   <title>Civil-Werkzeuge</title>
+   <shortdesc />
+
+   <conbody>
+      <p>BricsCAD V21 bietet viele erweiterte Werkzeuge für die lineare Infrastrukturmodellierung.</p>
+      <section id="section_rq2_qn5_r4b">
+         <title>Import/Export</title>
+         <p>Neue und verbesserte Werkzeuge für den Import und Export von zivilen Daten beschleunigen die Zusammenarbeit und die Konstruktionsprozesse.</p>
+         <p><b>Civil 3D-Daten</b></p>
+         <p>Die neue <xref keyref="CMD_civil3dimport" /> ermöglicht es Ihnen, mehrere zivile Objekte
+ in Ihrer BricsCAD-Zeichnung aus einer externen Autodesk® Civil 3D-Zeichnung in einem Arbeitsgang zu erstellen
+.</p>
+         <p><b>LandXML-Daten</b></p>
+         <p>Die Werkzeuge <xref keyref="CMD_landxmlimport" /> und <xref keyref="CMD_landxmlexport" /> 
+ bieten mehr Flexibilität. Sie unterstützen neue Ausrichtungskurven, einschließlich Kombinationen aus Spirale-Kurve-Spirale
+ und Parabeln für vertikale Ausrichtungen. Importierte vertikale Ausrichtungen
+ erzeugen automatisch 3D-Ausrichtungen. Und beim Importieren einer Fläche mit Bruchkanten können Sie mit der neuen Option
+ festlegen, ob die Bruchkanten als 3D-Polylinien oder
+ gar nicht gezeichnet werden sollen.</p>
+      </section>
+      <section id="section_sq2_qn5_r4b">
+         <title>Eigenschaften der zivilen Entität</title>
+         <p>Alle Civil Objekte enthalten jetzt Namens- und Beschreibungseigenschaften im Eigenschaften Panel. Name und Beschreibung befinden sich im schreibgeschützten Modus im Bereich Eigenschaften. Sie können mit der API bearbeitet werden.</p>
+         <fig>
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Civil_01_V21.png" id="image_tq2_qn5_r4b" scope="external" />
+         </fig>
+         <p>Ausgewählte Unterobjekte von (zivilen) benutzerdefinierten Objekten werden ebenfalls im Eigenschaftenbereich angezeigt.</p>
+      </section>
+      <section id="section_uq2_qn5_r4b">
+         <title>Zivilrechtliche einstellungen</title>
+         <p>Im Dialogfeld Einstellungen ist ein neuer Zivilknoten enthalten, der den einfachen Zugriff auf Zivileinstellungen ermöglicht.<fig id="fig_bjz_r45_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Civil_02_V21.png" id="image_vq2_qn5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_wq2_qn5_r4b">
+         <title>TIN Oberflächen</title>
+         <p>Neue und verbesserte Werkzeuge zum Erstellen und Bearbeiten von TIN-Oberflächen bieten mehr Flexibilität und einen schnelleren Workflow.</p>
+         <p><b>Assoziativität</b></p>
+         <p>Punkte und Blöcke werden dynamisch mit der TIN Oberfläche verknüpft. Wenn eine TIN-Oberfläche aus Punkten oder Blöcken in der Zeichnung erstellt wird und einige Punkte/Blöcke verschoben werden, wird die TIN-Oberfläche automatisch aktualisiert, um die Änderungen widerzuspiegeln.</p>
+         <p><b>Zuschneiden</b></p>
+         <p>Eine neue Option in <xref keyref="CMD_tin" /> und <xref keyref="CMD_tinedit" /> ermöglicht es Ihnen,
+ eine TIN-Oberfläche entsprechend einer vorgegebenen Polylinienbegrenzung zu beschneiden.<fig id="fig_s13_s45_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_03_V21.png" id="image_xq2_qn5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Rastergrafiken</b></p>
+         <p>Mit dem neuen <xref keyref="CMD_tinassignimage" /> können Sie ein Raster-Bild als TIN-Oberflächenmaterial zuweisen, um ein realistisches Standortmodell zu erstellen.<fig id="fig_lvn_s45_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_04_V21.png" id="image_yq2_qn5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Extrahieren</b></p>
+         <p>Mit <xref keyref="CMD_tinextract" /> können Sie Flächen, Punkte, Konturen und
+ die Umrandung einer TIN-Oberfläche extrahieren, zusätzlich zu der bisherigen Möglichkeit, ein Netz oder
+ Solid zu extrahieren.</p>
+         <fig id="fig_h4n_s2x_54b">
+            <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_06_V21.png" scope="external" id="image_i4n_s2x_54b" />
+         </fig>
+         <p>Sie können auch eine TIN-Oberfläche aus einer Benotung- oder TIN-Volumenoberfläche extrahieren, indem Sie den Befehl TINEXTRACT verwenden.</p>
+         <p><b>Projekt</b></p>
+         <p>Mit dem neuen <xref keyref="CMD_tinproject" /> können Sie punktbasierte Entitäten wie Punkte, Blöcke und Text- oder lineare Entitäten, einschließlich Linien, Polylinien und Kreise, auf eine TIN-Oberfläche projizieren.<fig id="fig_v35_s45_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_07_V21.png" id="image_zq2_qn5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Pfad zum Wasser</b></p>
+         <p>Die neue <xref keyref="CMD_tinwaterdrop" /> ermöglicht es Ihnen, den Weg eines Wassertropfens von einem
+ Punkt auf einer TIN-Oberfläche zu zeichnen.<fig id="fig_b41_t45_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_08_V21.png" id="image_ar2_qn5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_br2_qn5_r4b">
+         <title>Ausrichtungen</title>
+         <p>Der Arbeitsablauf zur Erstellung von Ausrichtungen wurde vereinfacht und bietet dennoch leistungsstarke Funktionen und zusätzliche Flexibilität.</p>
+         <p>Die Geometrie der horizontalen und vertikalen Ausrichtung wird verbessert. Horizontale Ausrichtungen unterstützen nun Spiralen und vertikale Ausrichtungen unterstützen nun parabolische Kurven. Der neue DEFAULTCURVETYPEHA<!--link--> und DEFAULTCURVETYPEVA<!--link--> Mit den Ausrichtungseinstellungen können Sie den Standardkurventyp für die Erstellung neuer horizontaler und vertikaler Ausrichtungen festlegen.<fig id="fig_is3_t45_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Civil_10_V21.png" id="image_cr2_qn5_r4b" scope="external" />
+            </fig><fig id="fig_zd1_y2x_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Civil_11_V21.png" id="image_dr2_qn5_r4b" scope="external" />
+            </fig></p>
+         <p>Im Eigenschaften-Panel werden die Eigenschaften der Elemente Spirale-Kurve-Spirale oder Parabel angezeigt.</p>
+      </section>
+      <section id="section_er2_qn5_r4b">
+         <title>Korridore</title>
+         <p>Leistungsstarke Korridorwerkzeuge helfen Ihnen, ein 3D-Modell der linearen Infrastruktur zu erstellen, das durch eine Vorlage und eine 3D-Ausrichtung definiert ist.</p>
+         <p>Mit dem neuen <xref keyref="CMD_corridortemplateelement" /> können Sie ein Korridorvorlagenelement aus geschlossenen Polylinien erstellen.<fig id="fig_fw5_t45_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_12_V21.png" id="image_fr2_qn5_r4b" scope="external" />
+            </fig></p>
+         <p>Verwenden Sie dann die neue <xref keyref="CMD_corridortemplate" /> , um eine Korridorvorlage
+ aus Vorlagenelementen zu erstellen.<fig id="fig_yk1_545_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_13_V21.png" id="image_gr2_qn5_r4b" scope="external" />
+            </fig></p>
+         <p>Verwenden Sie schließlich die neue <xref keyref="CMD_corridor" /> , um einen Korridor aus einer Korridorvorlage
+, einer 3D-Ausrichtung und/oder einer TIN-Oberfläche zu erstellen. Sie können mehrere Regionen mit
+ verschiedenen Korridorvorlagen erstellen. Außerdem können Sie mit der neuen <xref keyref="CMD_corridoredit" /> Regionen hinzufügen oder entfernen.<fig id="fig_wgg_545_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_14_V21.png" id="image_hr2_qn5_r4b" scope="external" />
+            </fig></p>
+         <p>Verwenden Sie das Bedienfeld &quot;Eigenschaften&quot;, um Daten und visuelle Stileigenschaften des ausgewählten Bereichs zu ändern.<fig id="fig_vqp_bfx_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Civil_15_V21.png" scope="external" id="image_wqp_bfx_54b" />
+            </fig></p>
+         <p>Mit der neuen <xref keyref="CMD_corridorextract" /> können Sie ein 3D-Volumen, ein 3D-Netz,
+ oder eine 3D-Polylinie aus einem Korridor extrahieren und für verschiedene Zwecke verwenden. Sie können z. B.
+ Polylinien aus einem Korridor extrahieren, um sie als Kanten für die Gradierung zu verwenden. Wenn Sie die Ausrichtung
+ greifen, folgt automatisch der Korridor und die dazugehörige Geometrie, wie z. B. die Gradierung
+.<fig id="fig_gvl_545_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_16_V21.png" id="image_ir2_qn5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_jr2_qn5_r4b">
+         <title>Böschungen</title>
+         <p>Mit dem neuen <xref keyref="CMD_gradingbalance" /> können Sie das Ausgleichen von Noten- und Füllmengen ausbalancieren.</p>
+      </section>
+      <section id="section_kr2_qn5_r4b">
+         <title>TIN-Volumenoberflächen</title>
+         <p>Die <xref keyref="SV_arrayassociativity" /> enthält eine neue Steuerung für die Assoziativität von TIN-Volumenoberflächen. TIN Volumen Oberfläche werden automatisch neu aufgebaut, wenn sich ihre Quell Oberflächen ändern.</p>
+      </section>
+      <section id="section_lr2_qn5_r4b">
+         <title>API-Proben</title>
+         <p>Die folgenden API-Beispiele werden bereitgestellt: Horizontaler Ausrichtungsbericht, Farbige Oberflächendreiecke nach Höhe, Farbige Oberflächendreiecke nach Neigung.</p>
+      </section>
+   </conbody>
+</concept>
