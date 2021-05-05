@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A221D243-C3D75C5-53C12286011525B-23A04B">
+   <title>Konstruieren</title>
+   <shortdesc />
+   <conbody>
+      <p>BricsCAD v21 bietet Erweiterungen für das Konstruieren, um Ihre Produktivität beim Entwerfen von 2D-Zeichnungen zu erhöhen.</p>
+      <section id="section_vgr_lj5_r4b">
+         <title>Text zu Mtext kombinieren.</title>
+         <p>Mit dem neuen <xref keyref="CMD_txt2mtxt" /> (alias COMBINETEXT) können Sie Einzel- und Mehrzeilentext in einer einzigen MText-Entität kombinieren. Sie können das Verhalten zum Kombinieren von Text im Dialog Ergebniss MText-Einstellungen steuern.<!--link-->.<fig id="fig_kp2_5j5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Drafting_01_V21.png" id="image_wgr_lj5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_xgr_lj5_r4b">
+         <title>Bogen ausgerichteter Text</title>
+         <p>Unter <xref keyref="PNL_properties" /> können Sie die Eigenschaften ausgewählter
+ Arc Aligned Text-Elemente anzeigen und bearbeiten.<fig id="fig_fw4_5j5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Drafting_02_V21.png" id="image_ygr_lj5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_zgr_lj5_r4b">
+         <title>Suchen und Ersetzen eines Textes</title>
+         <p>Das Dialogfeld &quot;Text suchen und ersetzen&quot; enthält neue Schaltflächen <uicontrol>Vergrößern</uicontrol> und <uicontrol>Verkleinern</uicontrol>. Diese ermöglichen es Ihnen, den Text im Kontext der Zeichnung genauer zu betrachten, ohne den Vorgang &quot;Suchen und Ersetzen&quot; beenden zu müssen.<fig id="fig_xzv_5j5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Drafting_03_V21.png" id="image_ahr_lj5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_bhr_lj5_r4b">
+         <title>SchriftFeld</title>
+         <p>Die <xref keyref="DB_field" /> unterstützt verschachtelte Formelfelder. Wenn Sie mit der rechten Maustaste in das Feld &quot;Formel&quot; des Dialogfelds &quot;Feld&quot; klicken, stehen Ihnen neue Optionen zum Einfügen, Bearbeiten und Aktualisieren eines Felds zur Verfügung. Sie können ein Feld auch in Text umwandeln.<fig id="fig_axb_vj5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Drafting_04_V21.png" id="image_chr_lj5_r4b" scope="external" />
+            </fig></p>
+      </section>
+   </conbody>
+</concept>
