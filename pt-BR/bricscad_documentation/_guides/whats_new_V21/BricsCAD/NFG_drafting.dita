@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A221D243-C3D75C5-53C12286011525B-23A04B">
+   <title>Desenho</title>
+   <shortdesc />
+   <conbody>
+      <p>O BricsCAD V21 oferece aprimoramentos de desenho para ajudar a aumentar sua produtividade no desenho 2D.</p>
+      <section id="section_vgr_lj5_r4b">
+         <title>Combinar Texto em TextoM.</title>
+         <p>O novo <xref keyref="CMD_txt2mtxt" /> (alias COMBINETEXT) permite combinar single-
+ e texto de várias linhas em uma única entidade mText. Você pode controlar o comportamento para combinar texto no diálogo Configurações Resultantes de TextoM.<!--link-->.<fig id="fig_kp2_5j5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Drafting_01_V21.png" id="image_wgr_lj5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_xgr_lj5_r4b">
+         <title>Alinhar Texto a Arco</title>
+         <p>O <xref keyref="PNL_properties" /> permite que você visualize e edite propriedades para entidades de Texto Alinhado em Arco selecionadas.<fig id="fig_fw4_5j5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Drafting_02_V21.png" id="image_ygr_lj5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_zgr_lj5_r4b">
+         <title>Localizar e Substituir Texto</title>
+         <p>A caixa de diálogo Localizar e substituir texto inclui novos botões <uicontrol>Zoom In</uicontrol> e <uicontrol>Zoom Out</uicontrol> botões. Isso permite que você dê uma olhada mais de perto no texto dentro do contexto do desenho sem ter que encerrar a operação Localizar e Substituir.<fig id="fig_xzv_5j5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Drafting_03_V21.png" id="image_ahr_lj5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_bhr_lj5_r4b">
+         <title>Campo</title>
+         <p>Os campos de fórmula aninhados <xref keyref="DB_field" /> suporta. Quando você clicar o botão direito do mouse no campo Formula da caixa de diálogo Campo, novas opções permitem Inserir, Editar e Atualizar um campo. Você também pode converter um campo em texto.<fig id="fig_axb_vj5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Drafting_04_V21.png" id="image_chr_lj5_r4b" scope="external" />
+            </fig></p>
+      </section>
+   </conbody>
+</concept>
