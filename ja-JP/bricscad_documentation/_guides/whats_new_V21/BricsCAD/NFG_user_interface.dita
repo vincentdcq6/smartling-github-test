@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A5F13434-735352C-7CBC10EF1557792-42321B">
+   <title>ユーザーインターフェース</title>
+   <shortdesc />
+
+   <conbody>
+      <p>BricsCAD V21では、既存のワークフローを中断することなく生産性を向上させるため、ユーザーインターフェースのさまざまな機能強化が提供されています。</p>
+      <section id="section_mwz_w3t_r4b">
+         <title>BricsCADランチャ</title>
+         <p>新しいデザインのBricsCADランチャから、設計タスクやライセンスレベルに最も適した環境でBricsCADを起動することができます。</p>
+         <p>使用可能な環境オプションは、ライセンスレベルによって異なります。あなたは変更することができます
+ <xref keyref="CMD_setlicenselevel" />ライセンスレベルを制御する新しいを使用して
+ <xref keyref="SV_runaslevel" />。体験版ライセンスをご使用の場合は、任意の環境を選択できます。それ以外の場合は、購入されたライセンスレベルでサポートされている任意の環境を選択できます。例えば、Ultimateライセンスではすべての環境がサポートされています。これに対し、Liteライセンスでは2D作図環境のみサポートされています。</p>
+         <p>新しい [単位] オプションを使用すると、使用するハッチングパターンと線種定義ファイルを決定する計測単位 (<xref keyref="SV_measureinit" />) を設定できます。また、このコントロールで、テンプレートファイルを使わずに作成する新しい図面の作図単位も指定されます。<fig id="fig_emz_535_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_01_V21.png" id="image_nwz_w3t_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_owz_w3t_r4b">
+         <title>コマンド</title>
+         <p>[コマンド] ウィンドウで、クリック可能なコマンドオプションがサポートされるようになりました。キーボードから入力しなくてもコマンドラインでオプションを選択することができます。<fig id="fig_ixm_v35_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_02_V21.png" id="image_pwz_w3t_r4b" scope="external" />
+            </fig></p>
+         <p><xref keyref="CMD_commands" />では、使用可能なコマンドを検索できます。BricsCAD V21では、現在のライセンスレベルで使用可能なコマンドのみが一覧表示されるようになりました。</p>
+      </section>
+      <section id="section_qwz_w3t_r4b">
+         <title>リボン</title>
+         <p>リボンを使用すると、マウスホイールでリボンタブをスクロールできます。リボンの任意の場所にカーソルを置き、ホイールを回転させます。</p>
+         <p>では、<xref keyref="SV_ribbontoolsize" /> リボンのツールボタンのサイズを設定します。オプションは、[<uicontrol> 小 </uicontrol>]、[<uicontrol> 大 </uicontrol>]、[<uicontrol> 特大 </uicontrol>] です。</p>
+      </section>
+      <section id="section_rwz_w3t_r4b">
+         <title>ツールバー</title>
+         <p>新しい UCS および UCS オプションツールバー<!--link--> では、UCS コマンドとオプションに簡単にアクセスできます。これらのツールバーにアクセスするには、ツールバー、パネル、リボンを右クリックし、 <menucascade>
+               <uicontrol>ツールバー </uicontrol>
+ <uicontrol>BricsCAD </uicontrol>
+            </menucascade> メニュー。</p>
+         <fig id="fig_bpr_bbr_cpb">
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_03_V21.png" id="image_swz_w3t_r4b" scope="external" />
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_04_V21.png" id="image_twz_w3t_r4b" scope="external" />
+         </fig>
+         <fig id="fig_gwt_x35_r4b">
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_05_V21.png" id="image_uwz_w3t_r4b" scope="external" />
+         </fig>
+         <p><xref keyref="SV_toolbuttonsize" />はツールバーにのみ適用され、リボンツールボタンには適用されません (上記を参照)。</p>
+      </section>
+      <section id="section_vwz_w3t_r4b">
+         <title>メニュー</title>
+         <p>右マウスボタンを使用して BricsCAD に dwg ファイルをドラッグアンドドロップしたときに表示されるメニューには、[<uicontrol> 読み取り専用で開く </uicontrol>] の新しいオプションが追加されました。<fig id="fig_ess_fj5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_06_V21.png" id="image_wwz_w3t_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_xwz_w3t_r4b">
+         <title>レイアウト</title>
+         <p>レイアウト管理の機能が拡張され、複数のレイアウトを公開できるようになりました。<fig id="fig_hky_y35_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_07_V21.png" id="image_ywz_w3t_r4b" scope="external" />
+            </fig></p>
+         <p>レイアウト管理で現在のレイアウトを設定すると、アクティブなレイアウトタブが自動的にスクロールして、レイアウトタブリストに表示されたままになります。<fig id="fig_p1f_z35_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_08_V21.png" id="image_zwz_w3t_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_axz_w3t_r4b">
+         <title>図形スナップ</title>
+         <p><uicontrol>図形スナップの [点スナップ </uicontrol>] オプション<!--link--> ツールバーおよびメニューの名前が [<uicontrol> ノードにスナップ </uicontrol>] に変更されます。</p>
+         <fig id="fig_fsh_hbr_cpb">
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_10_V21.png" id="image_cgd_fdx_54b" scope="external" />
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_UserInterface_09_V21.png" id="image_ow3_kdx_54b" scope="external" />
+         </fig>
+      </section>
+   </conbody>
+</concept>
