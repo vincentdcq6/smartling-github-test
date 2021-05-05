@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A464DCBA-3C3B5CB-CC2114111774544-17D903">
+   <title>プロジェクトコラボ</title>
+
+   <conbody>
+      <section id="section_qzm_tby_s4b">
+         <title>IFC読み込み/書き出し</title>
+         <p>IFC/BIM図形をBIM/IFC図形にマッピングして、読み込み/書き出しを行う図形をコントロールするメカニズムが実装されました。また、BricsCAD BIMには [注釈図形のIFC書き出し] も追加されました。</p>
+         <p>このマッピングは、マッピングファイルを使用して行うことができます。IfcimportMappingMathおよびIfcExportMappingPathユーザー設定で、必要なマッピングファイルへのパスが設定されます。これらのファイルは、幾つかのルールが含まれている単純なテキストファイルです。</p>
+         <p>このマッピングを使い、BIM図形を別のタイプのIFC図形として書き出したり、特定のタイプだけをスキップしたりできます。このような書き出しファイルの例を以下に示します。<ul id="ul_ulb_wby_s4b">
+               <li>bimdbColumn ifcMember</li>
+               <li>bimdbBeam IfcMember</li>
+               <li>bimdbFurnishingElement スキップ</li>
+            </ul></p>
+         <p>この例では、BricsCAD BIMモデルの柱と梁が部材としてIFCファイルに書き出され、調度要素をスキップして書き出し処理されます。</p>
+         <p>IFCファイルを読み込む場合も、同様のプロセスで行えます。このような読み込みファイルの例を以下に示します。<ul id="ul_nk2_3cy_s4b">
+               <li>IfcWall bimdbSlab</li>
+               <li>IfcSlab bimdbWall</li>
+            </ul></p>
+         <p>* スキップ</p>
+         <p>この場合、壁がスラブとして読み込まれ、スラブは壁として読み込まれます。アスタリスクは、リストされている図形のみを対象範囲に含めることを意味するため、他の図形は読み込まれません。リストされていない図形タイプはすべてスキップされます。</p>
+         <p>ユーザー設定にIfcCreateUniqueGuidが追加されたことで、分類されたブロックや外部参照内の入れ子状の要素に対する一意のGUIDの作成を有効/無効にすることができます。</p>
+         <p>フロー接続ポイントは、IfcBuildingElementProxyとして IFC に書き出されます。フロー接続点として分類できるのは、2Dジオメトリ、または2Dジオメトリを持つブロック参照のみです。</p>
+      </section>
+      <section id="section_rzm_tby_s4b">
+         <title>RVTファイルの読込み</title>
+         <p>[読み込み] を使用してRevitオブジェクトを読み込む場合、すべてのソリッドを読み込むか、オーバーレイとしてのみ読み込むかを選択できます。Revitビュー、カテゴリ、レベル、ワークセットで読み込みを絞り込めます。<fig id="fig_zrq_5cy_s4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_CollaborationCategories_01_V21.png" id="image_szm_tby_s4b" scope="external" />
+            </fig></p>
+         <p>下図は [カテゴリ] オプションの一例です。RVT読み込みに特定のカテゴリをマッピングできます。RVTファイルを読み込むときに、色と透過性が読み込まれるようになりました。<fig id="fig_rs4_vcy_s4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_CollaborationRevit_01_V21.png" id="image_tzm_tby_s4b" scope="external" />
+            </fig></p>
+      </section>
+   </conbody>
+</concept>

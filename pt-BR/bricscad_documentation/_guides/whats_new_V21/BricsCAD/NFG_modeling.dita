@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A2F7B17A-DC5CD7B-352CC15920A4042-726B5C">
+   <title>Modelagem</title>
+   <shortdesc />
+
+   <conbody>
+      <p>BricsCAD V21 oferece muitos aprimoramentos nas ferramentas de modelagem em 3D, para ajudar a simplificar e automatizar o processo de modelagem.</p>
+      <section id="section_xcq_hk5_r4b">
+         <title>UCS Dinâmico</title>
+         <p>O UCS dinâmico agora é apoiado pelo <xref keyref="CMD_plan" />. Isto permite-lhe selecionar uma face para o UCS atual e exibi-la imediatamente na vista em Planta.</p>
+      </section>
+      <section id="section_ycq_hk5_r4b">
+         <title>Modelagem Direta</title>
+         <p><b>Roscas</b></p>
+         <p>O novo <xref keyref="CMD_dmthread" /> permite que você adicione um thread paramétrico padrão ao
+ uma face cilíndrica do seu sólido 3D. Você pode editar as propriedades da rosca usando o Navegador de Mecânica.<fig id="fig_x1h_kk5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling01.png" id="image_zcq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Exibições de desenho criadas com o <xref keyref="CMD_viewbase" />, o <xref keyref="CMD_viewproj" /> ou o <xref keyref="CMD_viewsection" /> representam os threads
+ seguindo padrões de elaboração. A imagem a seguir mostra vistas de um cilindro antes e depois de adicionar roscas.</p>
+         <fig>
+            <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling02.png" id="image_adq_hk5_r4b" scope="external" />
+         </fig>
+         <p><b>Chanfros</b></p>
+         <p>As <xref keyref="CMD_dmchamfer" /> ofertas mais flexibilidade com novo assimétrico,
+ modos angulares, variáveis simétricas, variáveis assimétricas e variáveis angulares.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling03.png" id="image_bdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Concordar</b></p>
+         <p>O <xref keyref="CMD_dmfillet" /> oferece mais flexibilidade com um novo modo de raio variável.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling04.png" id="image_cdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Empurrar Puxar</b></p>
+         <p>O <xref keyref="CMD_dmpushpull" /> inclui uma opção para especificar o modo de subtrair
+ (ligar/desligar), que também é controlado por <xref keyref="SV_dmpushpullsubtract" />.</p>
+         <p>Este também permite que você troque o ponto de partida das dimensões dinâmicas em faces cilíndricas. Pressione a tecla Tab para alternar entre dimensões: radial e offset.</p>
+      </section>
+      <section id="section_ddq_hk5_r4b">
+         <title>Vistas Quebradas</title>
+         <p>O novo <xref keyref="CMD_viewbreak" /> permite que você divida uma exibição de desenho associativa
+ do seu modelo 3D criado com o <xref keyref="CMD_viewbase" />, o <xref keyref="CMD_viewproj" />, ou o <xref keyref="CMD_viewsection" /> e automaticamente
+ incluem símbolos de quebra. Você pode alterar a aparência de um símbolo de exibição quebrado selecionado
+ usando <xref keyref="PNL_properties" />o. O <xref keyref="CMD_viewbreak" /> corretamente
+ suporta dimensões que você coloca na vista de desenho antes de quebrar. Eles permanecem associativos com seu modelo 3D e a vista de desenho.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling05.png" id="image_edq_hk5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_fdq_hk5_r4b">
+         <title>Snaps a Entidade 3d</title>
+         <p>Ative e desative facilmente os snaps de entidade 3D pressionando a tecla de função F4.</p>
+      </section>
+      <section id="section_gdq_hk5_r4b">
+         <title>Polilinha 3D</title>
+         <p>Os vértices das polilinhas 3D agora suportam a seleção de subentidade <xref keyref="PNL_properties" />, a distância e a distância mais próxima.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling06.png" id="image_hdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Aprimoramentos adicionais para Polilinhas 3D permitem que você aplique restrições 3D a seus vértices e bordas.</p>
+      </section>
+      <section id="section_idq_hk5_r4b">
+         <title>Bloquificar Paramétrico</title>
+         <p>O novo <xref keyref="CMD_parametricblockify" /> permite que você converta rapidamente o modelo
+ entidades para blocos paramétricos. Selecione um bloco paramétrico ou entidades parametrizadas como geometria de entrada, para comparar com outra geometria no desenho. A geometria correspondente é convertida automaticamente para blocos paramétricos.</p>
+      </section>
+      <section id="section_jdq_hk5_r4b">
+         <title>Exibir 3D</title>
+         <p>O brilho do material foi ajustado para garantir que os detalhes da entidade sejam distinguíveis, mesmo com materiais brilhantes. O efeito de brilho é menos intenso para materiais claros e mais intenso para materiais escuros.</p>
+      </section>
+      <section id="section_kdq_hk5_r4b">
+         <title>Sólidos e Malhas</title>
+         <p><b>Converter em malha</b></p>
+         <p>O <xref keyref="CMD_convtomesh" /> é otimizado para triangular faces planares somente quando
+ necessário e com o menor número possível de rostos. Como exemplo, os sólidos originais à esquerda são convertidos em malhas no BricsCAD V20 (centro) e no BricsCAD V21 (à direita).<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling08.png" id="image_ldq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Converter para Sólido</b></p>
+         <p>O <xref keyref="CMD_convtosolid" /> permite converter uma malha para um 3D otimizado
+ sólido baseado no novo <xref keyref="SV_smoothmeshconvert" />.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling09.png" id="image_mdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Quando definido como otimizado, faces coplanares e adjacentes são mescladas em uma única face. Como exemplo, a malha original à esquerda é convertida em um sólido no BricsCAD V20 (centro) e no BricsCAD V21 (à direita).<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling10.png" id="image_ndq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Propriedades da Malha</b></p>
+         <p>As <xref keyref="PNL_properties" /> ofertas de acesso a propriedades adicionais para selecionados
+ entidades de malha. Entidades de malha agora incluem propriedades Malha e Geometria, incluindo a capacidade de especificar suavidade.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling11.png" id="image_odq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>O painel Propriedades também suporta subentidades de malha, incluindo faces, bordas e vértices, permitindo que você aplique diferentes níveis de vinco.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling12.png" id="image_pdq_hk5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_qdq_hk5_r4b">
+         <title>Dados Associativos</title>
+         <p>O novo GENERATEASSOCATTRS<!--link--> definição de controlos geração de dados associativos
+ Sólidos 3D durante a modelagem. Quando estiver Ligada, sólidos 3D vão conter dados associativos a partir do momento da sua criação. Isso permite <xref keyref="CMD_bimsectionupdate" /> e <xref keyref="CMD_viewbase" /> comandos para produzir desenhos para quais dimensões e tags
+ pode ser atualizado automaticamente após o modelo 3D mudar.</p>
+      </section>
+      <section id="section_rdq_hk5_r4b">
+         <title>Torcer Vista</title>
+         <p>A opção Twist é adicionada ao <xref keyref="CMD_-view" />.</p>
+      </section>
+      <section id="section_sdq_hk5_r4b">
+         <title>Editor de Animação</title>
+         <p>O Editor de Animação está aprimorado para suportar a animação de vistas explodidas no Model Space.</p>
+      </section>
+      <section id="section_tdq_hk5_r4b">
+         <title>Nuvens de pontos</title>
+         <p>A funcionalidade de nuvem de pontos está significativamente mais rápida e mais poderosa no BricsCAD V21.</p>
+         <p><b>Pré-processamento</b></p>
+         <p>O formato de arquivo E57 está adicionado aos arquivos suportados para pré-processamento.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling30.png" id="image_udq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Quando você anexa uma nuvem de pontos que requer pré-processamento, ela converte 5 a 8 vezes mais rápido no BricsCAD V21 do que na V20. Um medidor de progressão na parte inferior do monitor mostra o progresso da conversão.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling13.png" id="image_vdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Alinhamento</b></p>
+         <p>O novo gira <xref keyref="CMD_pointcloudalign" /> automaticamente uma nuvem de pontos para
+ alinhe-o otimamente com os eixos X e Y. Para determinar o melhor alinhamento, este pode analisar toda a nuvem de pontos, ou você pode especificar a área mais relevante.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling14.png" id="image_wdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Visualizador em Bolha</b></p>
+         <p>A nuvem de pontos exibe bolhas em todos os locais em que foi feita a digitalização. É naqueles locais onde você vai experimentar as representações visuais mais realistas.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling15.png" id="image_xdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Clique-duplo em uma das bolhas no Model Space para abrir o visualizador de Bolha. Você pode pressionar o botão médio e mover o mouse para ver a nuvem de pontos em qualquer direção, a partir do local da digitalização.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling16.png" id="image_ydq_hk5_r4b" scope="external" />
+            </fig><fig id="fig_mmr_32x_54b">
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling17.png" id="image_zdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Pressione a tecla Tab para alternar entre três diferentes modos visuais.</p>
+         <p>O primeiro modo exibe os pontos como suas cores reais ou em escala de cinza, dependendo de como os dados foram scanerizados.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling18.png" id="image_a2q_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>O segundo modo exibe os pontos como vermelho, verde ou azul de acordo com seus vetores normais. As cores correspondem aos eixos do UCS.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling19.png" id="image_b2q_hk5_r4b" scope="external" />
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling20.png" id="image_c2q_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>O terceiro modo exibe os pontos de claro a escuro à medida que a distância do local da varredura vai aumentando.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling21.png" id="image_d2q_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Você pode sincronizar facilmente a vista do desenho para corresponder ao visualizador de Bolha, pressionando Ctrl+A.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling22.png" id="image_e2q_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Snaps de entidade</b></p>
+         <p>O novo snap de entidade Point Cloud Closest Point melhora significativamente sua capacidade de selecionar pontos relevantes da nuvem de pontos. Este usa um cilindro imaginário a partir do ponto de vista atual, em direção ao cursor.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling23.png" id="image_f2q_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>O raio do cilindro imaginário é definido pela configuração da caixa de abertura de snap a Entidade.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling24.png" id="image_g2q_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Ative o novo snap de entidade Ponto Mais Próximo da Nuvem de Pontos junto com outros snaps de entidade 3D nos menus de Snap a Entidade, barra de ferramentas e configurações.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling25.png" id="image_h2q_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Exportar</b></p>
+         <p>O novo <xref keyref="CMD_pointcloudexport" /> permite exportar uma seleção recortada
+ de uma nuvem de pontos para um .pts .</p>
+      </section>
+   </conbody>
+</concept>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A2F7B17A-DC5CD7B-352CC15920A4042-726B5C">
+   <title>Modellierung</title>
+   <shortdesc />
+
+   <conbody>
+      <p>BricsCAD V21 bietet viele Erweiterungen der 3D-Modellierungswerkzeuge, um den Modellierungsprozess zu vereinfachen und zu automatisieren.</p>
+      <section id="section_xcq_hk5_r4b">
+         <title>Dynamisches BKS</title>
+         <p>Dynamic UCS wird jetzt von der <xref keyref="CMD_plan" /> unterstützt. Auf diese Weise können Sie eine Fläche für das aktuelle UCS auswählen und diese sofort in der Planansicht anzeigen.</p>
+      </section>
+      <section id="section_ycq_hk5_r4b">
+         <title>Direkt Modellierung</title>
+         <p><b>Gewinde</b></p>
+         <p>Mit dem neuen <xref keyref="CMD_dmthread" /> können Sie ein standardmäßiges parametrisches Gewinde zu einer zylindrischen Fläche Ihres 3D-Volumens hinzufügen. Sie können die Eigenschaften des Threads mit dem mechanischen Browser bearbeiten.<fig id="fig_x1h_kk5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling01.png" id="image_zcq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Zeichnungsansichten, die mit dem <xref keyref="CMD_viewbase" />, dem <xref keyref="CMD_viewproj" /> oder dem <xref keyref="CMD_viewsection" /> erstellt wurden, stellen die Gewinde
+ nach Zeichnungsstandards dar. Das folgende Bild zeigt die Ansichten eines Zylinders vor und
+ nach dem Hinzufügen von Gewinden.</p>
+         <fig>
+            <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling02.png" id="image_adq_hk5_r4b" scope="external" />
+         </fig>
+         <p><b>Chamfer/in</b></p>
+         <p>Die <xref keyref="CMD_dmchamfer" /> bietet mehr Flexibilität mit neuen asymmetrischen,
+ winkeligen, variablen symmetrischen, variablen asymmetrischen und variablen winkeligen Modi.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling03.png" id="image_bdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Abrundungen</b></p>
+         <p>Die <xref keyref="CMD_dmfillet" /> bietet mehr Flexibilität mit einem neuen variablen Radiusmodus.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling04.png" id="image_cdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Mit druckgriff</b></p>
+         <p>Die <xref keyref="CMD_dmpushpull" /> enthält eine Option zur Angabe des Subtraktionsmodus
+ (ein/aus), der ebenfalls über <xref keyref="SV_dmpushpullsubtract" /> gesteuert wird.</p>
+         <p>Außerdem können Sie den Anfangspunkt der dynamischen Abmessungen auf zylindrischen Flächen umschalten. Drücken Sie die Tabulatortaste, um zwischen Radial- und Offsetmaßen umzuschalten.</p>
+      </section>
+      <section id="section_ddq_hk5_r4b">
+         <title>Gebrochene Ansichten</title>
+         <p>Mit dem neuen <xref keyref="CMD_viewbreak" /> können Sie eine assoziative Zeichnungsansicht
+ Ihres 3D-Modells, die mit <xref keyref="CMD_viewbase" />, <xref keyref="CMD_viewproj" /> oder <xref keyref="CMD_viewsection" /> erstellt wurde, unterbrechen und automatisch
+ Unterbrechungssymbole einfügen. Sie können das Aussehen eines ausgewählten Symbols der unterbrochenen Ansicht
+ mit Hilfe der <xref keyref="PNL_properties" /> ändern. Die <xref keyref="CMD_viewbreak" /> unterstützt korrekt
+ Maße, die Sie vor dem Brechen in die Zeichnungsansicht setzen. Sie bleiben assoziativ
+ mit Ihrem 3D-Modell und der Zeichenansicht.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling05.png" id="image_edq_hk5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_fdq_hk5_r4b">
+         <title>3D Objekt Fänge</title>
+         <p>Schalten Sie 3D-Entity-Snaps ganz einfach mit der Funktionstaste F4 ein und aus.</p>
+      </section>
+      <section id="section_gdq_hk5_r4b">
+         <title>3D-Polylinie</title>
+         <p>Die Scheitelpunkte von 3D-Polylinien unterstützen jetzt die Auswahl von Unterpunkten, die <xref keyref="PNL_properties" /> und den nächstgelegenen Abstand.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling06.png" id="image_hdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Mit zusätzlichen Verbesserungen an 3D-Polylinien können Sie 3D-Beschränkungen auf ihre Stützpunkte und Kanten anwenden.</p>
+      </section>
+      <section id="section_idq_hk5_r4b">
+         <title>Parametrisches Blockify</title>
+         <p>Mit dem neuen <xref keyref="CMD_parametricblockify" /> können Sie Modelle schnell in parametrische Blöcke umwandeln. Wählen Sie einen parametrischen Block oder parametrische Objekte als Eingabegeometrie, um sie mit anderen Geometrien in der Zeichnung zu vergleichen. Die übereinstimmende Geometrie wird automatisch in parametrische Blöcke konvertiert.</p>
+      </section>
+      <section id="section_jdq_hk5_r4b">
+         <title>Anzeige in 3D</title>
+         <p>Der Materialglanz wurde angepasst, um sicherzustellen, dass auch bei glänzenden Materialien die Details des Objekts erkennbar sind. Der Glanzeffekt ist bei hellen Materialien weniger intensiv, bei dunklen Materialien intensiver.</p>
+      </section>
+      <section id="section_kdq_hk5_r4b">
+         <title>Solids und Meshes</title>
+         <p><b>In Netz konvertieren</b></p>
+         <p>Die <xref keyref="CMD_convtomesh" /> ist darauf optimiert, ebene Flächen nur dann zu triangulieren, wenn
+ es notwendig ist, und mit so wenig Flächen wie möglich. Zum Beispiel werden die ursprünglichen Feststoffe auf der linken Seite in Netze in BricsCAD V20 (Mitte) und BricsCAD V21 (rechts) konvertiert.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling08.png" id="image_ldq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>In Solid umwandeln</b></p>
+         <p>Mit <xref keyref="CMD_convtosolid" /> können Sie ein Netz in ein optimiertes 3D-Solid
+ umwandeln, das auf dem neuen <xref keyref="SV_smoothmeshconvert" /> basiert.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling09.png" id="image_mdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Bei der Einstellung &quot;Optimiert&quot; werden koplanare und benachbarte Flächen zu einer einzigen Fläche verschmolzen. Als Beispiel wird das ursprüngliche Netz auf der linken Seite in BricsCAD V20 (Mitte) und BricsCAD V21 (rechts) in ein Solid konvertiert.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling10.png" id="image_ndq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Mascheneigenschaften</b></p>
+         <p><xref keyref="PNL_properties" /> bietet Zugriff auf zusätzliche Eigenschaften für ausgewählte Netzelemente. Polygonnetz-Elemente enthalten jetzt Polygonnetz- und Geometrie-Eigenschaften, einschließlich der
+ Möglichkeit, die Glattheit zu spezifizieren.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling11.png" id="image_odq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Das Bedienfeld &quot;Eigenschaften&quot; unterstützt auch Netzunterelemente wie Flächen, Kanten und Scheitelpunkte, so dass Sie verschiedene Stufen der Rillung anwenden können.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling12.png" id="image_pdq_hk5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_qdq_hk5_r4b">
+         <title>Assoziative Daten</title>
+         <p>Das neue GENERATEASSOCATTRS<!--link--> Einstellung steuert die Erzeugung von assoziativen Daten auf
+ 3D-Solids während der Modellierung. Wenn diese Option aktiviert ist, enthalten 3D-Volumenkörper ab dem Zeitpunkt der Generierung assoziative Daten. Dadurch können <xref keyref="CMD_bimsectionupdate" /> und <xref keyref="CMD_viewbase" /> Befehle Zeichnungen erstellen, für die Dimensionen und Tags automatisch aktualisiert werden können, nachdem sich das 3D-Modell geändert hat.</p>
+      </section>
+      <section id="section_rdq_hk5_r4b">
+         <title>Ansicht Twist</title>
+         <p>Die Option &quot;Twist&quot; wird auf <xref keyref="CMD_-view" /> hinzugefügt.</p>
+      </section>
+      <section id="section_sdq_hk5_r4b">
+         <title>Animations Editor</title>
+         <p>Der Animationseditor wurde erweitert, um das Animieren von Explosionsansichten im Modellraum zu unterstützen.</p>
+      </section>
+      <section id="section_tdq_hk5_r4b">
+         <title>Punktwolken</title>
+         <p>Die Punktwolkenfunktionalität ist in BricsCAD V21 deutlich schneller und leistungsfähiger.</p>
+         <p><b>Vorverarbeitung</b></p>
+         <p>Das E1-Dateiformat wird den unterstützten Dateien zur Vorverarbeitung hinzugefügt.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling30.png" id="image_udq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Wenn Sie eine Punktwolke anhängen, die eine Vorverarbeitung erfordert, wird sie in BricsCAD V5  bis 8 Mal schneller konvertiert als in V21. Eine Fortschrittsanzeige am unteren Rand des Displays zeigt den Umwandlungsfortschritt an.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling13.png" id="image_vdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Ausrichtung</b></p>
+         <p>Das neue <xref keyref="CMD_pointcloudalign" /> dreht automatisch eine Punktwolke, um sie optimal an der X- und Y-Achse auszurichten. Um die beste Ausrichtung zu ermitteln, kann es
+ die gesamte Punktwolke analysieren oder Sie können den relevantesten Bereich angeben.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling14.png" id="image_wdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Blasenbetrachter</b></p>
+         <p>Die Punktwolke zeigt Blasen an allen Scanpositionen an. An diesen Stellen werden Sie die realistischsten visuellen Darstellungen erleben.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling15.png" id="image_xdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Doppelklicken Sie auf eine der Blasen im Modellbereich, um den Blasenbetrachter zu öffnen. Sie können die mittlere Maustaste drücken und die Maus bewegen, um die Punktwolke von dieser Scanposition aus in eine beliebige Richtung zu betrachten.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling16.png" id="image_ydq_hk5_r4b" scope="external" />
+            </fig><fig id="fig_mmr_32x_54b">
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling17.png" id="image_zdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Drücken Sie die Tab-Taste, um zwischen drei verschiedenen visuellen Modi zu wechseln.</p>
+         <p>Der erste Modus zeigt die Punkte in ihren tatsächlichen Farben oder in Graustufen an, je nachdem, wie die Daten gescannt wurden.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling18.png" id="image_a2q_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Im zweiten Modus werden die Punkte entsprechend ihrer Normalenvektoren als rot, grün oder blau dargestellt. Die Farben entsprechen den UCS-Achsen.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling19.png" id="image_b2q_hk5_r4b" scope="external" />
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling20.png" id="image_c2q_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Im dritten Modus werden die Punkte mit zunehmender Entfernung von der Scanposition von hell nach dunkel angezeigt.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling21.png" id="image_d2q_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Sie können die Zeichnungsansicht einfach mit dem Bubble Viewer synchronisieren, indem Sie Strg A drücken.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling22.png" id="image_e2q_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Entity-Schnapper</b></p>
+         <p>Der neue Punktwolken-Nahpunkt-Entity-Snap verbessert Ihre Fähigkeit, relevante Punktwolkenpunkte auszuwählen, erheblich. Es verwendet einen imaginären Zylinder vom aktuellen Betrachtungspunkt zum Cursor.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling23.png" id="image_f2q_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Der Radius des imaginären Zylinders wird durch die Einstellung der Fangblende des Objekts definiert.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling24.png" id="image_g2q_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Aktivieren Sie die Fangfunktion für die neue Punktwolke Nächster Punkt zusammen mit anderen 3D-Entitäts-Fangen in den Entitäts-Fangmenüs, der Werkzeugleiste und den Einstellungen.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling25.png" id="image_h2q_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Export</b></p>
+         <p>Die neue <xref keyref="CMD_pointcloudexport" /> ermöglicht den Export einer beschnittenen Auswahl
+ einer Punktwolke in eine .pts Datei.</p>
+      </section>
+   </conbody>
+</concept>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A2F7B17A-DC5CD7B-352CC15920A4042-726B5C">
+   <title>Modeling</title>
+   <shortdesc />
+
+   <conbody>
+      <p>BricsCAD V21の3Dモデリングツールでは、モデリングプロセスの簡素化や自動化をサポートする多くの機能強化が提供されています。</p>
+      <section id="section_xcq_hk5_r4b">
+         <title>ダイナミックUCS</title>
+         <p>ダイナミック UCS は、でサポートされるようになりました <xref keyref="CMD_plan" />。これにより、カレントのUCSの面を選択し、すぐに平面ビューで表示できます。</p>
+      </section>
+      <section id="section_ycq_hk5_r4b">
+         <title>ダイレクトモデリング</title>
+         <p><b>ねじ</b></p>
+         <p><xref keyref="CMD_dmthread" />新しいでは、標準のパラメトリックねじを
+ 3D ソリッドの円柱面です。メカニカルブラウザで、ねじのプロパティを編集できます。<fig id="fig_x1h_kk5_r4b">
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling01.png" id="image_zcq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><xref keyref="CMD_viewbase" />、、<xref keyref="CMD_viewproj" /> またはを使用して作成された図面ビューは、<xref keyref="CMD_viewsection" /> ねじを表します
+ 製図規格に従う。下図に、ねじを追加する前と後の円柱を示します。</p>
+         <fig>
+            <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling02.png" id="image_adq_hk5_r4b" scope="external" />
+         </fig>
+         <p><b>面取り</b></p>
+         <p><xref keyref="CMD_dmchamfer" />新しい非対称でより多くの柔軟性を提供しています,
+ 角度、可変対称、可変非対称および可変角度モード。<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling03.png" id="image_bdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>フィレット</b></p>
+         <p>新しい可変半径モードでは、<xref keyref="CMD_dmfillet" /> より柔軟性が得られます。<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling04.png" id="image_cdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>プッシュ/プル</b></p>
+         <p><xref keyref="CMD_dmpushpull" />には、減算モードを指定するオプションがあります。
+ (オン/オフ)。これもによって制御されます <xref keyref="SV_dmpushpullsubtract" />。</p>
+         <p>また、円柱面のダイナミック寸法の始点を切り替えることもできます。Tabキーを押すと、半径寸法とオフセット寸法が切り替わります。</p>
+      </section>
+      <section id="section_ddq_hk5_r4b">
+         <title>分割ビュー</title>
+         <p><xref keyref="CMD_viewbreak" />新しい機能では、関連図面ビューを解除できます。
+ <xref keyref="CMD_viewbase" />、<xref keyref="CMD_viewproj" />、またはを使用して作成した 3D モデルの <xref keyref="CMD_viewsection" />
+ 破断記号を含めます。選択した破断図記号の外観を変更できます
+ を使用します <xref keyref="PNL_properties" />。<xref keyref="CMD_viewbreak" />正しく
+ では、分割する前に図面ビューに配置する寸法がサポートされます。これらの寸法では、3Dモデルと作図ビューとの関連付けが維持されます。<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling05.png" id="image_edq_hk5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_fdq_hk5_r4b">
+         <title>3D図形スナップ</title>
+         <p>F4ファンクションキーを押すと、3D図形スナップのオン/オフを簡単に切り替えることができます。</p>
+      </section>
+      <section id="section_gdq_hk5_r4b">
+         <title>3Dポリライン</title>
+         <p>3D ポリラインの頂点は、サブ図形の選択、<xref keyref="PNL_properties" />、および最も近い距離をサポートするようになりました。<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling06.png" id="image_hdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>3Dポリラインがさらに機能強化され、頂点とエッジに3D拘束を適用できるようになりました。</p>
+      </section>
+      <section id="section_idq_hk5_r4b">
+         <title>パラメトリックブロック化</title>
+         <p><xref keyref="CMD_parametricblockify" />新しいモデルでは、モデルをすばやく変換できます
+ 図形をパラメトリックブロックにすることもできます。パラメトリックブロックまたはパラメトリック化された図形を入力ジオメトリとして選択し、図面内の他のジオメトリと比較します。一致するジオメトリが自動的にパラメトリックブロックに変換されます。</p>
+      </section>
+      <section id="section_jdq_hk5_r4b">
+         <title>3D表示</title>
+         <p>マテリアルの光沢が調整され、光沢のあるマテリアルであっても図形の詳細を識別しやすくなりました。光沢エフェクトは、明るいマテリアルでは弱めになり、暗いマテリアルでは強めになります。</p>
+      </section>
+      <section id="section_kdq_hk5_r4b">
+         <title>ソリッドとメッシュ</title>
+         <p><b>メッシュに変換</b></p>
+         <p><xref keyref="CMD_convtomesh" />は、平坦な面を三角形化するように最適化されています
+ 必要で、できるだけ少ない顔で。下図の例では、元のソリッド(左)をBricsCAD V20(中央)とBricsCAD V21(右)でメッシュに変換しています。<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling08.png" id="image_ldq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>ソリッドに変換</b></p>
+         <p><xref keyref="CMD_convtosolid" />では、メッシュを最適化された 3D に変換できます。
+ 新しいに基づいてソリッド <xref keyref="SV_smoothmeshconvert" />.<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling09.png" id="image_mdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>[最適化] に設定すると、同一平面上および隣接する面が 1 つの面に結合されます。下図の例では、元のメッシュ(左)をBricsCAD V20(中央)とBricsCAD V21(右)でソリッドに変換しています。<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling10.png" id="image_ndq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>メッシュのプロパティ</b></p>
+         <p>は、<xref keyref="PNL_properties" /> 選択したの追加プロパティへのアクセスを提供します
+ メッシュエンティティ滑らかさを指定できる機能など、メッシュとジオメトリのプロパティがメッシュ図形に含まれるようになりました。<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling11.png" id="image_odq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>[プロパティ] パネルでは、面、エッジ、頂点などのメッシュサブ図形もサポートされており、さまざまなレベルの折り目を適用できます。<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling12.png" id="image_pdq_hk5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_qdq_hk5_r4b">
+         <title>自動調整データ</title>
+         <p>新しい GENERATEASSOCATTRS<!--link--> 関連データの生成を制御する設定
+ モデリング中の 3D ソリッド[オン] に設定すると、3Dソリッドに作成時点からの自動調整データが含まれます。これにより <xref keyref="CMD_bimsectionupdate" />、<xref keyref="CMD_viewbase" /> およびコマンドは、寸法とタグの図面を作成できます。
+ は、3D モデルの変更後に自動的に更新できます。</p>
+      </section>
+      <section id="section_rdq_hk5_r4b">
+         <title>ツイストを表示</title>
+         <p>[ツイスト] オプションがに追加されます <xref keyref="CMD_-view" />。</p>
+      </section>
+      <section id="section_sdq_hk5_r4b">
+         <title>アニメーション編集</title>
+         <p>アニメーション編集機能が強化され、モデル空間で分解ビューのアニメーションがサポートされるようになりました。</p>
+      </section>
+      <section id="section_tdq_hk5_r4b">
+         <title>点群</title>
+         <p>BricsCAD V21では、点群機能が大幅に迅速化され、強力になりました。</p>
+         <p><b>前処理</b></p>
+         <p>前処理がサポートされているファイルにE57ファイル形式が追加されました。<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling30.png" id="image_udq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>前処理を行う必要がある点群をアタッチすると、BricsCAD V21ではV20よりも5～8倍の処理速度で変換されます。画面下部にある進行状況メーターに、変換の進行状況が表示されます。<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling13.png" id="image_vdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Alignment</b></p>
+         <p>新しいでは、<xref keyref="CMD_pointcloudalign" /> ポイントクラウドが自動的に回転します。
+ X軸とY軸に最適に位置合わせします。最適な位置合わせを決定するため、点群全体をシステムに解析させるか、最も関連性の高い領域を指定します。<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling14.png" id="image_wdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>バブルビューア</b></p>
+         <p>点群では、すべてのスキャン位置にバブルが表示されます。これらの位置は、最もリアルな視覚表現を得られる箇所です。<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling15.png" id="image_xdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>モデル空間でバブルの1つをダブルクリックして、バブルビューアを開きます。マウスの中央ボタンを押してカーソルを動かすと、スキャン位置から任意の方向の点群を表示できます。<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling16.png" id="image_ydq_hk5_r4b" scope="external" />
+            </fig><fig id="fig_mmr_32x_54b">
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling17.png" id="image_zdq_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Tabキーを押すと、3 種類の表示モードが切り替わります。</p>
+         <p>1番目のモードでは、データのスキャン方法に応じて、ポイントが実際の色またはグレースケールで表示されます。<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling18.png" id="image_a2q_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>2番目のモードでは、法線ベクトルに従って、ポイントが赤、緑、または青で表示されます。色はUCS軸に対応しています。<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling19.png" id="image_b2q_hk5_r4b" scope="external" />
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling20.png" id="image_c2q_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>3番目のモードは、スキャン位置からの距離が大きくなるにつれて、明から暗へポイントを表示します。<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling21.png" id="image_d2q_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>Ctrl + Aを押すと、バブルビューアに合わせて作図ビューを簡単に同期することができます。<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling22.png" id="image_e2q_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>図形スナップ</b></p>
+         <p>新しい点群最も近い点図形スナップにより、関連する点群の点を選択する機能が大幅に向上します。現在の視点からカーソルに向かって仮想円柱を使用します。<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling23.png" id="image_f2q_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>仮想円柱の半径は、[図形スナップの吸着範囲] を設定して定義します。<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling24.png" id="image_g2q_hk5_r4b" scope="external" />
+            </fig></p>
+         <p>図形スナップメニュー、ツールバー、設定で、他の3D図形スナップとともに新機能 [点群の近接点] 図形スナップを有効にします。<fig>
+               <image href="https://static.bricsys.com/help/en_US/V21/BCAD/What%20is%20new/NFG_BricsCAD_Modeling25.png" id="image_h2q_hk5_r4b" scope="external" />
+            </fig></p>
+         <p><b>書き出し</b></p>
+         <p><xref keyref="CMD_pointcloudexport" />新しいでは、切り抜かれた選択を書き出すことができます
+ ポイントクラウドから.pts。</p>
+      </section>
+   </conbody>
+</concept>

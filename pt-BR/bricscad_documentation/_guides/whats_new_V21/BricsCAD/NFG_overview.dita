@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="AF416B1A-C2434BA-A552B33D7C1D622-B55119">
+   <title>Visão Geral</title>
+   <shortdesc />
+
+   <conbody>
+      <p>BricsCAD V21 oferece uma infinidade de ferramentas, novas e aprimoradas, para ajudar a maximizar sua produtividade. Esta seção oferece uma visão geral de todos os novos recursos e melhorias no <b>Núcleo do BricsCAD V21 e ferramentas de Civil</b>:</p>
+      <p><xref keyref="NFG_user_interface" /></p>
+      <p><xref keyref="NFG_productivity" /></p>
+      <p><xref keyref="NFG_drafting" /></p>
+      <p><xref keyref="NFG_modeling" /></p>
+      <p><xref keyref="NFG_civil_tools" /></p>
+      <p><xref keyref="NFG_performance_and_compatibility" /></p>
+      <p />
+      <p>Para obter informações sobre os novos recursos e melhorias no <b>BricsCAD V21 BIM</b>, vá para a seção Novidades no BricsCAD V21 BIM. Esta contém os seguintes artigos:</p>
+      <p><xref keyref="NFG_overview_bim" /></p>
+      <p><xref keyref="NFG_modeling_techniques" /></p>
+      <p><xref keyref="NFG_building_data" /></p>
+      <p><xref keyref="NFG_project_collaboration" /></p>
+      <p><xref keyref="NFG_design_documentation" /></p>
+      <p><xref keyref="NFG_point_clouds" /></p>
+      <p />
+      <p>Para obter informações sobre os novos recursos e melhorias nas <b>ferramentas do BricsCAD V21 Mechanical</b>, vá para a seção de Novidades no BricsCAD V21 Mechanical. Esta contém os seguintes artigos:</p>
+      <p><xref keyref="NFG_overview_mechanical" /></p>
+      <p><xref keyref="NFG_bom_manager" /></p>
+      <p><xref keyref="NFG_parts_libraries" /></p>
+      <p><xref keyref="NFG_parameters_and_constraints" /></p>
+      <p><xref keyref="NFG_standard_parts" /></p>
+      <p><xref keyref="NFG_sheet_metal" /></p>
+      <section id="section_vl4_r3t_r4b">
+         <title>Notas de Release</title>
+         <p><xref href="https://www.bricsys.com/common/releasenotes.jsp" format="html" scope="external">Clique aqui</xref> para obter uma visão geral das Notas de Release.</p>
+      </section>
+      <section id="section_wl4_r3t_r4b">
+         <title>Diagnóstico e Coleta de Dados de Uso</title>
+         <p>Muitas das melhorias foram inspiradas em solicitações e sugestões de você, usuário BricsCAD. Na Bricsys, continuamos a expandir nossos métodos de coleta de feedback dos usuários com novas ferramentas para coleta de dados. Quando você inicia o BricsCAD pela segunda vez, uma caixa de diálogo é exibida, convidando você a participar do <xref href="https://help.bricsys.com/hc/en-us/articles/360016780820" format="html" scope="external">programa de Diagnóstico e Coleta de Dados de Uso</xref>. O processo de coleta de dados permite a você compartilhar dados anônimos de diagnóstico e uso com Bricsys para ajudar a melhorar o BricsCAD. São dados que não identificam você e nem seu computador. Mesmo depois de concordar, você pode retirar seu consentimento e ter seus dados removidos de nossos bancos de dados a qualquer momento.</p>
+      </section>
+   </conbody>
+</concept>

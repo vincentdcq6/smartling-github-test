@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A58F2161-B75AC5B-3597060284AC317-801FC2">
+   <title>Ferramentas de Civil</title>
+   <shortdesc />
+
+   <conbody>
+      <p>BricsCAD V21 oferece muitas ferramentas avançadas para modelagem de infraestrutura linear.</p>
+      <section id="section_rq2_qn5_r4b">
+         <title>Importar/Exportar</title>
+         <p>Ferramentas novas e aprimoradas para importar e exportar dados de Civil ajudam a acelerar os processos de colaboração e projeto.</p>
+         <p><b>Dados de Civil 3D</b></p>
+         <p>O novo <xref keyref="CMD_civil3dimport" /> permite que você crie várias entidades civis
+ no seu desenho BricsCAD, a partir de um desenho externo Autodesk® Civil 3D, em um
+ operação.</p>
+         <p><b>Dados LandXML</b></p>
+         <p>As <xref keyref="CMD_landxmlexport" /> ferramentas <xref keyref="CMD_landxmlimport" /> e
+ oferecer mais flexibilidade. Elas suportam novas curvas de alinhamento, incluindo combinações espiral-curva-espiral e parábolas para alinhamentos verticais. Alinhamentos verticais importados criam automaticamente Alinhamentos 3D. E, ao importar uma superfície com linhas de interrupção, uma nova opção permite especificar se as linhas de interrupção devem ser desenhadas como polilinhas 3D ou não desenhadas.</p>
+      </section>
+      <section id="section_sq2_qn5_r4b">
+         <title>Propriedades de Entidade Civil</title>
+         <p>Todas as entidades de Civil agora incluem as propriedades Nome e Descrição, no painel Propriedades. O nome e a descrição estão no modo somente leitura no painel Propriedades. Estes podem ser editados com a API.</p>
+         <fig>
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Civil_01_V21.png" id="image_tq2_qn5_r4b" scope="external" />
+         </fig>
+         <p>As subentidades selecionadas de entidades personalizadas (Civil) também estão exibidas no painel Propriedades.</p>
+      </section>
+      <section id="section_uq2_qn5_r4b">
+         <title>Configurações de Civil</title>
+         <p>Um novo nó Civil está incluído na caixa de diálogo Configurações para facilitar o acesso às configurações de Civil.<fig id="fig_bjz_r45_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Civil_02_V21.png" id="image_vq2_qn5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_wq2_qn5_r4b">
+         <title>Superfícies TIN</title>
+         <p>Ferramentas novas e aprimoradas para criar e editar Superfícies TIN fornecem mais flexibilidade e um fluxo de trabalho mais rápido.</p>
+         <p><b>Associatividade</b></p>
+         <p>Pontos e blocos estão dinamicamente vinculados à Superfície TIN. Se uma Superfície TIN é criada a partir de pontos ou blocos no desenho, e alguns pontos/blocos forem movidos, a superfície TIN vai atualizar automaticamente para refletir as alterações.</p>
+         <p><b>Recortar</b></p>
+         <p>Uma nova opção em <xref keyref="CMD_tin" /> e <xref keyref="CMD_tinedit" /> permite que você recorte uma superfície TIN de acordo com um determinado limite de polilinha.<fig id="fig_s13_s45_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_03_V21.png" id="image_xq2_qn5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Imagens Raster</b></p>
+         <p>O novo <xref keyref="CMD_tinassignimage" /> permite atribuir uma imagem raster como
+ Material de superfície TIN para criar um modelo de site realista.<fig id="fig_lvn_s45_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_04_V21.png" id="image_yq2_qn5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Extrair</b></p>
+         <p>O <xref keyref="CMD_tinextract" /> permite extrair faces, pontos, contornos e
+ a borda de uma superfície TIN, além da capacidade anterior de extrair uma malha ou
+ sólido.</p>
+         <fig id="fig_h4n_s2x_54b">
+            <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_06_V21.png" scope="external" id="image_i4n_s2x_54b" />
+         </fig>
+         <p>Você também pode extrair uma Superfície TIN de uma Superfície de Volume TIN ou Nivelamento, usando o comando de TINEXTRAIR.</p>
+         <p><b>Projetar</b></p>
+         <p>O novo <xref keyref="CMD_tinproject" /> permite projetar entidades baseadas em pontos
+ incluindo pontos, blocos e entidades de texto ou lineares, incluindo linhas, polilinhas e
+ círculos, para uma superfície de TIN.<fig id="fig_v35_s45_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_07_V21.png" id="image_zq2_qn5_r4b" scope="external" />
+            </fig></p>
+         <p><b>Caminho da Água</b></p>
+         <p>O novo <xref keyref="CMD_tinwaterdrop" /> permite que você desenhe o caminho de uma gota d'água de um ponto em uma superfície TIN.<fig id="fig_b41_t45_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_08_V21.png" id="image_ar2_qn5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_br2_qn5_r4b">
+         <title>Alinhamentos</title>
+         <p>O fluxo de trabalho para criar alinhamentos está simplificado ao mesmo tempo que ainda oferece funcionalidades poderosas e flexibilidade adicional.</p>
+         <p>Geometria de alinhamento horizontal e vertical está melhorada. Alinhamentos horizontais agora suportam espirais, e alinhamentos verticais agora suportam curvas parabólicas. O novo DEFAULTCURVETYPEHA<!--link--> e DEFAULTCURVETYPEVA<!--link--> As configurações de alinhamento permitem especificar o tipo de curva padrão para criar novos alinhamentos horizontais e verticais.<fig id="fig_is3_t45_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Civil_10_V21.png" id="image_cr2_qn5_r4b" scope="external" />
+            </fig><fig id="fig_zd1_y2x_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Civil_11_V21.png" id="image_dr2_qn5_r4b" scope="external" />
+            </fig></p>
+         <p>O painel Propriedades exibe propriedades para elementos de Espiral-Curva-Espiral ou parábola.</p>
+      </section>
+      <section id="section_er2_qn5_r4b">
+         <title>Corredores</title>
+         <p>Poderosas ferramentas de corredor ajudam você a criar um modelo 3D de infraestrutura linear definido por um template e alinhamento 3D.</p>
+         <p>O novo <xref keyref="CMD_corridortemplateelement" /> permite que você crie um corredor
+ elemento de modelo de polilinhas fechadas.<fig id="fig_fw5_t45_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_12_V21.png" id="image_fr2_qn5_r4b" scope="external" />
+            </fig></p>
+         <p>Em seguida, use o novo <xref keyref="CMD_corridortemplate" /> para criar um modelo de corredor
+ de elementos de modelo.<fig id="fig_yk1_545_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_13_V21.png" id="image_gr2_qn5_r4b" scope="external" />
+            </fig></p>
+         <p>Finalmente, use o novo <xref keyref="CMD_corridor" /> para criar um corredor a partir de um corredor
+ modelo, alinhamento 3D e/ou superfície TIN. Você pode criar múltiplas regiões usando diferentes templates de corredor. E, você pode adicionar ou remover regiões usando o novo <xref keyref="CMD_corridoredit" />.<fig id="fig_wgg_545_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_14_V21.png" id="image_hr2_qn5_r4b" scope="external" />
+            </fig></p>
+         <p>Use o painel Propriedades para modificar dados e propriedades de estilo visual da região selecionada.<fig id="fig_vqp_bfx_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Civil_15_V21.png" scope="external" id="image_wqp_bfx_54b" />
+            </fig></p>
+         <p>O novo <xref keyref="CMD_corridorextract" /> permite que você extraia um sólido 3D, malha 3D,
+ ou polilinha 3D de um corredor para usar para vários fins. Por exemplo, você pode extrair polilinhas de um corredor para usar como bordas para o nivelamento. Se você editar o alinhamento através de alças, o corredor e sua geometria associada, tal como o nivelamento, o seguem automaticamente.<fig id="fig_gvl_545_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_16_V21.png" id="image_ir2_qn5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_jr2_qn5_r4b">
+         <title>Nivelamentos</title>
+         <p>O novo <xref keyref="CMD_gradingbalance" /> permite equilibrar o corte e o preenchimento de avaliação
+ volumes.</p>
+      </section>
+      <section id="section_kr2_qn5_r4b">
+         <title>Superfícies de volume de</title>
+         <p>O <xref keyref="SV_arrayassociativity" /> inclui um novo controle para a associatividade TIN Volume Surface. Superfícies de Volume TIN reconstroem automaticamente quando suas superfícies de origem mudam.</p>
+      </section>
+      <section id="section_lr2_qn5_r4b">
+         <title>Amostras API</title>
+         <p>As seguintes Amostras de API são fornecidas: Horizontal alignment report (relatório de alinhamento horizontal), Color surface triangles by elevation (triângulos de superfície de cor por elevação), Color surface triangles by slope (triângulos de superfície de cor por declividade).</p>
+      </section>
+   </conbody>
+</concept>

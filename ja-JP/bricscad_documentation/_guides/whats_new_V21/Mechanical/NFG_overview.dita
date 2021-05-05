@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A926AA43-C4353C5-B371E2D47523815-E72635">
+   <title>概要</title>
+
+   <conbody>
+      <p>BricsCAD Mechanical V21では、BricsCAD V21で利用可能なすべての新しいツールと機能強化が提供されている他、メカニカルワークフロー専用の機能も強化されています。この項では、<b>BricsCAD V21メカニカルツール</b>の新機能と機能強化について概要を説明します。</p>
+      <p><xref keyref="NFG_bom_manager" /></p>
+      <p><xref keyref="NFG_parts_libraries" /></p>
+      <p><xref keyref="NFG_parameters_and_constraints" /></p>
+      <p><xref keyref="NFG_standard_parts" /></p>
+      <p><xref keyref="NFG_sheet_metal" /></p>
+      <p> </p>
+      <p><b>BricsCAD V21コアツールおよび土木ツール</b>の新機能と機能強化についての詳細は、「BricsCAD V21の新機能」を参照してください。以下の記事を記載しています。</p>
+      <p><xref keyref="NFG_overview" /></p>
+      <p><xref keyref="NFG_user_interface" /></p>
+      <p><xref keyref="NFG_productivity" /></p>
+      <p><xref keyref="NFG_drafting" /></p>
+      <p><xref keyref="NFG_modeling" /></p>
+      <p><xref keyref="NFG_civil_tools" /></p>
+      <p><xref keyref="NFG_performance_and_compatibility" /></p>
+      <p> </p>
+      <p><b>BricsCAD V21 BIMの新機能と改善については </b>、BricsCAD BIM V21の新機能セクションを参照してください。以下の記事を記載しています。</p>
+      <p><xref keyref="NFG_overview_bim" /></p>
+      <p><xref keyref="NFG_modeling_techniques" /></p>
+      <p><xref keyref="NFG_building_data" /></p>
+      <p><xref keyref="NFG_project_collaboration" /></p>
+      <p><xref keyref="NFG_design_documentation" /></p>
+      <p><xref keyref="NFG_point_clouds" /></p>
+      <p> </p>
+      <section id="section_wzb_sjv_54b">
+         <title>リリースノート</title>
+         <p>リリースノートの概要については、<xref href="https://www.bricsys.com/common/releasenotes.jsp" format="html" scope="external"> こちらをクリックしてください </xref>。</p>
+      </section>
+      <section id="section_xzb_sjv_54b">
+         <title>診断と使用状況データの収集</title>
+         <p>多くの場合で、BricsCADユーザーの皆様から寄せられるご要望やご提案が機能強化につながっております。Bricsysでは今後も、新しいデータ収集ツールを活用してユーザーの皆様からのフィードバック収集方法を拡充してまいります。BricsCADを2回目に起動すると、ダイアログボックスが表示され、<xref href="https://help.bricsys.com/hc/en-us/articles/360016780820" format="html" scope="external"> 診断と使用状況データ収集プログラムに参加するように促します </xref>。データ収集プロセスにご参加いただくことで、匿名の診断および使用状況データをBricsys社と共有することが可能となり、BricsCADの機能強化に役立てることができます。お客様は、いつでも同意を取り消し、お客様ご自身のデータを当社データベースから削除することができます。</p>
+      </section>
+   </conbody>
+</concept>

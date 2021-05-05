@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="AE16B7A5-2B7C525-33CEC2334D41F57-AB452D">
+   <title>BOMマネージャ</title>
+   <shortdesc />
+
+   <conbody>
+      <p>部品表の作成と編集を簡単に行えるようになりました。</p>
+      <section id="section_vql_pxv_54b">
+         <title>Grouping</title>
+         <p>プロパティにグループ化が追加されたことで、部品表の内容を既存の列の共通プロパティ別に凝縮された行にすばやくグループ化できるようになりました。<fig id="fig_yqf_2bw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMGrouping_01_V21.png" id="image_wql_pxv_54b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_xql_pxv_54b">
+         <title>列</title>
+         <p>部品表内の任意の列に対して、あらかじめ定義された列フィルタの1つを設定できるようになりました。<fig id="fig_azk_2bw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMFilter_01_V21.png" id="image_yql_pxv_54b" scope="external" />
+            </fig></p>
+         <p>集計列は、作成された最上位レベルおよび最下位レベルの BOM テーブルでサポートされるようになりました
+ を <xref keyref="CMD_bmbom" />.これにより、現在のグループ化に対して、特定のプロパティの合計、最小値、最大値、平均値を計算できます。<fig id="fig_y34_2bw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMAggregate_01_V21.png" id="image_zql_pxv_54b" scope="external" />
+            </fig></p>
+         <p>BOMマネージャのメインメニューでオプションを選択すると、新しい [フィルタコンフィギュレータ] ダイアログボックスが開きます。フィルタコンフィギュレータで、部品表の内容を絞り込むことができます。また、BOMフィルタの文字列プロパティではワイルドカード式がサポートされています。<fig id="fig_xgr_2bw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMTableFilter_01_V21.png" id="image_arl_pxv_54b" scope="external" />
+            </fig></p>
+         <p>テンプレート列は新しいタイプの評価列です。DIESEL式を使用して、複数のプロパティの値を部品表の1つの列にテキストとして結合できます。<fig id="fig_mf5_2bw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMTemplateColumn_01_V21.png" id="image_brl_pxv_54b" scope="external" />
+            </fig></p>
+         <p>式エディタダイアログを使用して、式またはテンプレート列の式を構成およびプレビュー表示できます。<fig id="fig_jxx_2bw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMTemplateColumn_02_V21.png" id="image_crl_pxv_54b" scope="external" />
+            </fig></p>
+         <p>[書式] ダイアログボックスが追加され部品表内のデータの式を接頭語、接尾辞、区切り記号でカスタマイズできるようになりました。<fig id="fig_sgb_fbw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMFormat_01_V21.png" id="image_drl_pxv_54b" scope="external" />
+            </fig></p>
+         <p>新しいオプション [列の役割] を使用すると、作図ビューのバルーンのソースとなる列を指定できます。<fig id="fig_mbf_fbw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMColumnRole_01_V21.png" id="image_erl_pxv_54b" scope="external" />
+            </fig></p>
+         <p>[物理的マテリアル] ダイアログおよび部品表の [列のプロパティ] セクションの両方で、マテリアル密度の単位を選択できるようになりました。サポートされている単位は、kg/m³、kg/dm³、g/cm³、lbs/ft³、lbs/in³ です。<fig id="fig_jtj_fbw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMDensity_01_V21.png" id="image_frl_pxv_54b" scope="external" />
+            </fig></p>
+         <p>階層型の部品表のレポートレベルを制限するオプションが導入されました。<fig id="fig_u5m_fbw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMHeir_01_V21.png" id="image_grl_pxv_54b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_hrl_pxv_54b">
+         <title>書き出し</title>
+         <p>部品表をCSVファイルに書き出せるようになりました。<fig id="fig_ohr_fbw_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_MCAD_BOMExport_01_V21.png" id="image_irl_pxv_54b" scope="external" />
+            </fig></p>
+      </section>
+   </conbody>
+</concept>

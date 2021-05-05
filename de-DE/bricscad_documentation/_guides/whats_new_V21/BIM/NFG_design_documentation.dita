@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A2F276B4-3A4DA52-375261874425551-B7E4C9">
+   <title>Design Dokumentation</title>
+
+   <conbody>
+      <section id="section_nz1_3dy_s4b">
+         <title>Schnitte</title>
+         <p><b>SectionView aktivieren</b></p>
+         <p>Mit diesem neuen Befehl können Sie das Modell aus der Perspektive einer Schnittebene betrachten, ohne den Abschnitt zu generieren. In dieser Ansicht können Sie das 3D-Modell von einem 2D-Punkt aus bearbeiten. Um die aktive Ansicht zu verlassen, kreisen Sie einfach um das Modell.</p>
+         <p><b>BimSections öffnen</b></p>
+         <p>Wenn Sie aus einer Blattansicht mit <xref keyref="CMD_bimsectionopen" /> zum Modell wechseln, wird das Modell gedreht und auf die gleiche Zoomstufe
+ wie die Blattansicht vergrößert.</p>
+         <p>Verfügbare Eigenschaften und Eigenschaftswerte werden im Filterparameter Formular angezeigt.</p>
+         <p>Der Befehl BIMSECTIONOPEN ermöglicht nun den nahtlosen Übergang zwischen der Blattansicht und dem Zeichnungsmodell auf derselben Zoomstufe, ohne dass Sie sich und das Modell an der Stelle neu orientieren müssen, an der Sie zuvor auf dem Blatt gearbeitet haben.</p>
+         <p>Wenn Sie mit dem aktualisierten Befehl BIMSECTIONOPEN zwischen einem Blatt-Viewport und dem Zeichnungsmodell umschalten, wird das Zeichnungsmodell angezeigt und orientiert sich an der gleichen Zoomstufe wie im Blatt-Viewport, unabhängig vom Maßstab des Standardmaßstabs oder des Anmerkungsmaßstabs der Zeichnung oder des Viewports.</p>
+         <p><b>BimSections aktualisieren</b></p>
+         <p>Die assoziativen Daten für 3D-Feststoffe, die für die Abschnittserstellung und das Taggen der Ergebnisse des Abschnitts durch das <xref keyref="CMD_bimtag" /> erforderlich sind, werden automatisch in BricsCAD BIM V21 beim Modellieren generiert, es sei denn, die neue Systemvariable GENERATEASSOCATTRS (Assoziative Attribute generieren)<!--link--> ist auf Aus gesetzt.</p>
+         <p><b>Innen Ansichten</b></p>
+         <p>Da Räume in V20 und älter jetzt veraltet und durch Spaces ersetzt werden, unterstützt die Innenoption <xref keyref="CMD_bimsection" /> jetzt Spaces.</p>
+      </section>
+      <section id="section_oz1_3dy_s4b">
+         <title>Bezeichner</title>
+         <p>Das Werkzeug &quot;BIM-Tags&quot; enthält jetzt Optionen zum Markieren von tragenden Richtungen und Punkthöhen auf Ansichtsfen im Papierbereich. Beide Tag-Typen funktionieren auf Plan- und Schnittzeichnungen. Die Spot-Höhen-Tags funktionieren auch bei Höhenzeichnungen.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_TagIcons_01_V21.png" id="image_pz1_3dy_s4b" scope="external" />
+            </fig></p>
+         <p>Automatisch generierte Tags können einen Offset haben, der über das Attribut Offset in TagTypeToStyle.xml definiert wird, das sich in der Datei <menucascade>
+               <uicontrol>SUPPORTFOLDER</uicontrol>
+               <uicontrol> Bim</uicontrol>
+               <uicontrol> Abschnitte</uicontrol>
+            </menucascade> Ordner. Wenn der Offset nicht angegeben wird, wird die Mitte des Tag-Blocks verwendet.</p>
+         <p>Ebenso können automatisch und manuell platzierte Tags gedreht werden, wenn das Attribut autoRotation in der Datei TagTypeToStyle.xml auf <uicontrol>true</uicontrol> gesetzt ist.</p>
+         <p><b>Bezeichner Tragfähigkeit</b></p>
+         <p>Tragfähigkeitsanhänger ist nur anwendbar, wenn die Tragrichtung der Platte
+ bereits festgelegt wurde. Weitere Informationen finden Sie unter <xref keyref="CMD_bimsetloadbearingdirection" /> .
+.</p>
+         <p><b>Bezeichner Spot Erhebung</b></p>
+         <p>Das Tag &quot;Spot Elevation Level&quot; zeigt die tatsächliche Höhe eines ausgewählten Punkts eines BIM-Objekts in einer Schnittansicht an. Die Höhe wird relativ zur Ebene 0 gemessen.</p>
+         <p><b>Tags im Allgemeinen</b></p>
+         <p>Klicken Sie auf der Registerkarte Papierbereich auf <uicontrol>Tag Load-bearing</uicontrol> und wählen Sie den Punkt auf einem geschnittenen BIM-Element aus, wenn Sie dazu aufgefordert werden. Sie werden aufgefordert, einen Punkt auf dem gewünschten geschnittenen BIM-Element auszuwählen oder die aktuellen Einstellungen des Mleader-Stils zu ändern, ähnlich wie Sie BIMTAG in V20 einstellen.</p>
+         <p>So können Sie z. B. ein Grafik-Tag für eine zweiseitig tragende Spannweite auf den Konstruktionsplänen haben.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_Tags_01_V21.png" id="image_qz1_3dy_s4b" scope="external" />
+            </fig></p>
+         <p>Oder Sie können Punkthöhen haben, die Höhenstufen relativ zum WCS anzeigen.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_SpotElevation_01_V21.png" id="image_rz1_3dy_s4b" scope="external" />
+            </fig></p>
+         <p>Wie alle anderen BIM-Tags sind sie anpassbare Multileader-Blöcke. So können z. B. Spot Elevation Tags weiter an Ihre Grafik- und Informationswünsche angepasst werden.</p>
+      </section>
+      <section id="section_sz1_3dy_s4b">
+         <title>Daten Extraktion</title>
+         <p>Unter <xref keyref="CMD_dataextraction" /> können Sie nun alle Blöcke einbeziehen und auch aus Layouts in den neuen Filterregeleinstellungen extrahieren. Sie können nun Daten zur Zusammensetzung und zum physikalischen Material extrahieren.</p>
+         <fig id="fig_zvc_ryb_v4b">
+            <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataExtraction_01_V21.png" scope="external" id="image_awc_ryb_v4b" />
+         </fig>
+         <p>Sie können jetzt Mengendaten auf der Basis von IFC2x3-Elementtypen extrahieren und planen.<fig id="fig_tnr_syb_v4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataExtraction_02_V21.png" scope="external" id="image_unr_syb_v4b" />
+            </fig></p>
+      </section>
+      <section id="section_tz1_3dy_s4b">
+         <title>Zeichnungs-Anpassungen</title>
+         <p>Drawing Customization ist ein neues Tool, das nur über das Panel verfügbar und zugänglich ist. Alle Steuerelemente von Zeichnungsanpassungen werden als grafische Symbole im Benutzeroberflächenbereich dargestellt, z. B. das Symbol <b>+</b> in einem blauen Kreis, um eine neue Vorlage zu erstellen. Sie können Ihre Anpassungsvorlagen duplizieren, umbenennen oder löschen.</p>
+         <p>Es ermöglicht Ihnen, Ansichtsvorlagen zu erstellen, um die Sichtbarkeitseinstellungen Ihrer Zeichnungen in Layouts zu steuern und anzupassen. Das Tool Drawing Customizations in BricsCAD wird von 3 Prinzipien – Entitätsanpassungen, Stile und Filterregeln – betrieben.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_Customization_01_V21.png" id="image_uz1_3dy_s4b" scope="external" />
+            </fig></p>
+         <p>Zeichnungsanpassungsvorlagen werden im Anpassungsordner im SUPPORTFOLDER unter <menucascade>
+               <uicontrol>Ordner &quot;Bim&quot;</uicontrol>
+               <uicontrol> Unterordner &quot;Sections</uicontrol>
+            </menucascade>.</p>
+         <p>Jede Anpassungsvorlage wird als einzelner Ordner gespeichert, der in der grundlegenden Form Settings.dwg-, Filter.json- und einer neuen customization.json-Datei enthalten ist. Der Ordner enthält auch alle externen Symbolquellen, die Sie mit den Schaltflächen Neu erstellen neu angelegt haben.</p>
+         <p>Die Datei Settings.dwg enthält die in der Registerkarte &quot;Stil&quot; erstellten Werte in Form von Layern. Wenn Sie benutzerdefinierte Eigenschaften erstellt haben, die Sie als Filterparameter verwenden möchten, müssen Sie sicherstellen, dass diese auch in der Datei Settings.dwg enthalten sind.<fig id="fig_orw_5yb_v4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_Customization_02_V21.png" scope="external" id="image_prw_5yb_v4b" />
+            </fig></p>
+         <p><b>Entitätsanpassungen</b></p>
+         <p>Entitätsanpassungen beziehen sich auf die Sichtbarkeitseinstellungen, wie Ihre Elemente in Ihrer Modellzeichnung aussehen sollen.</p>
+         <p>Eine Ebene tiefer innerhalb einer dieser Registerkarten zur Anpassung von Elementen gelangen Sie zu deren Einstellungen, wo Sie wählen können, wie das Element als Schnittergebnis aussehen soll, oder wie eine Darstellung vom Typ Mittellinie überlappen soll, oder wie eine externe Symboldarstellung das ursprüngliche Asset ersetzen soll. Sie können eine bestimmte Lage des gewünschten Aufbaus weiter modifizieren und anpassen, aber nur, wenn dies sinnvoll ist.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_Customization_03_V21.png" id="image_vz1_3dy_s4b" scope="external" />
+            </fig></p>
+         <p>Die Anpassung des Abschnittsergebnisses zeigt eine Reihe von Steuerelementen mit Dropdown-Werten aus der Registerkarte &quot;Stile&quot; zur genaueren Steuerung der Grafiken des Abschnittsergebnisses an. Sie können die Schraffuren der Elemente über die Funktion &quot;Erscheinungsbild überschreiben&quot; mit voreingestellten oder benutzerdefinierten physikalischen Materialien überschreiben, die in Ihrem Projekt verfügbar sind.</p>
+         <p>Bei den Einstellungen für die Symbolanpassung finden Sie einen Eingabedialog, in dem Sie Ihre gewünschte externe Symbolzeichnung in .dwg Format. Es gibt zusätzliche Schaltflächen, mit denen Sie die ausgewählte Symbolzeichnung bearbeiten oder eine neue .dwg-Datei erstellen können Symbol.</p>
+         <p>Sie können Ihre gespeicherten Stile außerdem auf bestimmte Ebenen innerhalb Ihrer externen Symbolquelle anwenden und so eine allgemeine Symbolzeichnung über mehrere Anpassungsvorlagen mit unterschiedlichen Ausgabeergebnissen beibehalten.</p>
+         <p><b>Stile</b></p>
+         <p>Hier werden die gewünschten Stiloptionen wie Linienstärke, Linienfarben usw. gespeichert und erscheinen als Dropdown-Optionen in den Einstellungen &quot;Entity-Anpassungen&quot; und &quot;Center-Anpassungen&quot;, wie im vorherigen Abschnitt oben gezeigt.</p>
+         <p>Die Bedienung der Registerkarten &quot;Stile&quot; entspricht der Bedienung der Registerkarten &quot;Entity-Anpassung&quot;.</p>
+         <p>Um einen der verfügbaren Stile zu bearbeiten, klicken Sie auf die entsprechende Registerkarte, um die Stileinstellungen aufzurufen, wo Sie die gewünschten Werte für die Farbe, den Linientyp, die Linienstärke und die Linientypskala des Stils angeben können.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_Customization_04_V21.png" id="image_wz1_3dy_s4b" scope="external" />
+            </fig></p>
+         <p><b>Regeln filtern</b></p>
+         <p>Um die richtigen Anpassungsstile auf bestimmte Entitäten anwenden zu können, müssen Sie auf der Registerkarte Filterregeln die entsprechenden Filterregeln einstellen, um diese Entitäten korrekt anzusprechen.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_Customization_05_V21.png" id="image_xz1_3dy_s4b" scope="external" />
+            </fig></p>
+         <p>Filterregeln können weiter in Unterregeln eingeteilt werden, die als Untermenge der übergeordneten Regel gelten, d. h.. Feuerausrüstung als Filterregel, während Feuerlöscher als Unterregel klassifiziert ist. Das blaue Symbol <b>+</b> wird auch auf jeder Regelsebene angezeigt, wobei am Ende jeder Regel, unabhängig davon, ob es sich um eine Teilmenge handelt oder nicht, mit einer Entitätsanpassung enden muss.<fig>
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_Customization_06_V21.png" id="image_yz1_3dy_s4b" scope="external" />
+            </fig></p>
+         <p>Das Hinzufügen und Bearbeiten eines Filterparameters führt zu einer Eingabeaufforderung, wobei die Optionen der Filtereigenschaft durch die in den Namensraumeinstellungen importierten BIMPROPERTIES bestimmt werden.</p>
+         <p>Um eine Filterregel zu beenden und zu legitimieren, muss der Entity-Anpassungswert hinzugefügt und ausgefüllt werden. Die in der Dropdown-Auswahl verfügbaren Optionen spiegeln die vorhandenen Anpassungen wider, die auf der Seite &quot;Entitätsanpassung&quot; verfügbar sind.</p>
+      </section>
+   </conbody>
+</concept>

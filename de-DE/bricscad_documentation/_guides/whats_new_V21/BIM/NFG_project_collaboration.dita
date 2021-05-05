@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A464DCBA-3C3B5CB-CC2114111774544-17D903">
+   <title>Projekt Zusammenarbeit</title>
+
+   <conbody>
+      <section id="section_qzm_tby_s4b">
+         <title>IFC IMPORT/EXPORT</title>
+         <p>Es wurde ein Mechanismus implementiert, um IFC/BIM Objekten für BIM/IFC Objekten zuzuordnen, um zu kontrollieren, welche Objekte importiert/exportiert werden. BricsCAD BIM fügte auch IFC Export von Beschriftungs Objekten hinzu.</p>
+         <p>Sie können dieses Zuordnen mit Hilfe von Zuordnungs-Dateien durchführen. Die Benutzereinstellungen IfcImportMappingMath und IfcImportMappingPath legen die Pfade zu den erforderlichen Zuordnungs-Dateien fest. Diese Dateien sind einfache Textdateien, die einige Regeln enthalten.</p>
+         <p>Diese Zuordnung kann verwendet werden, um BIM-Objekte als IFC-Objekte eines anderen Typs zu exportieren oder um bestimmte Typen ganz zu überspringen. Ein Beispiel für eine solche Exportdatei kann sein:<ul id="ul_ulb_wby_s4b">
+               <li>BimDbColumn IfcMember</li>
+               <li>BimDbBeam IfcMember</li>
+               <li>BimDbFurnishingElement überspringen</li>
+            </ul></p>
+         <p>In diesem Beispiel werden Stützen und Träger im BricsCAD-BIM-Modell als Stäbe in die IFC-Datei exportiert, und Einrichtungselemente werden beim Exportvorgang übersprungen.</p>
+         <p>Beim Importieren von IFC-Dateien kann ein ähnlicher Prozess verwendet werden. Ein Beispiel für eine solche Importdatei kann sein:<ul id="ul_nk2_3cy_s4b">
+               <li>IfcWall BimDbSlab</li>
+               <li>IfcSlab BimDbWall</li>
+            </ul></p>
+         <p>* Überspringen</p>
+         <p>In diesem Fall werden die Wände als Platten und die Platten als Wände importiert. Es werden keine anderen Objekte importiert, da das Sternchen bedeutet, dass nur gelistete Objekttypen berücksichtigt werden, alle nicht gelisteten Objekttypen werden übersprungen.</p>
+         <p>Die Benutzereinstellung IfcCreateUniqueGuid wurde hinzugefügt, um die Erstellung von eindeutigen GUIDs für verschachtelte Elemente innerhalb von klassifizierten Blöcken und Xrefs zu aktivieren/deaktivieren.</p>
+         <p>Der Flussverbindungs Punkt wird als IfcBuildingElementProxy nach IFC exportiert. Nur 2D-Geometrie oder eine Blockreferenz mit 2D-Geometrie kann als Strömungsverbindungs Punkt klassifiziert werden.</p>
+      </section>
+      <section id="section_rzm_tby_s4b">
+         <title>Importieren von RVT Dateien</title>
+         <p>Beim Importieren von Revit-Objekten mit IMPORT, können Sie wählen, ob Sie alle Volumenkörper importieren oder nur als Overlay importieren möchten. Sie können den Import auf Basis von Revit-Ansichten, Kategorien, Ebenen oder WorkSets filtern.<fig id="fig_zrq_5cy_s4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_CollaborationCategories_01_V21.png" id="image_szm_tby_s4b" scope="external" />
+            </fig></p>
+         <p>Dies ist ein Beispiel für die Option Kategorien, mit der Sie bestimmte Kategorien für Ihren RVT-Import zuordnen können. Farben und Transparenzen werden jetzt beim Importieren einer RVT-Datei importiert.<fig id="fig_rs4_vcy_s4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BIM_CollaborationRevit_01_V21.png" id="image_tzm_tby_s4b" scope="external" />
+            </fig></p>
+      </section>
+   </conbody>
+</concept>

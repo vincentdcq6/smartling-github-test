@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="A58F2161-B75AC5B-3597060284AC317-801FC2">
+   <title>土木ツール</title>
+   <shortdesc />
+
+   <conbody>
+      <p>BricsCAD V21では、線形インフラストラクチャモデリングのための高度なツールが豊富に提供されています。</p>
+      <section id="section_rq2_qn5_r4b">
+         <title>読み込み/書き出し</title>
+         <p>土木データの読み込みと書き出しのための新しいツールや強化されたツールを使い、コラボレーションや設計プロセスを迅速化できます。</p>
+         <p><b>土木3Dデータ</b></p>
+         <p><xref keyref="CMD_civil3dimport" />新しい機能では、複数の Civil エンティティを作成できます。
+ を BricsCAD 図面で、外部の Autodesk® Civil 3D 図面から 1 つに
+ 操作。</p>
+         <p><b>LandXMLデータ</b></p>
+         <p><xref keyref="CMD_landxmlimport" /> <xref keyref="CMD_landxmlexport" />ツールおよびツール
+ により柔軟性が高まります。らせん-曲線-らせんの組み合わせや垂直配列の放物線など、新しい配列曲線がサポートされています。読み込まれた垂直配列から自動的に3D配列が作成されます。また、破断線を含むサーフェスを読み込む場合、新しいオプションを使用して、破断線を3Dポリラインとして描画するか、まったく描画しないかを指定できます。</p>
+      </section>
+      <section id="section_sq2_qn5_r4b">
+         <title>土木図形のプロパティ</title>
+         <p>すべての土木図形について、[名前] と [説明] が [プロパティ] パネルに含まれるようになりました。[プロパティ] パネルに表示される [名前] と [説明] は読み取り専用です。これらはAPIで編集できます。</p>
+         <fig>
+            <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Civil_01_V21.png" id="image_tq2_qn5_r4b" scope="external" />
+         </fig>
+         <p>[プロパティ] パネルには、選択した(土木)カスタム図形のサブ図形も表示されます。</p>
+      </section>
+      <section id="section_uq2_qn5_r4b">
+         <title>土木設定</title>
+         <p>土木設定に簡単にアクセスできるように、[設定] ダイアログボックスに [土木] ノードが追加されました。<fig id="fig_bjz_r45_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Civil_02_V21.png" id="image_vq2_qn5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_wq2_qn5_r4b">
+         <title>TINサーフェス</title>
+         <p>TINサーフェスを作成および編集するための新しいツールと機能強化されたツールを使い、作業の柔軟性を向上させ、ワークフローを迅速化できます。</p>
+         <p><b>自動調整</b></p>
+         <p>点とブロックはTINサーフェスにダイナミックにリンクされます。図面内の点やブロックからTINサーフェスを作成した場合、点やブロックを移動すると、TINサーフェスが自動的に更新され、変更内容が反映されます。</p>
+         <p><b>クリップ</b></p>
+         <p><xref keyref="CMD_tin" /> <xref keyref="CMD_tinedit" />の新しいオプションで、
+ 指定されたポリライン境界に従って TIN サーフェスをクリップします。<fig id="fig_s13_s45_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_03_V21.png" id="image_xq2_qn5_r4b" scope="external" />
+            </fig></p>
+         <p><b>ラスターイメージ</b></p>
+         <p><xref keyref="CMD_tinassignimage" />新しいでは、ラスターイメージを
+ TIN サーフェスマテリアルな外構モデルを作成します。<fig id="fig_lvn_s45_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_04_V21.png" id="image_yq2_qn5_r4b" scope="external" />
+            </fig></p>
+         <p><b>抽出</b></p>
+         <p><xref keyref="CMD_tinextract" />では、面、点、等高線、
+ メッシュを抽出する以前の機能に加えて、TINサーフェスからの境界線または
+ ソリッド。</p>
+         <fig id="fig_h4n_s2x_54b">
+            <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_06_V21.png" scope="external" id="image_i4n_s2x_54b" />
+         </fig>
+         <p>TINEXTRACTコマンドを使い、グレーディングやTINボリュームサーフェスからTINサーフェスを抽出することもできます。</p>
+         <p><b>投影</b></p>
+         <p><xref keyref="CMD_tinproject" />新しい機能では、点ベースのエンティティを投影できます。
+ 点、ブロック、文字または直線図形を含み、線分、ポリライン、
+ 円を TIN サーフェスに配置します。<fig id="fig_v35_s45_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_07_V21.png" id="image_zq2_qn5_r4b" scope="external" />
+            </fig></p>
+         <p><b>水の経路</b></p>
+         <p><xref keyref="CMD_tinwaterdrop" />新しいを使用すると、水滴のパスを
+ TIN サーフェス上のポイント。<fig id="fig_b41_t45_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_08_V21.png" id="image_ar2_qn5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_br2_qn5_r4b">
+         <title>位置合わせ</title>
+         <p>位置合わせを作成するワークフローが簡素化され、しかも以前と同様の強力な機能性が保たれ、より柔軟に作業を行えます。</p>
+         <p>水平および垂直配列のジオメトリが強化されました。水平配列でらせんがサポートされるようになり、垂直配列で放物線曲線がサポートされるようになりました。新しいDEFAULTCURVETYPEHA<!--link--> と DEFAULTCURVETYPEVA<!--link--> 線形設定を使用すると、新しい平面線形と垂直線形を作成するための既定の曲線タイプを指定できます。<fig id="fig_is3_t45_r4b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Civil_10_V21.png" id="image_cr2_qn5_r4b" scope="external" />
+            </fig><fig id="fig_zd1_y2x_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Civil_11_V21.png" id="image_dr2_qn5_r4b" scope="external" />
+            </fig></p>
+         <p>[プロパティ] パネルに、らせん-曲線-らせんまたは放物線要素のプロパティが表示されます。</p>
+      </section>
+      <section id="section_er2_qn5_r4b">
+         <title>コリドー</title>
+         <p>強力なコリドーツールを使用すると、テンプレートおよび3D配列によって定義される線形インフラストラクチャの3Dモデルの作成が容易になります。</p>
+         <p><xref keyref="CMD_corridortemplateelement" />新しいでは、コリドーを作成できます。
+ 閉じたポリラインからのテンプレート要素。<fig id="fig_fw5_t45_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_12_V21.png" id="image_fr2_qn5_r4b" scope="external" />
+            </fig></p>
+         <p>次に、<xref keyref="CMD_corridortemplate" /> 新しいを使用してコリドーテンプレートを作成します
+ テンプレート要素から。<fig id="fig_yk1_545_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_13_V21.png" id="image_gr2_qn5_r4b" scope="external" />
+            </fig></p>
+         <p>最後に、<xref keyref="CMD_corridor" /> 新しいを使用して、コリドーからコリドーを作成します。
+ テンプレート、3D 位置合わせ、または TIN サーフェス異なるコリドーテンプレートを使用して、複数のリージョンを作成できます。また、新しいを使用してリージョンを追加または削除できます <xref keyref="CMD_corridoredit" />。<fig id="fig_wgg_545_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_14_V21.png" id="image_hr2_qn5_r4b" scope="external" />
+            </fig></p>
+         <p>[プロパティ] パネルで、選択したリージョンのデータや表示スタイルのプロパティを変更できます。<fig id="fig_vqp_bfx_54b">
+               <image href="https://static.bricsys.com/help/en_US/NFG_BricsCAD_Civil_15_V21.png" scope="external" id="image_wqp_bfx_54b" />
+            </fig></p>
+         <p><xref keyref="CMD_corridorextract" />新規では、3D ソリッド、3D メッシュ、
+ またはコリドーから 3D ポリラインを使用して、さまざまな目的で使用することができます。例えば、コリドーからポリラインを抽出して、グレーディングのエッジとして使用できます。配列をグリップ編集する場合、コリドーとその関連ジオメトリ(グレーディングなど)が自動的に追従します。<fig id="fig_gvl_545_r4b">
+               <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_16_V21.png" id="image_ir2_qn5_r4b" scope="external" />
+            </fig></p>
+      </section>
+      <section id="section_jr2_qn5_r4b">
+         <title>グレーディング</title>
+         <p><xref keyref="CMD_gradingbalance" />新しいでは、グレーディング切土と盛土のバランスをとることができます
+ ボリューム。</p>
+      </section>
+      <section id="section_kr2_qn5_r4b">
+         <title>TIN 土量サーフェス</title>
+         <p><xref keyref="SV_arrayassociativity" />には、TIN 土量サーフェス自動調整用の新しいコントロールが追加されました。TINボリュームサーフェスは、ソースサーフェスが変わると自動的に再構築されます。</p>
+      </section>
+      <section id="section_lr2_qn5_r4b">
+         <title>APIサンプル</title>
+         <p>以下のAPIサンプルが提供されています： 水平配列レポート、サーフェス三角形を高さで色分け、サーフェス三角形を勾配で色分け。</p>
+      </section>
+   </conbody>
+</concept>
