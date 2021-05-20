@@ -6,7 +6,7 @@
    <conbody>
       <section id="section_ypj_5mx_s4b">
          <title>Analytisches Modell</title>
-         <p>Mit diesem Befehl können Sie ein analytisches Modell aus einem vollständigen 3D-Modell mit einer Struktur erzeugen. Der Befehl startet mit einem automatisch generierten Vorschlag, erlaubt Ihnen aber, das Modell weiter an Ihre Wünsche anzupassen.<fig>
+         <p>This command allows you to generate an analytical model from a full 3D model of a structure. The command starts with an automatically generated proposal, but allows you to further adapt the model to your desires.<fig>
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataAnalyticalDialog_01_V21.png" id="image_zpj_5mx_s4b" scope="external" />
             </fig></p>
          <p>Der automatische Vorschlag wird versuchen, starre Verbindungen (Exzentrizitäten) so weit wie möglich zu minimieren, indem er einige Achslinien verschiebt, verlängert und sogar dreht. Sie können das Ausmaß solcher Änderungen durch die Abweichungseinstellungen steuern.<fig>
@@ -16,13 +16,13 @@
       </section>
       <section id="section_bqj_5mx_s4b">
          <title>BIM API</title>
-         <p>Konfigurierbare Mengen sind jetzt sowohl in der BIM-API als auch in der BIM-API für Bereiche verfügbar.</p>
+         <p>Configurable quantities are now available in the BIM API, as well as the BIM API for spaces.</p>
       </section>
       <section id="section_cqj_5mx_s4b">
          <title>BIM Zusammenstellungen</title>
-         <p>In V21 wurden die Anzeige des Rendermaterials und die LOD (Level of Details) Einstellung getrennt. Im Multifunktionsleisten Panel Start/Ansicht wurde eine neue Schaltfläche neben der LOD-Schaltfläche hinzugefügt, um die Rendering-Zusammenstellungs-Materialien umzuschalten.</p>
+         <p>In V22, the render material display and LOD setting have been separated. A new button has been added in the Home/View ribbon panel, next to the LOD button to toggle the rendering composition materials.</p>
          <p><image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_DataLODicon_01_V21.png" id="image_mrx_54x_s4b" scope="external" /><image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_DataRenderCompositionMaterial_01_V21.png" id="image_eqj_5mx_s4b" scope="external" /></p>
-         <p>Die LOD-Einstellungen steuern, ob die Schichten der Volumenkörper angezeigt werden oder nicht. Wenn die Schichten der Volumenkörper nicht sichtbar sind und die Option &quot;Render Zusammenstellungs Materialien&quot; aktiviert ist, werden nur die Hauptflächen der mehrschichtigen Volumenkörper mit Rendermaterialien belegt.</p>
+         <p>LOD settings control whether ply solids are shown or not. If ply solids are not visible and render composition materials is off, only major faces of the multi ply solids will get render materials.</p>
       </section>
       <section id="section_fqj_5mx_s4b">
          <title>Benutzerdefinierte BIM-Eigenschaften</title>
@@ -35,16 +35,21 @@
       <section id="section_gqj_5mx_s4b">
          <title>Räumliche Elemente</title>
          <p><b>BimRaum (bimroom)</b></p>
-         <p>Der Befehl BIMROOM wurde durch den Befehl <xref keyref="CMD_bimspace" /> ersetzt. Sie können immer noch BIMRÄUME öffnen, die in V20 erstellt wurden, aber es ist nicht möglich, neue BIMRÄUME zu erstellen oder die Geometrie von bestehenden BIMRÄUME in BricsCAD BIM V21 zu aktualisieren. Verwenden Sie die Space Option des <xref keyref="CMD_bimclassify" />, um einen BIM-Raum in einen BIM-Raum umzuwandeln. Raum Eigenschaften und Innen Ansichten, falls vorhanden, werden auf den entsprechenden Bereich übertragen.</p>
+         <p>The BIMROOM command has been replaced by the <xref keyref="CMD_bimspace" />. You can
+            still open BIMROOMs created in V19, but it is not possible to create new BIMROOMs or
+            update the geometry of existing BIMROOMs in BricsCAD BIM V21. Use the Space option of
+            the <xref keyref="CMD_bimclassify" /> to convert a BIM room to a BIM Space. Room
+            properties and interior elevations, if any, are transferred to the corresponding
+            Space.</p>
          <p><b>BimBereich</b></p>
          <p>Sie können BIM Bereiche aus geschlossenen Umgrenzungen erstellen. Wenn Wandelemente einen Bereich in Ihrem Modell umschließen, können Sie mit dem Werkzeug BimBereich einen BIM-Bereich definieren. Die Platz-Footprint-Vorschau wird jetzt beim Ausführen von <xref keyref="CMD_bimspace" /> angezeigt.            Diese Bereiche werden als regelmäßige Volumenkörper dargestellt, so dass sie leicht manipuliert werden können. Mit der Option Bearbeiten des Befehl BIMBEREICH können Sie Begrenzungselemente eines Raums hinzufügen oder entfernen.<fig>
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataSpace_01_V21.png" id="image_hqj_5mx_s4b" scope="external" />
             </fig></p>
          <p><b>BimAktBereich</b></p>
-         <p>Berechnet einen BIM-Bereich neu, der nicht mehr aktuell ist, zum Beispiel nach dem Hinzufügen oder Entfernen von begrenzenden Objekten. Im Eigenschaften Panel wird die Eigenschaft Aktualisierungs-Methode mit den Optionen Automatisch und Manuell hinzugefügt.</p>
-         <p>Die neue Eigenschaft Darstellung ermöglicht das Umschalten zwischen Volumenkörpern oder Grundriss-Darstellung eines Bereichs.</p>
+         <p>Recalculates a BIM space when it is out-of-date, for example after adding or removing bounding entities. In the Properties Panel, the Update Method property is added with the options Automatic and Manual.</p>
+         <p>The new Representation property allows toggling between Solid or Footprint representation of a Space.</p>
          <p>Der Bereich Bezeichner wurde hinzugefügt. Der Bereichs-Bezeichner ist ein Block, der eine Schraffur und Attribute enthält. Die Standardattribute des Bereichs-Bezeichner umfassen einen Bereichs-Namen und eine Bereichs-Nummer. Sie können die Werte der einzelnen Attribute über das Panel Eigenschaften ändern.</p>
-         <p>Die Eigenschaft Status gibt an, ob ein Raum aktuell oder veraltet ist.<fig id="fig_rdh_kzq_cpb">
+         <p>The new Status property indicates whether a Space is up-to-date or out-of-date.<fig id="fig_rdh_kzq_cpb">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataSpaceProperties_01_V21.png" id="image_iqj_5mx_s4b" scope="external" />
             </fig></p>
          <p><b>Bereichs Symbole</b></p>
@@ -73,15 +78,16 @@
       <section id="section_nqj_5mx_s4b">
          <title>Python-Skripte in BricsCAD BIM</title>
          <note>Dies ist eine Funktion von V21 Beta.</note>
-         <p>Das neue <xref keyref="CMD_bimpython" /> ermöglicht Ihnen die Abfrage und Verwaltung von Daten aus einem Modell innerhalb von BricsCAD BIM mit einer .py-Datei python-Skript.</p>
-         <p>Die Python-Skripte können so einfach sein wie das Abrufen von Mengen und zugehörigen Eigenschaften von Objekten und BIM-Objekten oder so aufwendig wie die Implementierung einer Reihe von Berechnungen auf der Grundlage der verfügbaren Modellparameter.</p>
-         <p>Wenn Sie BIMPYTHON ausführen, wird ein Windows-Dialogfeld geöffnet, in dem Sie das Python-Skript in .py Format.</p>
+         <p>The new <xref keyref="CMD_bimpython" /> enables you to query and manage data from a model
+            within BricsCAD BIM, with a .py Python script.</p>
+         <p>The Python scripts can be as simple as obtaining quantities and associated properties of objects and BIM entities, or as elaborate as implementing a series of calculations based on the model parameters available.</p>
+         <p>Executing BIMPYTHON opens a Windows dialog box where you can navigate and run your Python script in .py format.</p>
          <p>Der neue Befehl BIMACTIVATEPYTHON<!--link--> ermöglicht die Aktivierung und Deaktivierung der virtuellen Python-Umgebung in BricsCAD BIM, indem die Werte 0 bzw. 1 für <b>OFF</b> bzw. <b>ON</b> aktiviert werden. Sie müssen sicherstellen, dass sie <b>EIN</b> ist, bevor Sie BIMPYTHON verwenden.</p>
          <p>Die Programmiersprache Python ist zusammen mit ihren Standardbibliotheken in BricsCAD BIM eingebettet, so dass Sie diese nicht separat installieren müssen, es sei denn, Sie haben eigene Pakete und Bibliotheken, die Sie in Ihren Skripten verwenden möchten.</p>
       </section>
       <section id="section_oqj_5mx_s4b">
          <title>Projekt Browser</title>
-         <p>BIM-Projektdaten werden nun in einem externen Projekt <b>.bsyslib</b> gespeichert, anstelle der bisher verwendeten <b>.projectroot</b>. Beim Öffnen eines BIM-Projekts vor V21 können Sie die <b>.projectroot</b> in ein V21-Projekt <b>.bsyslib</b> konvertieren. Um die Eröffnung eines BIM-Projekts an einem neuen Ort zu vereinfachen, werden Pfade zu <b>.bsyslib</b> Dateien werden jetzt mit einem relativen Pfad gespeichert.</p>
+         <p>BIM project data are now stored in an external project <b>.bsyslib</b>, instead of the previously used <b>.projectroot</b>. When opening a pre-V21 BIM project, you can convert the <b>.projectroot</b> to a V20 project <b>.bsyslib</b>. To simplify the opening of a BIM project at a new location, paths to <b>.bsyslib</b> files are now stored with a relative path.</p>
          <p><b>Pläne</b></p>
          <p>Es ist jetzt möglich, ein Layout von Grund auf neu zu erstellen, und zwar im Dialog &quot;Plansatz Einrichtung&quot;.<fig id="fig_zls_q4x_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataProjectBrowser_01_V21.png" id="image_ams_q4x_s4b" scope="external" />
@@ -99,7 +105,7 @@
          <p>Der Assistent zum <b>Hinzufügen eines Extraktions-Plan</b>, der in einem Kontextmenü verfügbar ist, ermöglicht es Ihnen, schnell einen BIM Extraktions-Plan hinzuzufügen, ohne eine neue .dxd Datei erstellen zu müssen. Datei. Die Verwendung von relativen Pfaden wird jetzt für Extraktions-Pläne unterstützt.<fig id="fig_evd_44x_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataProjectBrowser_04_V21.png" id="image_fvd_44x_s4b" scope="external" />
             </fig></p>
-         <p>Die Optionen <b>Tabelle erstellen/aktualisieren</b> und <b>CSV erstellen/aktualisieren</b> sind in einem Kontextmenü zum Erstellen oder Aktualisieren eines Zeitplans oder einer CSV-Ausgabedatei verfügbar.<fig>
+         <p>The <b>Create/Update Table</b> and <b>Create/Update CSV</b> options are available in a context menu for creating or updating a Schedule or a CSV output file.<fig>
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataProjectBrowser_05_V21.png" id="image_pqj_5mx_s4b" scope="external" />
             </fig></p>
       </section>
