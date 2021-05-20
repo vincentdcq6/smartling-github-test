@@ -8,7 +8,7 @@
       <p>A funcionalidade de Nuvem de pontos é ainda mais poderosa com uma licença BIM.</p>
       <section id="section_izy_wvc_t4b">
          <title>Detecção de Piso</title>
-         <p>Os planos de corte também funcionam em nuvens de pontos, estes podem ser usados para mostrar partes de nuvens de pontos. A diferença entre recortes de nuvem de pontos e planos de corte é que o recorte da nuvem de pontos apenas recorta a nuvem de pontos, enquanto os planos de corte vão cortar toda a geometria em seu desenho.</p>
+         <p>SectionPlanes work on point clouds as well, they can be used to show parts of point clouds. The difference between point cloud crops and sectionplanes is that point cloud crop only clips the point cloud while section planes will clip all geometry in your drawing.</p>
          <p>O novo <xref keyref="CMD_pointclouddetectfloors" /> gera seções de volume para cada
  chão encontrado em uma nuvem de pontos representando um edifício. A detecção é baseada em regiões de pontos com coordenadas Z semelhantes. Os cortes de volume gerados podem ajudar para navegação de nuvens de pontos em edifícios.<fig id="fig_i2p_zvc_t4b">
                <image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_PointCloudsDetectFloors_01_V21.png" id="image_jzy_wvc_t4b" scope="external" />
@@ -25,9 +25,9 @@
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_PointCloudsFitPlanar_02_V21.png" scope="external" id="image_bhj_gzb_v4b" />
             </fig></p>
          <p><b>No espaço do modelo</b></p>
-         <p>Você também pode usar esse comando no Model Space quando o visualizador de bolhas não estiver aberto. O BricsCAD vai pedir que você selecione um ponto da nuvem de pontos no Model Space. Dependendo do tamanho da nuvem de pontos recortada, leva mais tempo, mas tem 2 vantagens ao pesquisar múltiplas posições de varredura:</p>
+         <p>You can also use this command in the model space when the bubble viewer is not open. BricsCAD will ask you to select a point of the point cloud in model space. Depending on the size of the cropped point cloud, it takes more time but it has two advantages by searching multiple scan positions:</p>
          <ul id="ul_lzy_wvc_t4b">
-            <li>Esta pode criar superfícies maiores onde apenas peças são visíveis em cada posição de varredura</li>
+            <li>It can create larger surfaces where only parts are visible in each scan position,</li>
             <li>Pode detectar espessura de parede e laje, uma vez que pode levar em conta a superfície oposta.</li>
          </ul>
          <fig id="fig_zzw_hzb_v4b">
@@ -39,8 +39,12 @@
       </section>
       <section id="section_mzy_wvc_t4b">
          <title>Projeção de Nuvem de pontos</title>
-         <p>O novo <xref keyref="CMD_pointcloudprojectsection" /> permite que você detecte paredes de
- a seção de volume de uma nuvem de pontos baseada em uma variedade de opções de detecção de parede. Você pode criar automaticamente cortes de volume, para cada andar de um prédio. Você pode usar esses cortes para gerar linhas 2d para criar uma planta 2d ou um corte vertical. Este é um processo em segundo plano e múltiplos cortes podem ser processados em fila. Desta forma, é possível executar este comando em resolução total em todos os cortes.<fig id="fig_qxq_kwc_t4b">
+         <p>The new <xref keyref="CMD_pointcloudprojectsection" /> enables you to detect walls from
+            the volume section of a point cloud based on a variety of wall detection options. You
+            can create volume sections automatically for each floor in a building. You can use these
+            sections to generate 2D lines to create a 2D floorplan or a vertical section. This is a
+            background process and multiple sections can be processed in a queue. This way it is
+            possible to run this command in full resolution on all sections.<fig id="fig_qxq_kwc_t4b">
                <image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_PointCloudsProjectSection_01_V21.png" id="image_nzy_wvc_t4b" scope="external" />
             </fig></p>
          <p>Ao mesmo tempo, uma imagem raster será gerada. Em alguns casos, não é necessário recriar o edifício existente. Imagens de fundo podem fornecer muito mais contexto para os documentos de projeto. Essas podem ser usadas para verificar a geometria 2D criada, mas em digitalizações de alta qualidade, essas imagens também podem ser usadas como material gráfico. Por exemplo, como uma imagem de fundo para um modelo BIM em projetos de renovação, onde uma intervenção moderna está sendo feita em edifícios históricos.<fig id="fig_w53_pwc_t4b">
