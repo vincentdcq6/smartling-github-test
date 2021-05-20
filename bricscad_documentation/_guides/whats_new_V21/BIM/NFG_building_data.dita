@@ -6,7 +6,7 @@
    <conbody>
       <section id="section_ypj_5mx_s4b">
          <title>Analytical Model</title>
-         <p>This command allows you to generate an analytical model from a full 3D model of a structure. The command starts with an automatically generated proposal, but allows you to further adapt the model to your desire.<fig>
+         <p>This command allows you to generate an analytical model from a full 3D model of a structure. The command starts with an automatically generated proposal, but allows you to further adapt the model to your desires.<fig>
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataAnalyticalDialog_01_V21.png" id="image_zpj_5mx_s4b" scope="external" />
             </fig></p>
          <p>The automatic proposal will try to minimize rigid links (eccentricities) as much as possible by shifting, extending and even rotating some axis lines. You can control the amount of such changes by the deviation settings.<fig>
@@ -16,13 +16,13 @@
       </section>
       <section id="section_bqj_5mx_s4b">
          <title>BIM API</title>
-         <p>Configurable quantities are now available in the BIM API, as well as the BIM API for Spaces.</p>
+         <p>Configurable quantities are now available in the BIM API, as well as the BIM API for spaces.</p>
       </section>
       <section id="section_cqj_5mx_s4b">
          <title>BIM Compositions</title>
-         <p>In V21, the render material display and LOD setting have been separated. A new button has been added in the Home/View ribbon panel, next to the LOD button to toggle the rendering composition materials.</p>
+         <p>In V22, the render material display and LOD setting have been separated. A new button has been added in the Home/View ribbon panel, next to the LOD button to toggle the rendering composition materials.</p>
          <p><image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_DataLODicon_01_V21.png" id="image_mrx_54x_s4b" scope="external" /><image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_DataRenderCompositionMaterial_01_V21.png" id="image_eqj_5mx_s4b" scope="external" /></p>
-         <p>LOD settings control whether ply solids are shown or not. If ply solids are not visible and render composition materials is on, only major faces of the multi ply solids will get render materials.</p>
+         <p>LOD settings control whether ply solids are shown or not. If ply solids are not visible and render composition materials is off, only major faces of the multi ply solids will get render materials.</p>
       </section>
       <section id="section_fqj_5mx_s4b">
          <title>Custom BIM Properties</title>
@@ -36,9 +36,9 @@
          <title>Spatial Elements</title>
          <p><b>BimRoom</b></p>
          <p>The BIMROOM command has been replaced by the <xref keyref="CMD_bimspace" />. You can
-            still open BIMROOMs created in V20, but it is not possible to create new BIMROOMs or
+            still open BIMROOMs created in V19, but it is not possible to create new BIMROOMs or
             update the geometry of existing BIMROOMs in BricsCAD BIM V21. Use the Space option of
-            the <xref keyref="CMD_bimclassify" /> to convert a BIM room to a BIM space. Room
+            the <xref keyref="CMD_bimclassify" /> to convert a BIM room to a BIM Space. Room
             properties and interior elevations, if any, are transferred to the corresponding
             Space.</p>
          <p><b>BimSpace</b></p>
@@ -51,10 +51,10 @@
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataSpace_01_V21.png" id="image_hqj_5mx_s4b" scope="external" />
             </fig></p>
          <p><b>BimUpdateSpace</b></p>
-         <p>Recalculates a BIM space which is out-of-date, for example after adding or removing bounding entities. In the Properties Panel, the Update Method property is added with the options Automatic and Manual.</p>
-         <p>The new Representation property allows toggling between Solid or Footprint representation of a space.</p>
+         <p>Recalculates a BIM space when it is out-of-date, for example after adding or removing bounding entities. In the Properties Panel, the Update Method property is added with the options Automatic and Manual.</p>
+         <p>The new Representation property allows toggling between Solid or Footprint representation of a Space.</p>
          <p>The Space tag has been added. The Space tag is a block that contains a hatch and attributes. The default attributes of the Space tag include a space name and a space number. You can change the values of each attribute using the Properties Panel.</p>
-         <p>The new Status property indicates whether a space is up-to-date or out-of-date.<fig id="fig_rdh_kzq_cpb">
+         <p>The new Status property indicates whether a Space is up-to-date or out-of-date.<fig id="fig_rdh_kzq_cpb">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataSpaceProperties_01_V21.png" id="image_iqj_5mx_s4b" scope="external" />
             </fig></p>
          <p><b>Space icons</b></p>
@@ -87,15 +87,15 @@
          <title>Python scripts in BricsCAD BIM</title>
          <note>This is a V21 Beta feature.</note>
          <p>The new <xref keyref="CMD_bimpython" /> enables you to query and manage data from a model
-            within BricsCAD BIM, with a .py python script.</p>
-         <p>The python scripts can be as simple as obtaining quantities and associated properties of objects and BIM entities, or as elaborate as implementing a series of calculations based on the model parameters available.</p>
-         <p>Executing BIMPYTHON opens a Windows dialog box where you can navigate and run your python script in .py format.</p>
+            within BricsCAD BIM, with a .py Python script.</p>
+         <p>The Python scripts can be as simple as obtaining quantities and associated properties of objects and BIM entities, or as elaborate as implementing a series of calculations based on the model parameters available.</p>
+         <p>Executing BIMPYTHON opens a Windows dialog box where you can navigate and run your Python script in .py format.</p>
          <p>The new BIMACTIVATEPYTHON command<!--link--> allows you to activate and deactivate the virtual python environment in BricsCAD BIM, by toggling the values 0 and 1 for <b>OFF</b> and <b>ON</b> respectively. You need to ensure it is turned <b>ON</b> before using BIMPYTHON.</p>
          <p>The Python Programming Language, together with its standard libraries, is embedded in BricsCAD BIM so there is no need for you to install them separately, unless you have custom packages and libraries which you wish to use in your scripts.</p>
       </section>
       <section id="section_oqj_5mx_s4b">
          <title>Project Browser</title>
-         <p>BIM project data are now stored in an external project <b>.bsyslib</b>, instead of the previously used <b>.projectroot</b>. When opening a pre-V21 BIM project, you can convert the <b>.projectroot</b> to a V21 project <b>.bsyslib</b>. To simplify the opening of a BIM project at a new location, paths to <b>.bsyslib</b> files are now stored with a relative path.</p>
+         <p>BIM project data are now stored in an external project <b>.bsyslib</b>, instead of the previously used <b>.projectroot</b>. When opening a pre-V21 BIM project, you can convert the <b>.projectroot</b> to a V20 project <b>.bsyslib</b>. To simplify the opening of a BIM project at a new location, paths to <b>.bsyslib</b> files are now stored with a relative path.</p>
          <p><b>Sheets</b></p>
          <p>It is now possible to create a layout from scratch in the Sheetset setup dialog box.<fig id="fig_zls_q4x_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataProjectBrowser_01_V21.png" id="image_ams_q4x_s4b" scope="external" />
@@ -114,7 +114,7 @@
          <p>The <b>Add Schedule</b> wizard, available in a context menu, allows you to quickly add a BIM schedule without the creation of a new .dxd file. The use of relative paths is now supported for Schedules.<fig id="fig_evd_44x_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataProjectBrowser_04_V21.png" id="image_fvd_44x_s4b" scope="external" />
             </fig></p>
-         <p>The <b>Create/Update Table</b> and <b>Create/Update CSV</b> options are available in a context menu for creating or updating a schedule or a CSV output file.<fig>
+         <p>The <b>Create/Update Table</b> and <b>Create/Update CSV</b> options are available in a context menu for creating or updating a Schedule or a CSV output file.<fig>
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataProjectBrowser_05_V21.png" id="image_pqj_5mx_s4b" scope="external" />
             </fig></p>
       </section>

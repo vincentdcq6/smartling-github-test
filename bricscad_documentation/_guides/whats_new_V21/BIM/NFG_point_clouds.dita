@@ -8,7 +8,7 @@
       <p>Point cloud functionality is even more powerful with a BIM license.</p>
       <section id="section_izy_wvc_t4b">
          <title>Floor Detection</title>
-         <p>Sectionplanes work on point clouds as well, they can be used to show parts of point clouds. The difference between point cloud crops and sectionplanes is that point cloud crop only clips the point cloud while section planes will clip all geometry in your drawing.</p>
+         <p>SectionPlanes work on point clouds as well, they can be used to show parts of point clouds. The difference between point cloud crops and sectionplanes is that point cloud crop only clips the point cloud while section planes will clip all geometry in your drawing.</p>
          <p>The new <xref keyref="CMD_pointclouddetectfloors" /> generates volume sections for each
             floor found in a point cloud representing a building. The detection is based on regions
             of points with similar Z-coordinates. The generated volume sections can help in
@@ -30,9 +30,9 @@
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_PointCloudsFitPlanar_02_V21.png" scope="external" id="image_bhj_gzb_v4b" />
             </fig></p>
          <p><b>In model space</b></p>
-         <p>You can also use this command in the model space when the bubble viewer is not open. BricsCAD will ask you to select a point of the point cloud in model space. Depending on the size of the cropped point cloud, it takes more time but it has 2 advantages by searching multiple scan positions:</p>
+         <p>You can also use this command in the model space when the bubble viewer is not open. BricsCAD will ask you to select a point of the point cloud in model space. Depending on the size of the cropped point cloud, it takes more time but it has two advantages by searching multiple scan positions:</p>
          <ul id="ul_lzy_wvc_t4b">
-            <li>It can create larger surfaces where only parts are visible in each scan position</li>
+            <li>It can create larger surfaces where only parts are visible in each scan position,</li>
             <li>It can detect wall and slab thickness since it can take the opposite surface into account.</li>
          </ul>
          <fig id="fig_zzw_hzb_v4b">
@@ -47,7 +47,7 @@
          <p>The new <xref keyref="CMD_pointcloudprojectsection" /> enables you to detect walls from
             the volume section of a point cloud based on a variety of wall detection options. You
             can create volume sections automatically for each floor in a building. You can use these
-            sections to generate 2d lines to create a 2d floorplan or a vertical section. This is a
+            sections to generate 2D lines to create a 2D floorplan or a vertical section. This is a
             background process and multiple sections can be processed in a queue. This way it is
             possible to run this command in full resolution on all sections.<fig id="fig_qxq_kwc_t4b">
                <image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_PointCloudsProjectSection_01_V21.png" id="image_nzy_wvc_t4b" scope="external" />
