@@ -11,7 +11,7 @@
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingBimApplyProfile_01_V21.png" id="image_mc2_t3x_s4b" scope="external" />
             </fig></p>
          <p><b>BIMPROFILES</b></p>
-         <p>When changing the Offset property of a CustomShape profile via the Profiles dialog, you can choose whether to keep the position of the solid or its axis, for linear solids using said profile.<fig id="fig_x11_y3x_s4b">
+         <p>When changing the offset property of a CustomShape profile via the Profiles dialog, you can choose whether to keep the position of the solid or its axis, for linear solids using said profile.<fig id="fig_x11_y3x_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingBimProfiles_01_V21.png" id="image_nc2_t3x_s4b" scope="external" />
             </fig></p>
          <p><b>BIMPROFILESTANDARDS</b></p>
@@ -20,7 +20,7 @@
       <section id="section_oc2_t3x_s4b">
          <title>Mass Modeling tools</title>
          <p>The first prototype of the new <xref keyref="CMD_bimquickbuilding" /> has been
-            implemented. The QuickBuilding tool allows you to generate a BIM building just from one
+            implemented. The Quickbuilding tool allows you to generate a BIM building just from one
             massing solid. It automatically generates different levels, walls, spatial locations,
             etc. It can be very useful in early design stages, volume studies and conceptual design.
             The tool will assign BIM properties to each part of the new building.</p>
@@ -37,10 +37,10 @@
          <p>The <xref keyref="CMD_bminsert" /> now includes a SMART insert option, which
             automatically adjusts parts to match current and relevant parts in the model file when
             inserted.</p>
-         <p>You can select SMART insert by clicking the option in the command line, or toggle CTRL to the rightmost icon when prompted in the HotKey Assistant.<fig id="fig_qc3_fjx_s4b">
+         <p>You can select SMART insert by clicking the option in the command line, or toggle CTRL to the rightmost icon when prompted in the Hotkey assistant.<fig id="fig_qc3_fjx_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingSmartInsertHKA_01_V21.png" id="image_uc2_t3x_s4b" scope="external" />
             </fig></p>
-         <p>By detecting and creating 3D constraints between the relevant connection points, SMART insert resizes and attaches your desired component onto the current component/s with assembly constraints and common parameters to form a bigger part of a parametric assembly. This is particularly useful in modeling parametric MEP piping systems.</p>
+         <p>By detecting and creating 3D constraints between the relevant connection points, SMART insert resizes and attaches your desired component onto the current component(s) with assembly constraints and common parameters to form a bigger part of a parametric assembly. This is particularly useful in modeling parametric MEP piping systems.</p>
          <fig id="fig_ktn_yzq_cpb">
             <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingSmartInsert_01_V21.png" id="image_wc2_t3x_s4b" scope="external" />
             <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingSmartInsert_02_V21.png" id="image_xc2_t3x_s4b" scope="external" />
@@ -66,7 +66,7 @@
       </section>
       <section id="section_gd2_t3x_s4b">
          <title>Quickdraw</title>
-         <p>The Quickdraw cursor now supports snapping to (double) lines inside XREFs. Walls now inherit the spatial location of the slab on which they are created.</p>
+         <p>The QuickDraw cursor now supports snapping to (double) lines inside XREFs. Walls now inherit the spatial location of the slab on which they are created.</p>
       </section>
       <section id="section_hd2_t3x_s4b">
          <title>Standards Parts</title>
