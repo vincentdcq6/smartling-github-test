@@ -11,7 +11,7 @@
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingBimApplyProfile_01_V21.png" id="image_mc2_t3x_s4b" scope="external" />
             </fig></p>
          <p><b>BIMPROFILE</b></p>
-         <p>Wenn die Versatz-Eigenschaft eines Benutzerdefinierte-Form Profils über den Dialog Profile geändert werden, können Sie wählen, ob die Position des Volumenkörpers oder seiner Achse für lineare Volumenkörper mit diesem Profil beibehalten werden soll.<fig id="fig_x11_y3x_s4b">
+         <p>When changing the offset property of a CustomShape profile via the Profiles dialog, you can choose whether to keep the position of the solid or its axis, for linear solids using said profile.<fig id="fig_x11_y3x_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingBimProfiles_01_V21.png" id="image_nc2_t3x_s4b" scope="external" />
             </fig></p>
          <p><b>BIMPROFILESTANDARDS</b></p>
@@ -19,8 +19,11 @@
       </section>
       <section id="section_oc2_t3x_s4b">
          <title>Werkzeuge zur Massenmodellierung</title>
-         <p>Der erste Prototyp des neuen <xref keyref="CMD_bimquickbuilding" /> wurde
- implementiert. Mit dem QuickBuilding Werkzeug können Sie ein BIM-Gebäude nur aus einem Massen-Volumenkörper erzeugen. Es erzeugt automatisch verschiedene Ebenen, Wände, räumliche Positionen usw. Sie kann in frühen Designphasen, Volumenstudien und Konzeptdesign sehr nützlich sein.            Das Werkzeug weist den einzelnen Teilen des neuen Gebäudes BIM-Eigenschaften zu.</p>
+         <p>The first prototype of the new <xref keyref="CMD_bimquickbuilding" /> has been
+            implemented. The Quickbuilding tool allows you to generate a BIM building just from one
+            massing solid. It automatically generates different levels, walls, spatial locations,
+            etc. It can be very useful in early design stages, volume studies and conceptual design.
+            The tool will assign BIM properties to each part of the new building.</p>
          <p>Räumliche Standorte können nun als Eingabe für BIMQUICKBUILDING verwendet werden. Dieser Workflow ermöglicht es Ihnen, verschiedene Gebäude gleichzeitig zu bearbeiten.</p>
          <p>Der Befehl funktioniert jetzt auch bei Volumenkörpern ohne Kanten - z. B. einer Kugel oder einem Torus.</p>
          <fig id="fig_bx5_djx_s4b">
@@ -34,10 +37,10 @@
          <p>Die <xref keyref="CMD_bminsert" /> enthält jetzt eine SMART-Einfügeoption, die
  Teile beim Einfügen automatisch an aktuelle und relevante Teile in der Modelldatei anpasst.
 </p>
-         <p>Sie können SMART-Einfügen auswählen, indem Sie auf die Option in der Befehlszeile klicken, oder den Fokus mit STRG-Taste auf das Symbol ganz rechts setzen, wenn Sie im HotKey-Assistenten dazu aufgefordert werden.<fig id="fig_qc3_fjx_s4b">
+         <p>You can select SMART insert by clicking the option in the command line, or toggle CTRL to the rightmost icon when prompted in the Hotkey assistant.<fig id="fig_qc3_fjx_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingSmartInsertHKA_01_V21.png" id="image_uc2_t3x_s4b" scope="external" />
             </fig></p>
-         <p>Durch das Erkennen und Erzeugen von 3D-Abhängigkeiten zwischen den relevanten Verbindungspunkten passt SMART einfügen die Größe Ihrer gewünschten Komponente an und fügt sie an die aktuelle(n) Komponente(n) mit Baugruppen-Abhängigkeiten und gemeinsamen Parametern an, um einen größeren Teil einer parametrischen Baugruppe zu bilden. Dies ist besonders nützlich bei der Modellierung parametrischer MEP-Rohrleitungssysteme.</p>
+         <p>By detecting and creating 3D constraints between the relevant connection points, SMART insert resizes and attaches your desired component onto the current component(s) with assembly constraints and common parameters to form a bigger part of a parametric assembly. This is particularly useful in modeling parametric MEP piping systems.</p>
          <fig id="fig_ktn_yzq_cpb">
             <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingSmartInsert_01_V21.png" id="image_wc2_t3x_s4b" scope="external" />
             <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingSmartInsert_02_V21.png" id="image_xc2_t3x_s4b" scope="external" />
@@ -62,7 +65,7 @@
       </section>
       <section id="section_gd2_t3x_s4b">
          <title>Quickdraw</title>
-         <p>Der Quickdraw-Cursor fängt sich jetzt an (doppelten) Linien innerhalb von XREFs Wände erben nun die räumliche Lage der Platte, auf der sie erstellt wurden.</p>
+         <p>The QuickDraw cursor now supports snapping to (double) lines inside XREFs. Walls now inherit the spatial location of the slab on which they are created.</p>
       </section>
       <section id="section_hd2_t3x_s4b">
          <title>Normteile</title>
