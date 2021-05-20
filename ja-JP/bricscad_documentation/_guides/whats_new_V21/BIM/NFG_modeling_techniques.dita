@@ -11,7 +11,7 @@
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingBimApplyProfile_01_V21.png" id="image_mc2_t3x_s4b" scope="external" />
             </fig></p>
          <p><b>BIMPROFILES</b></p>
-         <p>[プロファイル] ダイアログから [カスタム形] プロファイルの [オフセット] プロパティを変更する場合、そのプロファイルを使用する線形ソリッドに対して、ソリッドの位置を保持するか、軸の位置を保持するかを選択できます。<fig id="fig_x11_y3x_s4b">
+         <p>When changing the offset property of a CustomShape profile via the Profiles dialog, you can choose whether to keep the position of the solid or its axis, for linear solids using said profile.<fig id="fig_x11_y3x_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingBimProfiles_01_V21.png" id="image_nc2_t3x_s4b" scope="external" />
             </fig></p>
          <p><b>BIMPROFILESTANDARDS</b></p>
@@ -19,8 +19,11 @@
       </section>
       <section id="section_oc2_t3x_s4b">
          <title>マスモデリングツール</title>
-         <p><xref keyref="CMD_bimquickbuilding" />新しい最初のプロトタイプが
- 実装されました。クイックビルドツールを使用すると、1つのマスソリッドからBIM建物を生成できます。さまざまな階数、壁、空間位置などが自動的に生成されます。初期の設計段階、ボリュームスタディ、概念設計で非常に便利な機能です。このツールは、新しい建物の各パーツにBIMプロパティを割り当てます。</p>
+         <p>The first prototype of the new <xref keyref="CMD_bimquickbuilding" /> has been
+            implemented. The Quickbuilding tool allows you to generate a BIM building just from one
+            massing solid. It automatically generates different levels, walls, spatial locations,
+            etc. It can be very useful in early design stages, volume studies and conceptual design.
+            The tool will assign BIM properties to each part of the new building.</p>
          <p>空間的位置をクイックビルドの入力として使用できます。このワークフローでは、異なる建物を同時に処理できます。</p>
          <p>このコマンドは、エッジのないソリッド(球、トーラスなど)にも使用できます。</p>
          <fig id="fig_bx5_djx_s4b">
@@ -34,10 +37,10 @@
          <p>には <xref keyref="CMD_bminsert" /> SMART 挿入オプションが含まれており、
  では、モデルファイル内の現在のパーツと関連するパーツに一致するようにパーツが自動的に調整されます。
  挿入されました。</p>
-         <p>[スマート挿入] を選択するには、コマンドラインで [スマート挿入] オプションをクリックするか、ホットキーアシスタントでプロンプトが表示されたら、Ctrlキーで右端のアイコンに切り替えます。<fig id="fig_qc3_fjx_s4b">
+         <p>You can select SMART insert by clicking the option in the command line, or toggle CTRL to the rightmost icon when prompted in the Hotkey assistant.<fig id="fig_qc3_fjx_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingSmartInsertHKA_01_V21.png" id="image_uc2_t3x_s4b" scope="external" />
             </fig></p>
-         <p>スマート挿入は関連する接続点間の3D拘束を検出および作成し、アセンブリ拘束と共通パラメータを持つ現在のコンポーネントに合わせて目的のコンポーネントのサイズを変更してアタッチし、パラメトリックアセンブリのより大きなパーツを形成します。これは、パラメトリックMEP配管システムのモデリングに特に便利な機能です。</p>
+         <p>By detecting and creating 3D constraints between the relevant connection points, SMART insert resizes and attaches your desired component onto the current component(s) with assembly constraints and common parameters to form a bigger part of a parametric assembly. This is particularly useful in modeling parametric MEP piping systems.</p>
          <fig id="fig_ktn_yzq_cpb">
             <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingSmartInsert_01_V21.png" id="image_wc2_t3x_s4b" scope="external" />
             <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingSmartInsert_02_V21.png" id="image_xc2_t3x_s4b" scope="external" />
@@ -62,7 +65,7 @@
       </section>
       <section id="section_gd2_t3x_s4b">
          <title>クイックドロー</title>
-         <p>クイックドローカーソルで、外部参照内の(2重)線へのスナップがサポートされるようになりました。この結果、壁を作成するスラブの空間位置が継承されるようになりました。</p>
+         <p>The QuickDraw cursor now supports snapping to (double) lines inside XREFs. Walls now inherit the spatial location of the slab on which they are created.</p>
       </section>
       <section id="section_hd2_t3x_s4b">
          <title>標準部品</title>
