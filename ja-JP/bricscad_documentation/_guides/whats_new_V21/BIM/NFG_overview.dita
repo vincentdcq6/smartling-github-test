@@ -4,14 +4,14 @@
    <title>概要</title>
 
    <conbody>
-      <p>BricsCAD V21では、生産性の最大化に役立つ多くの新しいツールや機能強化が提供されています。この項では、<b>BricsCAD V21 BIM</b>の新機能と機能強化について概要を説明します。</p>
+      <p>BricsCAD V21 offers a plethora of new and improved tools to help maximize your productivity. This sections give an overview of all the new features and improvements in <b>BricsCAD V21 BIM</b> :</p>
       <p><xref keyref="NFG_modeling_techniques" /></p>
       <p><xref keyref="NFG_building_data" /></p>
       <p><xref keyref="NFG_project_collaboration" /></p>
       <p><xref keyref="NFG_design_documentation" /></p>
       <p><xref keyref="NFG_point_clouds" /></p>
       <p> </p>
-      <p><b>BricsCAD V21コアツールおよび土木ツール</b>の新機能と機能強化についての詳細は、「BricsCAD V21の新機能」を参照してください。以下の記事を記載しています。</p>
+      <p>For information about the new features and improvements in <b>BricsCAD V21 Core and Civil tools</b>, go to the What's new in BricsCAD V21 section. It contains the following articles.</p>
       <p><xref keyref="NFG_overview" /></p>
       <p><xref keyref="NFG_user_interface" /></p>
       <p><xref keyref="NFG_productivity" /></p>
@@ -20,7 +20,7 @@
       <p><xref keyref="NFG_civil_tools" /></p>
       <p><xref keyref="NFG_performance_and_compatibility" /></p>
       <p> </p>
-      <p><b>BricsCAD V21メカニカルツール</b>の新機能と機能強化についての詳細は、「BricsCAD V21 Mechanicalの新機能」を参照してください。以下の記事を記載しています。</p>
+      <p>For information about the new features and improvements in <b>BricsCAD V21 Mechanical tools</b>, visit the What's new in BricsCAD V21 Mechanical section. It contains the following articles:</p>
       <p><xref keyref="NFG_overview_mechanical" /></p>
       <p><xref keyref="NFG_bom_manager" /></p>
       <p><xref keyref="NFG_parts_libraries" /></p>
@@ -34,7 +34,7 @@
       </section>
       <section id="section_mlw_5w5_r4b">
          <title>診断と使用状況データの収集</title>
-         <p>多くの場合で、BricsCADユーザーの皆様から寄せられるご要望やご提案が機能強化につながっております。Bricsysでは今後も、新しいデータ収集ツールを活用してユーザーの皆様からのフィードバック収集方法を拡充してまいります。BricsCADを2回目に起動すると、ダイアログボックスが表示され、<xref href="https://help.bricsys.com/hc/en-us/articles/360016780820" format="html" scope="external"> 診断と使用状況データ収集プログラムに参加するように促します </xref>。データ収集プロセスにご参加いただくことで、匿名の診断および使用状況データをBricsys社と共有することが可能となり、BricsCADの機能強化に役立てることができます。お客様は、いつでも同意を取り消し、お客様ご自身のデータを当社データベースから削除することができます。</p>
+         <p>Many of the improvements were inspired by requests and suggestions from you, BricsCAD users. At Bricsys, we continue to expand our methods of gathering user feedback with new data collection tools. When you launch BricsCAD for the second time, a dialog box appears, inviting you to participate in the <xref href="https://help.bricsys.com/hc/en-us/articles/360016780820" format="html" scope="external">Diagnostics and Usage Data Collection program</xref>. This data collection process enables you to share anonymous diagnostic and usage data with Bricsys to help improve BricsCAD. You can withdraw your consent and have your data removed from our databases at any time.</p>
       </section>
    </conbody>
 </concept>
