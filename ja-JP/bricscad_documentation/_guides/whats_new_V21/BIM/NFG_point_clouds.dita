@@ -8,7 +8,7 @@
       <p>BIMライセンスで、点群機能がさらに強化されました。</p>
       <section id="section_izy_wvc_t4b">
          <title>フロア検出</title>
-         <p>断面平面を点群にも使用することができ、点群の一部を表示できます。点群クロップと断面平面の違いは、点群クロップでは点群のみがクリップされるの対し、断面平面では図面内のすべてのジオメトリがクリップされます。</p>
+         <p>SectionPlanes work on point clouds as well, they can be used to show parts of point clouds. The difference between point cloud crops and sectionplanes is that point cloud crop only clips the point cloud while section planes will clip all geometry in your drawing.</p>
          <p>新しいでは、<xref keyref="CMD_pointclouddetectfloors" /> 各ボリュームセクションが生成されます。
  建物を表す点群で見つかった床。フロアの検出は、類似したZ座標を持つ点のリージョンに基づき実行されます。生成されたボリューム断面を利用すると、建物の点群をナビゲートしやすくなります。<fig id="fig_i2p_zvc_t4b">
                <image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_PointCloudsDetectFloors_01_V21.png" id="image_jzy_wvc_t4b" scope="external" />
@@ -25,9 +25,9 @@
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_PointCloudsFitPlanar_02_V21.png" scope="external" id="image_bhj_gzb_v4b" />
             </fig></p>
          <p><b>モデル空間での</b></p>
-         <p>バブルビューアが開いていないときに、モデル空間でこのコマンドを使用することもできます。BricsCADにより、モデル空間で点群の1点を選択するよう求められます。点群クロップのサイズによっては時間がかかりますが、複数のスキャン位置を検索することには2つの利点があります。</p>
+         <p>You can also use this command in the model space when the bubble viewer is not open. BricsCAD will ask you to select a point of the point cloud in model space. Depending on the size of the cropped point cloud, it takes more time but it has two advantages by searching multiple scan positions:</p>
          <ul id="ul_lzy_wvc_t4b">
-            <li>各スキャン位置で部分的にしか表示されない大きなサーフェスを作成できます。</li>
+            <li>It can create larger surfaces where only parts are visible in each scan position,</li>
             <li>反対側のサーフェスも対象範囲に含めることができるため、壁とスラブの厚さを検出できます。</li>
          </ul>
          <fig id="fig_zzw_hzb_v4b">
@@ -39,8 +39,12 @@
       </section>
       <section id="section_mzy_wvc_t4b">
          <title>点群投影</title>
-         <p><xref keyref="CMD_pointcloudprojectsection" />新しいでは、壁を検出することができます
- さまざまな壁検出オプションに基づく点群の体積断面。建物のフロアごとに自動的にボリューム断面を作成できます。これらの断面を使い2D線分を生成して、2D平面図または垂直断面図を作成できます。このプロセスはバックグラウンドで実行され、複数の断面をキューに入れて処理できます。これにより、このコマンドをすべての断面に対して完全な解像度で実行できます。<fig id="fig_qxq_kwc_t4b">
+         <p>The new <xref keyref="CMD_pointcloudprojectsection" /> enables you to detect walls from
+            the volume section of a point cloud based on a variety of wall detection options. You
+            can create volume sections automatically for each floor in a building. You can use these
+            sections to generate 2D lines to create a 2D floorplan or a vertical section. This is a
+            background process and multiple sections can be processed in a queue. This way it is
+            possible to run this command in full resolution on all sections.<fig id="fig_qxq_kwc_t4b">
                <image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_PointCloudsProjectSection_01_V21.png" id="image_nzy_wvc_t4b" scope="external" />
             </fig></p>
          <p>同時に、ラスターイメージが生成されます。場合によっては、既存の建物を再作成する必要はありません。背景イメージがあると、設計ドキュメントについての理解が深まります。これらのイメージは、作成した2D形状を検証するために使用できますが、高品質スキャンされたイメージはグラフィック素材として使用することもできます。例えば、歴史的建造物に現代技術による修理等を施す改修プロジェクトで、BIMモデルの背景イメージとして使用します。<fig id="fig_w53_pwc_t4b">
