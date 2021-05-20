@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
 <concept id="A62B454D-35A2375-2224A73561257B5-BB3EE2">
-   <title>Modellierungs Techniken</title>
+   <title>Modeling Techniques</title>
 
    <conbody>
       <section id="section_lc2_t3x_s4b">
-         <title>BIM Profile</title>
-         <p><b>BIMPROFILANWENDEN / BIMLINEAREVOLUMENKÖRPER</b></p>
-         <p>Das Kompositionsmaterial eines Profils wird nun mit den Befehlen <xref keyref="CMD_bimapplyprofile" /> und <xref keyref="CMD_bimlinearsolid" /> an das erstellte Solid angehängt.<fig id="fig_pq2_x3x_s4b">
+         <title>BIM Profiles</title>
+         <p><b>BIMAPPLYPROFILE / BIMLINEARSOLID</b></p>
+         <p>The composition material of a profile is now attached to the created solid in the <xref keyref="CMD_bimapplyprofile" /> and <xref keyref="CMD_bimlinearsolid" /> commands.<fig id="fig_pq2_x3x_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingBimApplyProfile_01_V21.png" id="image_mc2_t3x_s4b" scope="external" />
             </fig></p>
-         <p><b>BIMPROFILE</b></p>
-         <p>Wenn die Versatz-Eigenschaft eines Benutzerdefinierte-Form Profils über den Dialog Profile geändert werden, können Sie wählen, ob die Position des Volumenkörpers oder seiner Achse für lineare Volumenkörper mit diesem Profil beibehalten werden soll.<fig id="fig_x11_y3x_s4b">
+         <p><b>BIMPROFILES</b></p>
+         <p>When changing the offset property of a CustomShape profile via the Profiles dialog, you can choose whether to keep the position of the solid or its axis, for linear solids using said profile.<fig id="fig_x11_y3x_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingBimProfiles_01_V21.png" id="image_nc2_t3x_s4b" scope="external" />
             </fig></p>
          <p><b>BIMPROFILESTANDARDS</b></p>
-         <p>Die Einstellung BIMPROFILESTANDARDS<!--link--> ist die Groß- und Kleinschreibung nicht mehr empfindlich. Falls keine Profile vorhanden sind, die dem Wert der Einstellung BIMPROFILESTANDARDS entsprechen, wird eine Warnmeldung angezeigt.</p>
+         <p>The BIMPROFILESTANDARDS setting<!--link--> is no longer case sensitive. In case there are no profiles matching the value of the BIMPROFILESTANDARDS setting, a warning message displays.</p>
       </section>
       <section id="section_oc2_t3x_s4b">
-         <title>Werkzeuge zur Massenmodellierung</title>
-         <p>Der erste Prototyp des neuen <xref keyref="CMD_bimquickbuilding" /> wurde
- implementiert. Mit dem QuickBuilding Werkzeug können Sie ein BIM-Gebäude nur aus einem Massen-Volumenkörper erzeugen. Es erzeugt automatisch verschiedene Ebenen, Wände, räumliche Positionen usw. Sie kann in frühen Designphasen, Volumenstudien und Konzeptdesign sehr nützlich sein.            Das Werkzeug weist den einzelnen Teilen des neuen Gebäudes BIM-Eigenschaften zu.</p>
-         <p>Räumliche Standorte können nun als Eingabe für BIMQUICKBUILDING verwendet werden. Dieser Workflow ermöglicht es Ihnen, verschiedene Gebäude gleichzeitig zu bearbeiten.</p>
-         <p>Der Befehl funktioniert jetzt auch bei Volumenkörpern ohne Kanten - z. B. einer Kugel oder einem Torus.</p>
+         <title>Mass Modeling tools</title>
+         <p>The first prototype of the new <xref keyref="CMD_bimquickbuilding" /> has been
+            implemented. The Quickbuilding tool allows you to generate a BIM building just from one
+            massing solid. It automatically generates different levels, walls, spatial locations,
+            etc. It can be very useful in early design stages, volume studies and conceptual design.
+            The tool will assign BIM properties to each part of the new building.</p>
+         <p>Spatial Locations can now be used as input for BIMQUICKBUILDING. This workflow allows you to process different buildings simultaneously.</p>
+         <p>The command also works on solids without edges, for example, a sphere or a torus.</p>
          <fig id="fig_bx5_djx_s4b">
             <image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_ModelingQuickBuilding_01_V21.png" id="image_qc2_t3x_s4b" scope="external" />
             <image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_ModelingQuickBuilding_02_V21.png" id="image_rc2_t3x_s4b" scope="external" />
@@ -30,14 +33,14 @@
          </fig>
       </section>
       <section id="section_tc2_t3x_s4b">
-         <title>BIM Komponente einfügen</title>
-         <p>Die <xref keyref="CMD_bminsert" /> enthält jetzt eine SMART-Einfügeoption, die
- Teile beim Einfügen automatisch an aktuelle und relevante Teile in der Modelldatei anpasst.
-</p>
-         <p>Sie können SMART-Einfügen auswählen, indem Sie auf die Option in der Befehlszeile klicken, oder den Fokus mit STRG-Taste auf das Symbol ganz rechts setzen, wenn Sie im HotKey-Assistenten dazu aufgefordert werden.<fig id="fig_qc3_fjx_s4b">
+         <title>Insert BIM Component</title>
+         <p>The <xref keyref="CMD_bminsert" /> now includes a SMART insert option, which
+            automatically adjusts parts to match current and relevant parts in the model file when
+            inserted.</p>
+         <p>You can select SMART insert by clicking the option in the command line, or toggle CTRL to the rightmost icon when prompted in the Hotkey assistant.<fig id="fig_qc3_fjx_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingSmartInsertHKA_01_V21.png" id="image_uc2_t3x_s4b" scope="external" />
             </fig></p>
-         <p>Durch das Erkennen und Erzeugen von 3D-Abhängigkeiten zwischen den relevanten Verbindungspunkten passt SMART einfügen die Größe Ihrer gewünschten Komponente an und fügt sie an die aktuelle(n) Komponente(n) mit Baugruppen-Abhängigkeiten und gemeinsamen Parametern an, um einen größeren Teil einer parametrischen Baugruppe zu bilden. Dies ist besonders nützlich bei der Modellierung parametrischer MEP-Rohrleitungssysteme.</p>
+         <p>By detecting and creating 3D constraints between the relevant connection points, SMART insert resizes and attaches your desired component onto the current component(s) with assembly constraints and common parameters to form a bigger part of a parametric assembly. This is particularly useful in modeling parametric MEP piping systems.</p>
          <fig id="fig_ktn_yzq_cpb">
             <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingSmartInsert_01_V21.png" id="image_wc2_t3x_s4b" scope="external" />
             <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingSmartInsert_02_V21.png" id="image_xc2_t3x_s4b" scope="external" />
@@ -48,9 +51,10 @@
          </fig>
       </section>
       <section id="section_ad2_t3x_s4b">
-         <title>Trennen</title>
-         <p>Die Befehle <xref keyref="CMD_lconnect" /> und <xref keyref="CMD_bimstructuralconnect" /> 
- enthalten jetzt eine vierte Option: DISCONNECTED. Sie können die Optionen mit der STRG-Taste im HotKey-Assistenten wechseln.</p>
+         <title>Disconnect</title>
+         <p>The <xref keyref="CMD_lconnect" /> and <xref keyref="CMD_bimstructuralconnect" /> commands
+            now include a fourth option: DISCONNECTED. You can cycle through the options with the
+            CTRL button in the HotKey Assistant.</p>
          <fig id="fig_q14_tjx_s4b">
             <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingDisconnect_01_V21.png" id="image_cd2_t3x_s4b" scope="external" />
             <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingDisconnect_02_V21.png" id="image_dd2_t3x_s4b" scope="external" />
@@ -62,11 +66,11 @@
       </section>
       <section id="section_gd2_t3x_s4b">
          <title>Quickdraw</title>
-         <p>Der Quickdraw-Cursor fängt sich jetzt an (doppelten) Linien innerhalb von XREFs Wände erben nun die räumliche Lage der Platte, auf der sie erstellt wurden.</p>
+         <p>The QuickDraw cursor now supports snapping to (double) lines inside XREFs. Walls now inherit the spatial location of the slab on which they are created.</p>
       </section>
       <section id="section_hd2_t3x_s4b">
-         <title>Normteile</title>
-         <p>Rohr Bauteile wurden der Kategorie Normteile des Bibliotheks Panels hinzugefügt.<fig id="fig_nyj_xjx_s4b">
+         <title>Standards Parts</title>
+         <p>Piping parts were added to the standard parts category of the Library panel.<fig id="fig_nyj_xjx_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingLibrary_01_V21.png" id="image_id2_t3x_s4b" scope="external" />
             </fig></p>
       </section>
