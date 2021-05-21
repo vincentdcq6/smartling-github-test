@@ -37,7 +37,7 @@
          <p><b>Associatividade</b></p>
          <p>Pontos e blocos estão dinamicamente vinculados à Superfície TIN. Se uma Superfície TIN é criada a partir de pontos ou blocos no desenho, e alguns pontos/blocos forem movidos, a superfície TIN vai atualizar automaticamente para refletir as alterações.</p>
          <p><b>Recortar</b></p>
-         <p>Uma nova opção em <xref keyref="CMD_tin" /> e <xref keyref="CMD_tinedit" /> permite que você recorte uma superfície TIN de acordo com um determinado limite de polilinha.<fig id="fig_s13_s45_r4b">
+         <p>Uma nova opção em <xref keyref="CMD_tinedit" /> e <xref keyref="CMD_tin" /> permite que você recorte uma superfície TIN de acordo com um determinado limite de polilinha.<fig id="fig_s13_s45_r4b">
                <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_03_V21.png" id="image_xq2_qn5_r4b" scope="external" />
             </fig></p>
          <p><b>Imagens Raster</b></p>
