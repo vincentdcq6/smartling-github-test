@@ -8,7 +8,7 @@
       <p>Die Punktwolken-Funktionalität ist mit einer BIM-Lizenz noch leistungsfähiger.</p>
       <section id="section_izy_wvc_t4b">
          <title>Geschoss Erkennung</title>
-         <p>Schnittebenen funktionieren auch bei Punktwolken, sie können verwendet werden, um Teile von Punktwolken darzustellen. Der Unterschied zwischen Punktwolkenausschnitten und Schnittebenen besteht darin, dass der Punktwolkenausschnitt nur die Punktwolke ausschneidet, während die Schnittebenen die gesamte Geometrie in Ihrer Zeichnung abschneidet.</p>
+         <p>SectionPlanes work on point clouds as well, they can be used to show parts of point clouds. The difference between point cloud crops and sectionplanes is that point cloud crop only clips the point cloud while section planes will clip all geometry in your drawing.</p>
          <p>Das neue <xref keyref="CMD_pointclouddetectfloors" /> erzeugt Volumenschnitte für jedes
  Stockwerk, das in einer Punktwolke gefunden wird, die ein Gebäude darstellt. Die Erkennung basiert auf Regionen von Punkten mit ähnlichen Z-Koordinaten. Die erzeugten Volumenschnitte können bei der Navigation in Punktwolken von Gebäuden helfen.<fig id="fig_i2p_zvc_t4b">
                <image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_PointCloudsDetectFloors_01_V21.png" id="image_jzy_wvc_t4b" scope="external" />
@@ -24,9 +24,9 @@
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_PointCloudsFitPlanar_02_V21.png" scope="external" id="image_bhj_gzb_v4b" />
             </fig></p>
          <p><b>Im Modellbereich</b></p>
-         <p>Sie können diesen Befehl auch im Modellbereich verwenden, wenn der Blasenbetrachter nicht geöffnet ist. BricsCAD fordert Sie auf, einen Punkt der Punktwolke im Model Bereich auszuwählen. Abhängig von der Größe der beschnittenen Punktwolke benötigt es mehr Zeit, hat aber 2 Vorteile durch die Suche nach mehreren Scanpositionen:</p>
+         <p>You can also use this command in the model space when the bubble viewer is not open. BricsCAD will ask you to select a point of the point cloud in model space. Depending on the size of the cropped point cloud, it takes more time but it has two advantages by searching multiple scan positions:</p>
          <ul id="ul_lzy_wvc_t4b">
-            <li>Er kann größere Oberflächen erzeugen, bei denen in jeder Scanposition nur Teile sichtbar sind</li>
+            <li>It can create larger surfaces where only parts are visible in each scan position,</li>
             <li>Er kann Wand- und Deckenstärken erkennen, da es die gegenüberliegende Fläche berücksichtigen kann.</li>
          </ul>
          <fig id="fig_zzw_hzb_v4b">
@@ -38,8 +38,12 @@
       </section>
       <section id="section_mzy_wvc_t4b">
          <title>Punktwolken Projektion</title>
-         <p>Das neue <xref keyref="CMD_pointcloudprojectsection" /> ermöglicht die Erkennung von Wänden aus
- dem Volumenausschnitt einer Punktwolke auf der Grundlage verschiedener Optionen für die Wanderkennung. Sie können Volumen-Schnitte automatisch für jedes Geschoss in einem Gebäude erstellen. Mit diesen Schnitten können Sie 2D-Linien erzeugen, um einen 2D-Grundriss oder einen Vertikalschnitt zu erstellen. Dies ist ein Hintergrundprozess und mehrere Schnitte können in einer Warteschlange verarbeitet werden. So können Sie diesen Befehl in voller Auflösung in allen Schnitten ausführen.<fig id="fig_qxq_kwc_t4b">
+         <p>The new <xref keyref="CMD_pointcloudprojectsection" /> enables you to detect walls from
+            the volume section of a point cloud based on a variety of wall detection options. You
+            can create volume sections automatically for each floor in a building. You can use these
+            sections to generate 2D lines to create a 2D floorplan or a vertical section. This is a
+            background process and multiple sections can be processed in a queue. This way it is
+            possible to run this command in full resolution on all sections.<fig id="fig_qxq_kwc_t4b">
                <image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_PointCloudsProjectSection_01_V21.png" id="image_nzy_wvc_t4b" scope="external" />
             </fig></p>
          <p>Gleichzeitig wird ein Rasterbild erzeugt. In einigen Fällen ist es nicht erforderlich, das vorhandene Gebäude neu zu erstellen. Hintergrundbilder können den Designdokumenten sehr viel mehr Aussagekraft verleihen. Diese können zur Überprüfung der erstellten 2D-Geometrie verwendet werden, aber bei qualitativ hochwertigen Scans können diese Bilder auch als grafisches Material verwendet werden. Zum Beispiel als Hintergrundbild für ein BIM-Modell bei Renovierungsprojekten, bei denen zeitgemäße Veränderungen in historischen Gebäuden vorgenommen werden.<fig id="fig_w53_pwc_t4b">

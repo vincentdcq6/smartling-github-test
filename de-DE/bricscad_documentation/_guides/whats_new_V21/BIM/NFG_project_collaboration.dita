@@ -6,12 +6,12 @@
    <conbody>
       <section id="section_qzm_tby_s4b">
          <title>IFC IMPORT/EXPORT</title>
-         <p>Es wurde ein Mechanismus implementiert, um IFC/BIM Objekten für BIM/IFC Objekten zuzuordnen, um zu kontrollieren, welche Objekte importiert/exportiert werden. BricsCAD BIM fügte auch IFC Export von Beschriftungs Objekten hinzu.</p>
+         <p>A mechanism has been implemented to map BIM/IFC entities to IFC/BIM entities, to control which entities are imported/exported. BricsCAD BIM also added IFC Export of Annotation entities.</p>
          <p>Sie können dieses Zuordnen mit Hilfe von Zuordnungs-Dateien durchführen. Die Benutzereinstellungen IfcImportMappingMath und IfcImportMappingPath legen die Pfade zu den erforderlichen Zuordnungs-Dateien fest. Diese Dateien sind einfache Textdateien, die einige Regeln enthalten.</p>
          <p>Diese Zuordnung kann verwendet werden, um BIM-Objekte als IFC-Objekte eines anderen Typs zu exportieren oder um bestimmte Typen ganz zu überspringen. Ein Beispiel für eine solche Exportdatei kann sein:<ul id="ul_ulb_wby_s4b">
                <li>BimDbColumn IfcMember</li>
                <li>BimDbBeam IfcMember</li>
-               <li>BimDbFurnishingElement überspringen</li>
+               <li>BimDbFurnishingElement Skip</li>
             </ul></p>
          <p>In diesem Beispiel werden Stützen und Träger im BricsCAD-BIM-Modell als Stäbe in die IFC-Datei exportiert, und Einrichtungselemente werden beim Exportvorgang übersprungen.</p>
          <p>Beim Importieren von IFC-Dateien kann ein ähnlicher Prozess verwendet werden. Ein Beispiel für eine solche Importdatei kann sein:<ul id="ul_nk2_3cy_s4b">
@@ -25,7 +25,7 @@
       </section>
       <section id="section_rzm_tby_s4b">
          <title>Importieren von RVT Dateien</title>
-         <p>Beim Importieren von Revit-Objekten mit IMPORT, können Sie wählen, ob Sie alle Volumenkörper importieren oder nur als Overlay importieren möchten. Sie können den Import auf Basis von Revit-Ansichten, Kategorien, Ebenen oder WorkSets filtern.<fig id="fig_zrq_5cy_s4b">
+         <p>When importing Revit Objects using IMPORT, you can choose for Import all the Solids or only Import as an Overlay. You can filter the import based on Revit Views, Categories, Levels or WorkSets.<fig id="fig_zrq_5cy_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_CollaborationCategories_01_V21.png" id="image_szm_tby_s4b" scope="external" />
             </fig></p>
          <p>Dies ist ein Beispiel für die Option Kategorien, mit der Sie bestimmte Kategorien für Ihren RVT-Import zuordnen können. Farben und Transparenzen werden jetzt beim Importieren einer RVT-Datei importiert.<fig id="fig_rs4_vcy_s4b">
