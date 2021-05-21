@@ -10,7 +10,7 @@
          <title>読み込み/書き出し</title>
          <p>土木データの読み込みと書き出しのための新しいツールや強化されたツールを使い、コラボレーションや設計プロセスを迅速化できます。</p>
          <p><b>土木3Dデータ</b></p>
-         <p><xref keyref="CMD_civil3dimport" />新しい機能では、複数の Civil エンティティを作成できます。
+         <p>新しい機能では、<xref keyref="CMD_civil3dimport" /> 複数の Civil エンティティを作成できます。
  を BricsCAD 図面で、外部の Autodesk® Civil 3D 図面から 1 つに
  操作。</p>
          <p><b>LandXMLデータ</b></p>
@@ -37,7 +37,7 @@
          <p><b>自動調整</b></p>
          <p>点とブロックはTINサーフェスにダイナミックにリンクされます。図面内の点やブロックからTINサーフェスを作成した場合、点やブロックを移動すると、TINサーフェスが自動的に更新され、変更内容が反映されます。</p>
          <p><b>クリップ</b></p>
-         <p><xref keyref="CMD_tin" /> <xref keyref="CMD_tinedit" />の新しいオプションで、
+         <p><xref keyref="CMD_tinedit" /> <xref keyref="CMD_tin" />の新しいオプションで、
  指定されたポリライン境界に従って TIN サーフェスをクリップします。<fig id="fig_s13_s45_r4b">
                <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_03_V21.png" id="image_xq2_qn5_r4b" scope="external" />
             </fig></p>
