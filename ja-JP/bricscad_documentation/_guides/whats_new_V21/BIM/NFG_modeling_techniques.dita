@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
 <concept id="A62B454D-35A2375-2224A73561257B5-BB3EE2">
-   <title>モデリング技術</title>
+   <title>Modeling Techniques</title>
 
    <conbody>
       <section id="section_lc2_t3x_s4b">
-         <title>BIMプロファイル</title>
+         <title>BIM Profiles</title>
          <p><b>BIMAPPLYPROFILE / BIMLINEARSOLID</b></p>
-         <p>これで、<xref keyref="CMD_bimapplyprofile" /> <xref keyref="CMD_bimlinearsolid" /> およびコマンドで作成したソリッドに、プロファイルの合成材料がアタッチされます。<fig id="fig_pq2_x3x_s4b">
+         <p>The composition material of a profile is now attached to the created solid in the <xref keyref="CMD_bimapplyprofile" /> and <xref keyref="CMD_bimlinearsolid" /> commands.<fig id="fig_pq2_x3x_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingBimApplyProfile_01_V21.png" id="image_mc2_t3x_s4b" scope="external" />
             </fig></p>
          <p><b>BIMPROFILES</b></p>
-         <p>[プロファイル] ダイアログから [カスタム形] プロファイルの [オフセット] プロパティを変更する場合、そのプロファイルを使用する線形ソリッドに対して、ソリッドの位置を保持するか、軸の位置を保持するかを選択できます。<fig id="fig_x11_y3x_s4b">
+         <p>When changing the offset property of a CustomShape profile via the Profiles dialog, you can choose whether to keep the position of the solid or its axis, for linear solids using said profile.<fig id="fig_x11_y3x_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingBimProfiles_01_V21.png" id="image_nc2_t3x_s4b" scope="external" />
             </fig></p>
          <p><b>BIMPROFILESTANDARDS</b></p>
-         <p>BIMPROFILESTANDARDS 設定<!--link--> は大文字と小文字を区別しなくなりました。BIMPROFILESTANDARDS設定値と一致するプロファイルがない場合は、警告メッセージが表示されます。</p>
+         <p>The BIMPROFILESTANDARDS setting<!--link--> is no longer case sensitive. In case there are no profiles matching the value of the BIMPROFILESTANDARDS setting, a warning message displays.</p>
       </section>
       <section id="section_oc2_t3x_s4b">
-         <title>マスモデリングツール</title>
-         <p><xref keyref="CMD_bimquickbuilding" />新しい最初のプロトタイプが
- 実装されました。クイックビルドツールを使用すると、1つのマスソリッドからBIM建物を生成できます。さまざまな階数、壁、空間位置などが自動的に生成されます。初期の設計段階、ボリュームスタディ、概念設計で非常に便利な機能です。このツールは、新しい建物の各パーツにBIMプロパティを割り当てます。</p>
-         <p>空間的位置をクイックビルドの入力として使用できます。このワークフローでは、異なる建物を同時に処理できます。</p>
-         <p>このコマンドは、エッジのないソリッド(球、トーラスなど)にも使用できます。</p>
+         <title>Mass Modeling tools</title>
+         <p>The first prototype of the new <xref keyref="CMD_bimquickbuilding" /> has been
+            implemented. The Quickbuilding tool allows you to generate a BIM building just from one
+            massing solid. It automatically generates different levels, walls, spatial locations,
+            etc. It can be very useful in early design stages, volume studies and conceptual design.
+            The tool will assign BIM properties to each part of the new building.</p>
+         <p>Spatial Locations can now be used as input for BIMQUICKBUILDING. This workflow allows you to process different buildings simultaneously.</p>
+         <p>The command also works on solids without edges, for example, a sphere or a torus.</p>
          <fig id="fig_bx5_djx_s4b">
             <image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_ModelingQuickBuilding_01_V21.png" id="image_qc2_t3x_s4b" scope="external" />
             <image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_ModelingQuickBuilding_02_V21.png" id="image_rc2_t3x_s4b" scope="external" />
@@ -30,14 +33,14 @@
          </fig>
       </section>
       <section id="section_tc2_t3x_s4b">
-         <title>BIMコンポーネントを挿入</title>
-         <p>には <xref keyref="CMD_bminsert" /> SMART 挿入オプションが含まれており、
- では、モデルファイル内の現在のパーツと関連するパーツに一致するようにパーツが自動的に調整されます。
- 挿入されました。</p>
-         <p>[スマート挿入] を選択するには、コマンドラインで [スマート挿入] オプションをクリックするか、ホットキーアシスタントでプロンプトが表示されたら、Ctrlキーで右端のアイコンに切り替えます。<fig id="fig_qc3_fjx_s4b">
+         <title>Insert BIM Component</title>
+         <p>The <xref keyref="CMD_bminsert" /> now includes a SMART insert option, which
+            automatically adjusts parts to match current and relevant parts in the model file when
+            inserted.</p>
+         <p>You can select SMART insert by clicking the option in the command line, or toggle CTRL to the rightmost icon when prompted in the Hotkey assistant.<fig id="fig_qc3_fjx_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingSmartInsertHKA_01_V21.png" id="image_uc2_t3x_s4b" scope="external" />
             </fig></p>
-         <p>スマート挿入は関連する接続点間の3D拘束を検出および作成し、アセンブリ拘束と共通パラメータを持つ現在のコンポーネントに合わせて目的のコンポーネントのサイズを変更してアタッチし、パラメトリックアセンブリのより大きなパーツを形成します。これは、パラメトリックMEP配管システムのモデリングに特に便利な機能です。</p>
+         <p>By detecting and creating 3D constraints between the relevant connection points, SMART insert resizes and attaches your desired component onto the current component(s) with assembly constraints and common parameters to form a bigger part of a parametric assembly. This is particularly useful in modeling parametric MEP piping systems.</p>
          <fig id="fig_ktn_yzq_cpb">
             <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingSmartInsert_01_V21.png" id="image_wc2_t3x_s4b" scope="external" />
             <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingSmartInsert_02_V21.png" id="image_xc2_t3x_s4b" scope="external" />
@@ -49,8 +52,9 @@
       </section>
       <section id="section_ad2_t3x_s4b">
          <title>Disconnect</title>
-         <p><xref keyref="CMD_lconnect" /> <xref keyref="CMD_bimstructuralconnect" />コマンドとコマンド
- 4番目のオプション「切断」を含めます。オプションを切り替えるには、ホットキーアシスタントで Ctrlボタンを押します。</p>
+         <p>The <xref keyref="CMD_lconnect" /> and <xref keyref="CMD_bimstructuralconnect" /> commands
+            now include a fourth option: DISCONNECTED. You can cycle through the options with the
+            CTRL button in the HotKey Assistant.</p>
          <fig id="fig_q14_tjx_s4b">
             <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingDisconnect_01_V21.png" id="image_cd2_t3x_s4b" scope="external" />
             <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingDisconnect_02_V21.png" id="image_dd2_t3x_s4b" scope="external" />
@@ -61,12 +65,12 @@
          </fig>
       </section>
       <section id="section_gd2_t3x_s4b">
-         <title>クイックドロー</title>
-         <p>クイックドローカーソルで、外部参照内の(2重)線へのスナップがサポートされるようになりました。この結果、壁を作成するスラブの空間位置が継承されるようになりました。</p>
+         <title>Quickdraw</title>
+         <p>The QuickDraw cursor now supports snapping to (double) lines inside XREFs. Walls now inherit the spatial location of the slab on which they are created.</p>
       </section>
       <section id="section_hd2_t3x_s4b">
-         <title>標準部品</title>
-         <p>[ライブラリ] パネルの標準部品カテゴリに配管パーツが追加されました。<fig id="fig_nyj_xjx_s4b">
+         <title>Standards Parts</title>
+         <p>Piping parts were added to the standard parts category of the Library panel.<fig id="fig_nyj_xjx_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_ModelingLibrary_01_V21.png" id="image_id2_t3x_s4b" scope="external" />
             </fig></p>
       </section>

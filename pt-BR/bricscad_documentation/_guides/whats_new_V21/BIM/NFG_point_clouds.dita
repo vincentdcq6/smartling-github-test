@@ -1,34 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
 <concept id="A2F16BA4-54CC34D-53253CC23525C21-557B29">
-   <title>Nuvens de pontos</title>
+   <title>Point clouds</title>
    <shortdesc />
 
    <conbody>
-      <p>A funcionalidade de Nuvem de pontos é ainda mais poderosa com uma licença BIM.</p>
+      <p>Point cloud functionality is even more powerful with a BIM license.</p>
       <section id="section_izy_wvc_t4b">
-         <title>Detecção de Piso</title>
-         <p>Os planos de corte também funcionam em nuvens de pontos, estes podem ser usados para mostrar partes de nuvens de pontos. A diferença entre recortes de nuvem de pontos e planos de corte é que o recorte da nuvem de pontos apenas recorta a nuvem de pontos, enquanto os planos de corte vão cortar toda a geometria em seu desenho.</p>
-         <p>O novo <xref keyref="CMD_pointclouddetectfloors" /> gera seções de volume para cada
- chão encontrado em uma nuvem de pontos representando um edifício. A detecção é baseada em regiões de pontos com coordenadas Z semelhantes. Os cortes de volume gerados podem ajudar para navegação de nuvens de pontos em edifícios.<fig id="fig_i2p_zvc_t4b">
+         <title>Floor Detection</title>
+         <p>SectionPlanes work on point clouds as well, they can be used to show parts of point clouds. The difference between point cloud crops and sectionplanes is that point cloud crop only clips the point cloud while section planes will clip all geometry in your drawing.</p>
+         <p>The new <xref keyref="CMD_pointclouddetectfloors" /> generates volume sections for each
+            floor found in a point cloud representing a building. The detection is based on regions
+            of points with similar Z-coordinates. The generated volume sections can help in
+            navigating point clouds of buildings.<fig id="fig_i2p_zvc_t4b">
                <image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_PointCloudsDetectFloors_01_V21.png" id="image_jzy_wvc_t4b" scope="external" />
             </fig></p>
       </section>
       <section id="section_kzy_wvc_t4b">
-         <title>Ajustar Plano</title>
-         <p>O novo <xref keyref="CMD_pointcloudfitplanar" /> permite que você crie geometria 3D baseada
- na nuvem de pontos. Este vai criar uma superfície planar ou sólido após uma seleção de um ponto em uma nuvem de pontos. Os pontos que parecem estar em um plano nunca estão exatamente em um plano, portanto, um valor limite é definido como uma propriedade da entidade de nuvem de pontos. Isso também funciona na vista de bolhas.</p>
-         <p><b>Na vista da bolha</b></p>
-         <p>Se o visualizador de bolhas estiver aberto antes de iniciar o comando, o BricsCAD espera que você selecione no visualizador de bolhas. O cursor fornece uma vista prévia da direção do plano. Quando você clica, obtém uma prévia tanto na vista de bolha como na vista do modelo. Você pode alternar entre duas representações de forma usando a tecla Ctrl.<fig id="fig_z4m_bzb_v4b">
+         <title>Planar Fit</title>
+         <p>The new <xref keyref="CMD_pointcloudfitplanar" /> enables you to create 3d geometry based
+            on the point cloud. It will create a planar surface or solid after a selection of one
+            point in a point cloud. The points that seem to be in a plane are never exactly in one
+            plane, therefore a threshold value is set as a property of the point cloud entity. This
+            also works in bubble view.</p>
+         <p><b>In bubble view</b></p>
+         <p>If the bubble viewer is open before launching the command, BricsCAD expects you to select in the bubble viewer. The cursor will give you a preview of the direction of the plane. When you click you get a preview in both bubble view and model view. You can toggle between 2 shape representations using the CTRL key.<fig id="fig_z4m_bzb_v4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_PointCloudsFitPlanar_01_V21.png" scope="external" id="image_apm_bzb_v4b" />
             </fig><fig id="fig_ahj_gzb_v4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_PointCloudsFitPlanar_02_V21.png" scope="external" id="image_bhj_gzb_v4b" />
             </fig></p>
-         <p><b>No espaço do modelo</b></p>
-         <p>Você também pode usar esse comando no Model Space quando o visualizador de bolhas não estiver aberto. O BricsCAD vai pedir que você selecione um ponto da nuvem de pontos no Model Space. Dependendo do tamanho da nuvem de pontos recortada, leva mais tempo, mas tem 2 vantagens ao pesquisar múltiplas posições de varredura:</p>
+         <p><b>In model space</b></p>
+         <p>You can also use this command in the model space when the bubble viewer is not open. BricsCAD will ask you to select a point of the point cloud in model space. Depending on the size of the cropped point cloud, it takes more time but it has two advantages by searching multiple scan positions:</p>
          <ul id="ul_lzy_wvc_t4b">
-            <li>Esta pode criar superfícies maiores onde apenas peças são visíveis em cada posição de varredura</li>
-            <li>Pode detectar espessura de parede e laje, uma vez que pode levar em conta a superfície oposta.</li>
+            <li>It can create larger surfaces where only parts are visible in each scan position,</li>
+            <li>It can detect wall and slab thickness since it can take the opposite surface into account.</li>
          </ul>
          <fig id="fig_zzw_hzb_v4b">
             <image href="https://static.bricsys.com/help/en_US/NFG_BIM_PointCloudsFitPlanar_03_V21.png" scope="external" id="image_a1x_hzb_v4b" />
@@ -38,12 +43,16 @@
          </fig>
       </section>
       <section id="section_mzy_wvc_t4b">
-         <title>Projeção de Nuvem de pontos</title>
-         <p>O novo <xref keyref="CMD_pointcloudprojectsection" /> permite que você detecte paredes de
- a seção de volume de uma nuvem de pontos baseada em uma variedade de opções de detecção de parede. Você pode criar automaticamente cortes de volume, para cada andar de um prédio. Você pode usar esses cortes para gerar linhas 2d para criar uma planta 2d ou um corte vertical. Este é um processo em segundo plano e múltiplos cortes podem ser processados em fila. Desta forma, é possível executar este comando em resolução total em todos os cortes.<fig id="fig_qxq_kwc_t4b">
+         <title>Point cloud projection</title>
+         <p>The new <xref keyref="CMD_pointcloudprojectsection" /> enables you to detect walls from
+            the volume section of a point cloud based on a variety of wall detection options. You
+            can create volume sections automatically for each floor in a building. You can use these
+            sections to generate 2D lines to create a 2D floorplan or a vertical section. This is a
+            background process and multiple sections can be processed in a queue. This way it is
+            possible to run this command in full resolution on all sections.<fig id="fig_qxq_kwc_t4b">
                <image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_PointCloudsProjectSection_01_V21.png" id="image_nzy_wvc_t4b" scope="external" />
             </fig></p>
-         <p>Ao mesmo tempo, uma imagem raster será gerada. Em alguns casos, não é necessário recriar o edifício existente. Imagens de fundo podem fornecer muito mais contexto para os documentos de projeto. Essas podem ser usadas para verificar a geometria 2D criada, mas em digitalizações de alta qualidade, essas imagens também podem ser usadas como material gráfico. Por exemplo, como uma imagem de fundo para um modelo BIM em projetos de renovação, onde uma intervenção moderna está sendo feita em edifícios históricos.<fig id="fig_w53_pwc_t4b">
+         <p>At the same time, a raster image will be generated. In some cases it is not necessary to recreate the existing building. Background images can give so much more context to the design documents. These can be used to verify the created 2d geometry but in high quality scans these images can also be used as graphical material. For example, as a background image for a BIM model in renovation projects where modern intervention are made in historical buildings.<fig id="fig_w53_pwc_t4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_PointCloudsProjectSection_02_V21.png" id="image_ozy_wvc_t4b" scope="external" />
             </fig></p>
       </section>
