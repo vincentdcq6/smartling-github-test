@@ -10,8 +10,8 @@
          <title>Import/Export</title>
          <p>Neue und verbesserte Werkzeuge für den Import und Export von zivilen Daten beschleunigen die Zusammenarbeit und die Konstruktionsprozesse.</p>
          <p><b>Civil 3D-Daten</b></p>
-         <p>Die neue <xref keyref="CMD_civil3dimport" /> ermöglicht es Ihnen, mehrere zivile Objekte
- in Ihrer BricsCAD-Zeichnung aus einer externen Autodesk® Civil 3D-Zeichnung in einem Arbeitsgang zu erstellen
+         <p>Mit der neuen Funktion können Sie <xref keyref="CMD_civil3dimport" /> mehrere zivile Objekte
+ in Ihrer BricsCAD-Zeichnung aus einer externen Autodesk® Civil 3D-Zeichnung in einem Arbeitsgang erstellen
 .</p>
          <p><b>LandXML-Daten</b></p>
          <p>Die Werkzeuge <xref keyref="CMD_landxmlimport" /> und <xref keyref="CMD_landxmlexport" /> 
@@ -41,8 +41,7 @@
          <p><b>Assoziativität</b></p>
          <p>Punkte und Blöcke werden dynamisch mit der TIN Oberfläche verknüpft. Wenn eine TIN-Oberfläche aus Punkten oder Blöcken in der Zeichnung erstellt wird und einige Punkte/Blöcke verschoben werden, wird die TIN-Oberfläche automatisch aktualisiert, um die Änderungen widerzuspiegeln.</p>
          <p><b>Zuschneiden</b></p>
-         <p>Eine neue Option in <xref keyref="CMD_tin" /> und <xref keyref="CMD_tinedit" /> ermöglicht es Ihnen,
- eine TIN-Oberfläche entsprechend einer vorgegebenen Polylinienbegrenzung zu beschneiden.<fig id="fig_s13_s45_r4b">
+         <p>Mit einer neuen Option in <xref keyref="CMD_tinedit" /> und <xref keyref="CMD_tin" /> können Sie eine TIN-Oberfläche entsprechend einer bestimmten Polyliniengrenze zuschneiden.<fig id="fig_s13_s45_r4b">
                <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_03_V21.png" id="image_xq2_qn5_r4b" scope="external" />
             </fig></p>
          <p><b>Rastergrafiken</b></p>
