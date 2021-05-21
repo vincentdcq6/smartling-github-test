@@ -10,7 +10,7 @@
          <title>Import/Export</title>
          <p>New and enhanced tools for importing and exporting civil data help accelerate collaboration and design processes.</p>
          <p><b>Civil 3D Data</b></p>
-         <p>The new <xref keyref="CMD_civil3dimport" /> enables you to create multiple civil entities
+         <p>The new enables you to create <xref keyref="CMD_civil3dimport" /> multiple civil entities
             in your BricsCAD drawing, from an external Autodesk® Civil 3D drawing, in one
             operation.</p>
          <p><b>LandXML Data</b></p>
@@ -41,7 +41,7 @@
          <p><b>Associativity</b></p>
          <p>Points and blocks are dynamically linked to the TIN surface. If a TIN surface is created from points or blocks in the drawing and some points/blocks are moved, the TIN surface automatically updates to reflect the changes.</p>
          <p><b>Clipping</b></p>
-         <p>A new option in <xref keyref="CMD_tin" /> and <xref keyref="CMD_tinedit" /> enables you to
+         <p>A new option in <xref keyref="CMD_tinedit" /> and <xref keyref="CMD_tin" /> enables you to
             clip a TIN Surface according to a given polyline boundary.<fig id="fig_s13_s45_r4b">
                <image href="https://static.bricsys.com/help/en_INTL/NFG_BricsCAD_Civil_03_V21.png" id="image_xq2_qn5_r4b" scope="external" />
             </fig></p>
