@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="safe_mode">
+   <title>Safe mode</title>
+   <shortdesc />
+   <conbody>
+      <p>Since V20, you can launch the program in <xref href="https://help.bricsys.com/hc/en-us/articles/360013746579#more-information" format="html" scope="external">Safe mode</xref>,<!--needs link--> using the <xref keyref="SV_safemode" />. This temporarily prevents all third-party plug-in code,
+         enablers, and user lisp files from loading in the current session. Starting in a clean
+         environment can prevent potential crash causes.</p>
+   </conbody>
+</concept>
+
