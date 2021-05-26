@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="system_requirements">
+   <title>Minimum system requirements and recommendations</title>
+   <shortdesc />
+   <conbody>
+      <section id="section_z2d_qlg_smb">
+         <title>Minimum requirements</title>
+         <p>
+            <table id="simpletable_tcf_qng_gmb">
+               <tgroup cols="3">
+                  <colspec colname="c1" colsep="1" rowsep="1" colnum="1" colwidth="1*" />
+                  <colspec colname="c2" rowsep="1" colsep="1" colnum="2" colwidth="1*" />
+                  <colspec colname="c3" rowsep="1" colsep="1" colnum="3" colwidth="1*" />
+                  <thead>
+                     <row>
+                        <entry align="center" />
+                        <entry align="center">Requirement</entry>
+                        <entry align="center">Notes</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry><b>Operating systems</b></entry>
+                        <entry>
+                           <ul id="ul_jny_sng_gmb">
+                              <li>Microsoft Windows<ul id="ul_pwm_hyf_3mb">
+                                    <li>Windows 10 (64-bit)<!--32-bit will be dropped for V21--></li>
+                                    <li>Windows 8 (64-bit)<!--32-bit will be dropped for V21?--><note>End of mainstream support for Windows 8 since January 2008. Currently extended support.</note></li>
+                                    <li>Windows Server 2008 R2</li>
+                                    <li>Windows Server 2008 with Service Pack 2 or higher</li>
+                                 </ul></li>
+                              <li>Mac OSX 10.13 or higher<!--For V21 we’ll need to add a section concerning MacOS 11 and intel/Apple silicon. --></li>
+                              <li>Linux<ul id="ul_kny_sng_gmb">
+                                    <li>Ubuntu 18.04 or higher</li>
+                                    <li>openSUSE<sup>*</sup></li>
+                                    <li>Fedora<sup>*</sup></li>
+                                 </ul><sup>*</sup> Later than April 2018</li>
+                           </ul>
+                        </entry>
+                        <entry />
+                     </row>
+                     <row>
+                        <entry><b>Processor</b></entry>
+                        <entry>Intel or AMD CPU, 1ghz or faster</entry>
+                        <entry />
+                     </row>
+                     <row>
+                        <entry><b>Memory</b></entry>
+                        <entry>1 GB</entry>
+                        <entry />
+                     </row>
+                     <row>
+                        <entry><b>Hard Drive</b></entry>
+                        <entry>1 GB for program files + 1 GB free space</entry>
+                        <entry />
+                     </row>
+                     <row>
+                        <entry><b>Display Resolution</b></entry>
+                        <entry>1024 x 768 XGA with True Color</entry>
+                        <entry />
+                     </row>
+                     <row>
+                        <entry><b>Display</b></entry>
+                        <entry>
+                           <ul id="ul_dzb_c5g_gmb">
+                              <li>On Windows, all graphic cards from NVIDIA, ATI and INTEL are supported by RedSDK.</li>
+                              <li>On Linux, 3D graphics hardware acceleration in RedSDK is supported on the following video chipsets:<ul id="ul_ezb_c5g_gmb">
+                                    <li>NVIDIA cards. We recommend to use the latest driver from NVIDIA.</li>
+                                    <li>ATI cards. We recommend to use the latest driver from ATI/AMD.</li>
+                                 </ul></li>
+                              <li>3D graphics hardware acceleration in RedSDK on Linux is NOT supported on:<ul id="ul_fzb_c5g_gmb">
+                                    <li>INTEL cards. As opposed to ATI and NVIDIA, 3D hardware acceleration in Linux drivers for INTEL cards is relatively new. So far, we do not yet officially support 3D hardware acceleration on INTEL cards, although we are working on it.</li>
+                                    <li>Laptops with dual graphics, although it happens to work on some dual graphics systems using recent versions of proprietary NVIDIA drivers.</li>
+                                 </ul></li>
+                           </ul>
+                        </entry>
+                        <entry><b conkeyref="product_names_warehouse/b_lhg_1q1_cnb" />'s non-wireframe render modes are based on RedSDK technology from Redway3D<sup>®</sup>. GPU acceleration for these render modes requires a supported GPU (Graphic Processing Unit), either on a video card or on the motherboard.</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </table>
+         </p>
+      </section>
+      <section id="section_gmk_plg_smb">
+         <title>Recommendations</title>
+         <p>
+            <table id="table_dmx_hxg_gmb">
+               <tgroup cols="3">
+                  <colspec colname="c1" rowsep="1" colnum="1" colwidth="1*" colsep="1" />
+                  <colspec colname="c2" rowsep="1" colsep="1" colnum="2" colwidth="1*" />
+                  <colspec colname="c3" rowsep="1" colsep="1" colnum="3" colwidth="1*" />
+                  <thead>
+                     <row>
+                        <entry align="center" />
+                        <entry align="center">Recommendation</entry>
+                        <entry align="center">Notes</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry><b>Processor</b></entry>
+                        <entry>Fast processor with 4 physical cores and high STR (Single Thread performance Rating) score.</entry>
+                        <entry />
+                     </row>
+                     <row>
+                        <entry><b>Hard drive</b></entry>
+                        <entry>Fast SSD primary drive combined with a fast SATA as secondary drive</entry>
+                        <entry />
+                     </row>
+                     <row>
+                        <entry><b>RAM</b></entry>
+                        <entry>16 GB or more</entry>
+                        <entry>16 GB of RAM is sufficient for most tasks, but it is interesting to install more memory to handle large projects. This applies to BIM, mechanicals, and large data sets. Point clouds do not require a lot of memory, but since they retrieve data in a database-like manner, we recommend to put them on an SSD drive.</entry>
+                     </row>
+                     <!--<row><entry><b>GPU</b></entry><entry>High-end GPU when using the RENDER command to generate images.</entry><entry>The GPU's on most graphic cards in today's computers handle editing tasks of 3D models using a rendered visual style with satisfactory performance. The bottleneck to update views of 3D models during editing usually is at CPU side, not at GPU side.</entry></row>-->
+                     <row>
+                        <entry><b>Screen</b></entry>
+                        <entry>A 2nd screen next to the drawing area</entry>
+                        <entry />
+                     </row>
+                  </tbody>
+               </tgroup>
+            </table>
+         </p>
+      </section>
+   </conbody>
+</concept>
+
+<?oxy_options track_changes="on"?>
