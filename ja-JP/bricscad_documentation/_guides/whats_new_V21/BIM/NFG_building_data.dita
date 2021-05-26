@@ -1,109 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
 <concept id="A52162AC-CDD37B3-51220B7A55D45D3-E9E0F5">
-   <title>建物データ</title>
+   <title>Building Data</title>
 
    <conbody>
       <section id="section_ypj_5mx_s4b">
-         <title>解析モデル</title>
-         <p>このコマンドを使用して、構造物の完全な3Dモデルから解析モデルを生成できます。この機能を開始すると提案が自動生成されて表示され、必要に応じてモデルをさらに適合させることができます。<fig>
+         <title>Analytical Model</title>
+         <p>This command allows you to generate an analytical model from a full 3D model of a structure. The command starts with an automatically generated proposal, but allows you to further adapt the model to your desires.<fig>
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataAnalyticalDialog_01_V21.png" id="image_zpj_5mx_s4b" scope="external" />
             </fig></p>
-         <p>自動提案では、軸線をシフト、延長、回転させることによって、剛体リンク(偏心)を可能な限り最小限に抑えます。このような変更の量は、偏差設定によって制御できます。<fig>
+         <p>The automatic proposal will try to minimize rigid links (eccentricities) as much as possible by shifting, extending and even rotating some axis lines. You can control the amount of such changes by the deviation settings.<fig>
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataAnalytical_01_V21.png" id="image_aqj_5mx_s4b" scope="external" />
             </fig></p>
-         <p>編集後のモデルは、IFCに書き出すことができます。</p>
+         <p>After editing the model, you can export it to an IFC.</p>
       </section>
       <section id="section_bqj_5mx_s4b">
          <title>BIM API</title>
-         <p>BIM APIおよびBIM API for Spacesで、設定可能な数量を利用できるようになりました。</p>
+         <p>Configurable quantities are now available in the BIM API, as well as the BIM API for spaces.</p>
       </section>
       <section id="section_cqj_5mx_s4b">
-         <title>BIM複合材</title>
-         <p>BricsCAD V21では、レンダリングマテリアル表示と詳細レベル(LOD)設定が分離されています。[ホーム]/[表示] リボンパネルの [詳細レベル] ボタンの横に、レンダリングの複合材マテリアルを切り替える新しいボタンが追加されました。</p>
+         <title>BIM Compositions</title>
+         <p>In V22, the render material display and LOD setting have been separated. A new button has been added in the Home/View ribbon panel, next to the LOD button to toggle the rendering composition materials.</p>
          <p><image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_DataLODicon_01_V21.png" id="image_mrx_54x_s4b" scope="external" /><image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_DataRenderCompositionMaterial_01_V21.png" id="image_eqj_5mx_s4b" scope="external" /></p>
-         <p>詳細レベルの設定で、プライソリッドの表示と非表示をコントロールできます。プライソリッドを非表示にして [複合材マテリアルのレンダリング] をオンにすると、マルチプライソリッドの上位面だけにレンダリングマテリアルが実行されます。</p>
+         <p>LOD settings control whether ply solids are shown or not. If ply solids are not visible and render composition materials is off, only major faces of the multi ply solids will get render materials.</p>
       </section>
       <section id="section_fqj_5mx_s4b">
-         <title>カスタムBIMプロパティ</title>
-         <p>カスタムプロパティセットの [インスタンス毎] オプションを使用すると、図形ごとにユーザー定義プロパティを有効または無効にできます。</p>
-         <p>[Enum] オプションを使用すると、カスタムBIMプロパティに指定できる値を固定数で定義できます。</p>
+         <title>Custom BIM Properties</title>
+         <p>The Per Instance option of a custom property set allows you to enable/disable user-defined properties, on a per-entity basis.</p>
+         <p>The Enum option allows you to define a fixed number of possible values for custom BIM properties.</p>
          <fig id="fig_rc1_twb_v4b">
             <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataProperties_01_V21.png" scope="external" id="image_sc1_twb_v4b" />
          </fig>
       </section>
       <section id="section_gqj_5mx_s4b">
-         <title>空間要素</title>
-         <p><b>BimRoom [部屋]</b></p>
-         <p>BIMROOM コマンドは、に置き換えられました <xref keyref="CMD_bimspace" />。V20で作成したBIM部屋を開くことはできますが、BricsCAD BIM V21で新しいBIM部屋を作成したり、既存のBIM部屋の形状を更新することはできません。[スペース] オプションを使用します。
- <xref keyref="CMD_bimclassify" />を使用して、BIM ルームを BIM スペースに変換します。部屋のプロパティと内装の立面図(存在する場合)は、対応する空間に転送されます。</p>
-         <p><b>BimSpace(空間(</b></p>
-         <p>BIM空間図形は、閉じた境界から作成できます。モデルに壁要素で囲まれている空間がある場合、BIMSPACEツールでBIM空間を定義できます。ザ・ザ・ザ・
- を実行したときに、スペースフットプリントのプレビューが表示されるようになりました <xref keyref="CMD_bimspace" />。
-これらの空間は通常のソリッドとして表されるので、簡単に操作できます。BIMSPACEコマンドの [編集] オプションを使い、空間の境界要素を追加または削除できます。<fig>
+         <title>Spatial Elements</title>
+         <p><b>BimRoom</b></p>
+         <p>The BIMROOM command has been replaced by the <xref keyref="CMD_bimspace" />. You can
+            still open BIMROOMs created in V19, but it is not possible to create new BIMROOMs or
+            update the geometry of existing BIMROOMs in BricsCAD BIM V21. Use the Space option of
+            the <xref keyref="CMD_bimclassify" /> to convert a BIM room to a BIM Space. Room
+            properties and interior elevations, if any, are transferred to the corresponding
+            Space.</p>
+         <p><b>BimSpace</b></p>
+         <p>You can create BIM Spaces entities from enclosed boundaries. When the wall elements
+            enclose a space in your model, you can use the BIMSPACE tool to define a BIM Space. The
+            space footprint preview now displays when executing the <xref keyref="CMD_bimspace" />.
+            These spaces are represented as regular solids so they can be easily manipulated. The
+            Edit option of the BIMSPACE command allows you to add or remove the bounding elements of
+            a space.<fig>
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataSpace_01_V21.png" id="image_hqj_5mx_s4b" scope="external" />
             </fig></p>
-         <p><b>BimUpdateSpace(空間更新)</b></p>
-         <p>境界図形を追加または削除した後など、最新ではないBIM空間を再計算します。[プロパティ] パネルに [更新方法] プロパティが追加され、[自動] と [手動] オプションを選択できます。</p>
-         <p>新しい [表示] プロパティを使い、空間の [ソリッド] 表示と [投影面積] 表示を切り替えることができます。</p>
-         <p>空間タグが追加されました。空間タグは、ハッチングと属性を含むブロックです。空間タグの既定の属性には、空間名と空間番号が含まれます。[プロパティ] パネルで各属性の値を変更できます。</p>
-         <p>新しい [ステータス] プロパティは、空間が最新かどうかを示します。<fig id="fig_rdh_kzq_cpb">
+         <p><b>BimUpdateSpace</b></p>
+         <p>Recalculates a BIM space when it is out-of-date, for example after adding or removing bounding entities. In the Properties Panel, the Update Method property is added with the options Automatic and Manual.</p>
+         <p>The new Representation property allows toggling between Solid or Footprint representation of a Space.</p>
+         <p>The Space tag has been added. The Space tag is a block that contains a hatch and attributes. The default attributes of the Space tag include a space name and a space number. You can change the values of each attribute using the Properties Panel.</p>
+         <p>The new Status property indicates whether a Space is up-to-date or out-of-date.<fig id="fig_rdh_kzq_cpb">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataSpaceProperties_01_V21.png" id="image_iqj_5mx_s4b" scope="external" />
             </fig></p>
-         <p><b>空間アイコン</b></p>
-         <p>クワッド、リボン、BIM空間ツールバーで [空間を編集]、[空間を更新]、[内装の立面図を定義] のBIM空間ツールアイコンを使用できます。<fig>
+         <p><b>Space icons</b></p>
+         <p>BIM Space tool icons for Edit Space, Update Space and Define Interior Elevations are available in the Quad, the Ribbon and the BIM Spaces toolbar.<fig>
                <image href="https://static.bricsys.com/help/en_INTL/NFG_BIM_DataSpaceIcons_01_V21.png" id="image_jqj_5mx_s4b" scope="external" />
             </fig></p>
-         <p><b>空間の構成要素</b></p>
-         <p>を使用する場合 <xref keyref="CMD_bimclassify" />、新しい分類カテゴリには
- がダイアログボックスに追加されました。新しいカテゴリの名前は、「空間の構成要素」です。このカテゴリの下に、[空間]、[建物]、[階]があります。<fig>
+         <p><b>Spatial Structure Elements</b></p>
+         <p>When using the <xref keyref="CMD_bimclassify" />, a new category of classification has
+            been added to the dialog box. The name of the new category is Spatial Structure
+            Elements. Under this category you will find Space, Building and Story.<fig>
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataSpaceClassify_01_V21.png" id="image_kqj_5mx_s4b" scope="external" />
             </fig></p>
-         <p><b>DefaultSpaceHeight(既定の空間高さ)</b></p>
-         <p>システム変数 ROOMHEIGHT は、DefaultSpaceHeight ユーザに置き換えられます。
- 好み<!--link-->に設定した場合、設定は [スペース] に適用されます。</p>
+         <p><b>DefaultSpaceHeight</b></p>
+         <p>The ROOMHEIGHT System Variable  is replaced by the DefaultSpaceHeight user
+            preference<!--link-->, the setting applies to Spaces.</p>
       </section>
       <section id="section_lqj_5mx_s4b">
          <title>BIMSETLOADBEARINGDIRECTION</title>
-         <p>V21 でを起動する新しいツールボタンを使用すると、クワッドを通るスラブの耐荷重方向を簡単に設定できます。<xref keyref="CMD_bimsetloadbearingdirection" /><fig>
+         <p>With the new tool button that launches the <xref keyref="CMD_bimsetloadbearingdirection" /> in V21, it is easy to set your loadbearing direction of your slab through the Quad.<fig>
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataLoadBearingDirectionQuad_01_V21.png" id="image_bxt_lpx_s4b" scope="external" />
             </fig></p>
-         <p>その結果として、黒色の点がスラブに表示されます。これをクリックすると、スラブの2つの主要な方向のいずれかまたは両方向に、スラブの荷重方向を変更することができます。<fig id="fig_ent_bpx_s4b">
+         <p>As a result, you will get a black dot on your slab. Once you click on it, you can change
+            the load-bearing direction of the slab in one of the two main directions of the slab or
+            in both.<fig id="fig_ent_bpx_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataLoadbearing_01_V21.png" id="image_q3g_mpx_s4b" scope="external" />
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataLoadbearing_02_V21.png" id="image_sqr_mpx_s4b" scope="external" />
             </fig></p>
       </section>
       <section id="section_nqj_5mx_s4b">
-         <title>BricsCAD BIMのPythonスクリプト</title>
-         <note>これは V21 ベータ機能です。</note>
-         <p><xref keyref="CMD_bimpython" />新しいモデルでは、モデルからデータをクエリおよび管理できます。
- BricsCAD BIM内で、.pyで。</p>
-         <p>Pythonスクリプトには、オブジェクトやBIM図形の数量および関連プロパティの取得などシンプルなものから、使用可能なモデルパラメータに基づいた一連の計算の実装など精巧なものまで、さまざまなスクリプトがあります。</p>
-         <p>BIMPYTHONを実行すると、Windowsダイアログボックスが開き、.py形式のPythonスクリプトをナビゲートして実行できます。</p>
-         <p>新しい BIMACTIVATEPYTHON コマンド<!--link--> では、BricsCAD BIMで仮想Python環境を有効または無効にできます。これは、それぞれ<b>OFF</b>と<b>ON</b>の値を0と1に切り替えます。BIMPYTHON を使用する前に、設定が<b>オン</b>になっていることを確認してください。</p>
-         <p>BricsCAD BIMにはPythonプログラミング言語と標準ライブラリが組み込まれているので、別途インストールする必要はありません。ただし、カスタムパッケージやライブラリをスクリプトで使用される場合は、別途インストールしてください。</p>
+         <title>Python scripts in BricsCAD BIM</title>
+         <note>This is a V21 Beta feature.</note>
+         <p>The new <xref keyref="CMD_bimpython" /> enables you to query and manage data from a model
+            within BricsCAD BIM, with a .py Python script.</p>
+         <p>The Python scripts can be as simple as obtaining quantities and associated properties of objects and BIM entities, or as elaborate as implementing a series of calculations based on the model parameters available.</p>
+         <p>Executing BIMPYTHON opens a Windows dialog box where you can navigate and run your Python script in .py format.</p>
+         <p>The new BIMACTIVATEPYTHON command<!--link--> allows you to activate and deactivate the virtual python environment in BricsCAD BIM, by toggling the values 0 and 1 for <b>OFF</b> and <b>ON</b> respectively. You need to ensure it is turned <b>ON</b> before using BIMPYTHON.</p>
+         <p>The Python Programming Language, together with its standard libraries, is embedded in BricsCAD BIM so there is no need for you to install them separately, unless you have custom packages and libraries which you wish to use in your scripts.</p>
       </section>
       <section id="section_oqj_5mx_s4b">
-         <title>プロジェクトブラウザ</title>
-         <p>BIMプロジェクトデータは外部プロジェクト <b>.bsyslib</b> に保存されるようになりました。これは、以前使用されていた<b>.projectroot</b>に代わる保存先です。V21以前に作成したBIMプロジェクトを開く場合、<b>.projectroot</b>をV21プロジェクト<b>.bsyslib</b>に変換できます。新しい場所でもBIMプロジェクトを簡単に開けるように、<b>.bsyslib</b>ファイルへのパスが相対パスで保存されるようになりました。</p>
-         <p><b>シート</b></p>
-         <p>[シートセット設定] ダイアログボックスで、レイアウトを最初から作成できるようになりました。<fig id="fig_zls_q4x_s4b">
+         <title>Project Browser</title>
+         <p>BIM project data are now stored in an external project <b>.bsyslib</b>, instead of the previously used <b>.projectroot</b>. When opening a pre-V21 BIM project, you can convert the <b>.projectroot</b> to a V20 project <b>.bsyslib</b>. To simplify the opening of a BIM project at a new location, paths to <b>.bsyslib</b> files are now stored with a relative path.</p>
+         <p><b>Sheets</b></p>
+         <p>It is now possible to create a layout from scratch in the Sheetset setup dialog box.<fig id="fig_zls_q4x_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataProjectBrowser_01_V21.png" id="image_ams_q4x_s4b" scope="external" />
             </fig></p>
-         <p>プロジェクトブラウザ(存在する場合)に、シート番号が表示されます。シート番号は、[ <b>シートを作成</b>] 手順で割り当てられます。シートビュー番号は、開始時に割り当てられます
- で作成されたすべてのセクション結果に対して、1 から <xref keyref="CMD_bimsectionupdate" />。<fig id="fig_jv5_p4x_s4b">
+         <p>The Project Browser displays the Sheet Number (if it exists). The Sheet Number is
+            assigned by the <b>Create Sheets</b> procedure. Sheet View Numbers are assigned starting
+            from 1 for all section results created by the <xref keyref="CMD_bimsectionupdate" />.<fig id="fig_jv5_p4x_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataProjectBrowser_02_V21.png" id="image_kv5_p4x_s4b" scope="external" />
             </fig></p>
-         <p><b>モデル</b></p>
-         <p>マスター図面と外部参照は、プロジェクトブラウザの [モデル] タブにツリー構造で表示されます。</p>
-         <p>バルーンを使用して、プロジェクトライブラリの図面シートへの接続を固定できます。<fig id="fig_gcy_44x_s4b">
+         <p><b>Models</b></p>
+         <p>Master drawings and external references are listed in a tree-structured manner in the Models tab of the Project Browser:</p>
+         <p>A balloon is available to fix a project libraries' connection to a drawing sheet.<fig id="fig_gcy_44x_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataProjectBrowser_03_V21.png" id="image_hcy_44x_s4b" scope="external" />
             </fig></p>
-         <p><b>建具表</b></p>
-         <p>コンテキストメニューから利用できる [<b>建具表を追加</b>] ウィザードを使用すると、新しい.dxdファイルを作成せずにBIM建具表をすばやく追加できます。建具表で、相対パスの使用がサポートされるようになりました。<fig id="fig_evd_44x_s4b">
+         <p><b>Schedules</b></p>
+         <p>The <b>Add Schedule</b> wizard, available in a context menu, allows you to quickly add a BIM schedule without the creation of a new .dxd file. The use of relative paths is now supported for Schedules.<fig id="fig_evd_44x_s4b">
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataProjectBrowser_04_V21.png" id="image_fvd_44x_s4b" scope="external" />
             </fig></p>
-         <p>[<b> テーブルの作成/更新 </b>] および [<b> CSV の作成/更新 </b>] オプションは、スケジュールまたは CSV 出力ファイルを作成または更新するためのコンテキストメニューで使用できます。<fig>
+         <p>The <b>Create/Update Table</b> and <b>Create/Update CSV</b> options are available in a context menu for creating or updating a Schedule or a CSV output file.<fig>
                <image href="https://static.bricsys.com/help/en_US/NFG_BIM_DataProjectBrowser_05_V21.png" id="image_pqj_5mx_s4b" scope="external" />
             </fig></p>
       </section>
